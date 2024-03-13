@@ -3,16 +3,11 @@
 
 Personal::Personal(){}
 
-Personal::Personal(int trainerID, Aluno aluno[])
+Personal::Personal(Aluno aluno[])
 {
-  this->trainerID = trainerID;
   this->aluno = aluno;
 }
 
-int Personal::getTrainerID()
-{
-  return trainerID;
-}
 
 Aluno Personal::getAluno()
 {
@@ -24,10 +19,6 @@ void  Personal::setAluno(Aluno aluno)
   this->aluno = aluno;
 }
 
-void Personal::setTrainerID(int trainerID)
-{
-  this->trainerID = trainerID;
-}
 
 void Personal::cadastrarAluno()
 {
