@@ -31,5 +31,15 @@ void Personal::setTrainerID(int trainerID)
 
 void Personal::cadastrarAluno()
 {
-
+  
 }
+
+void Personal::alterarAluno(){}
+
+void Personal::verAluno(){}
+
+void Personal::removerAluno(){}
+
+void Personal::exibir(){}
+
+

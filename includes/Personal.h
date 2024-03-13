@@ -19,7 +19,8 @@ class Personal
 
     void cadastrarAluno();
     void alterarAluno();
+    void removerAluno();
     void verAluno();
     void exibir();
-    void gerar();
+    void gerarID();
   };
