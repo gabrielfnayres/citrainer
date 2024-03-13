@@ -20,8 +20,11 @@ void  Personal::setAluno(Aluno aluno)
 }
 
 
-void Personal::cadastrarAluno()
+void Personal::cadastrarAluno() : Pessoa(string nomeCompleto, int idade)
 {
+  string n;
+  int idade;
+  Aluno aluno;
   
 }
 
