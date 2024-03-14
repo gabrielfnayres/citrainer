@@ -7,6 +7,7 @@ int main()
 {
     int cargo;
 
+    cout << "------------------------------ Bem-vindo ao CI Trainer ------------------------------" << endl;
     cout << "Você é aluno ou personal? (1 - Personal | 2 - Aluno)" << endl;
     cin >> cargo;
 
@@ -15,20 +16,20 @@ int main()
         if (cargo == 1)
         {
             Personal personal;
-            Personal.menu();
+            personal.menu();
 
             break;
         }
         else if (cargo == 2)
         {
             Aluno aluno;
-            Aluno.menu();
-            
+            aluno.menu();
+
             break;
         }
         else
         {
-        cout << "Opção inválida!" << endl;
+            cout << "Opção inválida!" << endl;
         }
     }
 }
