@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include "Pessoa.h"
+
 #include "Medidas.h"
 #include "Treino.h"
 
@@ -18,3 +19,4 @@ Aluno(string nomeCompleto, int idade, Medidas medidas, Treino treinos);
 void exibir();
 
 };
+

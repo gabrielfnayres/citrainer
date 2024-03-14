@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+
 #include <string>
 
 using namespace std;
@@ -31,4 +32,5 @@ float getPanturrilha();
 void exibir();
 
 
-}
+};
+
