@@ -21,7 +21,41 @@ void Aluno:: exibir(){
 
 cout<<"Nome: "<<nomeCompleto << endl;
 cout<<"Idade: "<<idade<< endl;
-medidas.exibir();
-treinos.exibir();
+}
+
+void Aluno:: menu(){
+int escolha;
+
+while(escolha){
+
+cout << "-----------------------------" <<endl;
+
+    cout << "   1 - Ver treino    " << endl;
+    cout << "   2 - Ver informações    " << endl;
+    cout << "   3 - Concluir treino    " << endl; 
+    cout << "   4 - Sair" << endl;
+
+    cout << "----------------------------" << endl;
 
 }
+cin >> escolha;
+
+if(escolha == 1){
+    status = false;
+    treinos.exibir();
+}
+
+if(escolha == 2){
+exibir();
+medidas.exibir();
+}
+
+if(escolha == 3)
+status = true;
+cout << "Treino concluído" << endl;
+}
+
+if(escolha == 4){
+    break;
+}
+
