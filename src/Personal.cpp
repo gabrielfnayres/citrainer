@@ -36,4 +36,28 @@ void Personal::removerAluno(){}
 
 void Personal::exibir(){}
 
+void Personal::menu()
+{
+  int escolha;
+  while(escolha){  
+    cout << "-----------------------------" <<endl;
 
+    cout << "   1 - Adicionar aluno    " << endl;
+    cout << "   2 - Alterar aluno    " << endl;
+    cout << "   3 - Buscar aluno     " << endl; 
+    cout << "   3 - Lista de alunos" << endl;
+    cout << "   4 - Remover aluno" << endl;
+    cout << "   5 - Sair" << endl;
+
+    cout << "----------------------------" << endl;
+
+    cin >> escolha;
+
+    if(escolha == 1)
+    {
+      
+    }
+  }
+
+
+}

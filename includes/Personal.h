@@ -20,4 +20,5 @@ class Personal
     void verAluno();
     void exibir();
     void gerarID();
+    void menu();
   };
