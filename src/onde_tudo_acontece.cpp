@@ -23,7 +23,7 @@ int main()
         else if (cargo == 2)
         {
             Aluno aluno;
-            aluno.menu();
+            //aluno.menu();
 
             break;
         }
@@ -33,6 +33,8 @@ int main()
             cin >> cargo;
         }
     }
+
+    cout << "------------------------------ Obrigado por usar o CI Trainer --------------------------------" << endl;
 
     return 0;
 }
