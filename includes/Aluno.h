@@ -14,9 +14,12 @@ Treino treinos;
 
 
 public:
+bool status;
+
+
 Aluno();
 Aluno(string nomeCompleto, int idade, Medidas medidas, Treino treinos);
 void exibir();
-
+void menu();
 };
 
