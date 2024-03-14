@@ -29,7 +29,10 @@ int main()
         }
         else
         {
-            cout << "Opção inválida!" << endl;
+            cout << "Opção inválida. Insira uma opção válida:" << endl;
+            cin >> cargo;
         }
     }
+
+    return 0;
 }
