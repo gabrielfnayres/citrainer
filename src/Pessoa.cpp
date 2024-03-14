@@ -1,5 +1,4 @@
 #include "../includes/Pessoa.h"
-#include <iostream>
 
 using namespace std;
 

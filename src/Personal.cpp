@@ -1,30 +1,32 @@
 #include "../includes/Personal.h"
 
 
-Personal::Personal(){}
-
-Personal::Personal(Aluno aluno[])
+Personal::Personal()
 {
-  this->aluno = aluno;
+
 }
 
-
-Aluno Personal::getAluno()
+vector<Aluno> Personal::getAluno()
 {
   return aluno;
 }
 
-void  Personal::setAluno(Aluno aluno)
+void  Personal::setAluno(Aluno aluno, int index)
 {
-  this->aluno = aluno;
+  this->aluno[index] = aluno;
 }
 
 
-void Personal::cadastrarAluno() : Pessoa(string nomeCompleto, int idade)
+void Personal::cadastrarAluno()
 {
   string n;
   int idade;
   Aluno aluno;
+  cout << "Informe o nome do aluno: " << "\n";
+  cin >> n;
+  cout << "Informe a idade do aluno: " << "\n";
+  aluno.setNomeCompleto(n);
+  aluno.setIdade(idade);
   
 }
 

@@ -1,6 +1,5 @@
 #pragma once
-#include "Pessoa.h"
-#include "Aluno.h"
+#include "../includes/Pessoa.h"
 #include <iostream>
 using namespace std;
 

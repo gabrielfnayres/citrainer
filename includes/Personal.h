@@ -8,13 +8,11 @@ class Personal
   private:
       vector<Aluno> aluno = vector<Aluno>(100);
 
-    public:
+  public:
       Personal();
-      Personal(int trainerID, Aluno aluno[]);
       
-      Aluno getAluno();
-      
-      void setAluno(Aluno aluno);
+      vector<Aluno> getAluno();
+      void setAluno(Aluno aluno, int index);
 
       void cadastrarAluno();
       void alterarAluno();
@@ -22,5 +20,5 @@ class Personal
       void verAluno();
       void exibir();
       void gerarID();
-       void menu();
+      void menu();
   };
