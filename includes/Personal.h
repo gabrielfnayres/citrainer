@@ -16,6 +16,7 @@ class Personal
 
       void cadastrarAluno();
       void alterarAluno();
+      void buscarAluno(string nomeAluno);
       void removerAluno();
       void verAluno();
       void exibir();
