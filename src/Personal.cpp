@@ -43,7 +43,7 @@ void Personal::exibir(){}
 void Personal::menu()
 {
   int escolha;
-  while(escolha){  
+  while(1){  
     cout << "-----------------------------" <<endl;
 
     cout << "   1 - Adicionar aluno    " << endl;
@@ -54,12 +54,13 @@ void Personal::menu()
     cout << "   5 - Sair" << endl;
 
     cout << "----------------------------" << endl;
-
     cin >> escolha;
-
+    cin.ignore();
+    
     if(escolha == 1)
     {
       alterarAluno();
+      
     }
     else if(escolha == 3)
     {
@@ -67,6 +68,7 @@ void Personal::menu()
       string busca;
       getline(cin, busca);
       buscarAluno(busca);
+      
     }
     else if(escolha == 2)
     {
@@ -74,6 +76,7 @@ void Personal::menu()
       cout << "1 - Nome" << "\n";
       cout << "2 - Idade" << "\n";
       cout << "3 - Treino" << "\n";
+      
     }
     else if(escolha == 4)
     {
@@ -81,13 +84,15 @@ void Personal::menu()
 
       cout <<"Informe o aluno que deseja remover: " << "\n";
       getline(cin, remo);
+      
     }
 
     else if(escolha == 5)
     {
-      return;
+      break;
     }
   }
-
-
 }
+
+
+
