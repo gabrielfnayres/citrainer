@@ -21,22 +21,22 @@ void Aluno::exibir()
   cout << "Idade: " << idade << endl;
 }
 
-Medidas getMedidas()
+Medidas Aluno::getMedidas()
 {
   return medidas;
 }
 
-void setMedidas(Medidas medidas)
+void Aluno::setMedidas(Medidas medidas)
 {
   this->medidas = medidas;
 }
 
-Treino getTreino()
+Treino Aluno::getTreino()
 {
-  return treino;
+  return treinos;
 }
   
-void setTreino(Treino treinos)
+void Aluno::setTreino(Treino treinos)
 {
   this->treinos = treinos;
 }
@@ -73,14 +73,14 @@ void Aluno::menu()
     
     else if(escolha == 3){
 
-      if(treino == 2)
-        treino = 0;
+      if(treinoDoDia == 2)
+        treinoDoDia = 0;
 
       else 
-        treino++;
+        treinoDoDia++;
         
       cout << "Muito bem! Esse é o treino de amanhã." << endl;
-      treinos.treinoDoDia(treino);
+      treinos.treinoDoDia(treinoDoDia);
     }
 
     else if(escolha == 4){
