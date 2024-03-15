@@ -10,7 +10,7 @@ Aluno::Aluno(){}
 Aluno::Aluno(string nomeCompleto, int idade, Medidas medidas, Treino treinos) : Pessoa(nomeCompleto, idade)
 {
   this->medidas = medidas;
-  this-> treinos = treinos;
+  this->treinos = treinos;
 }
 
 void Aluno::exibir()
@@ -39,7 +39,6 @@ void Aluno::menu()
     cin >> escolha;
 
     if(escolha == 1){
-      status = false;
       treinos.exibir();
     }
 
@@ -53,8 +52,15 @@ void Aluno::menu()
     }
 
     else if(escolha == 3){
-      status = true;
-      cout << "Treino concluído" << endl;
+
+      if(treino == 2)
+        treino = 0;
+
+      else 
+        treino++;
+        
+      cout << "Muito bem! Esse é o treino de amanhã." << endl;
+      treinos.treinoDoDia(treino);
     }
 
     else if(escolha == 4){

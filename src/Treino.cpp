@@ -327,6 +327,18 @@ void Treino::exibir()
     exibirTreinoC();
 }
 
+void Treino::treinoDoDia(int i)
+{
+    if (i == 0)
+        exibirTreinoA();
+
+    else if (i == 1)
+        exibirTreinoB();
+
+    else if (i == 2)
+        exibirTreinoC(); 
+}
+
 tipo Treino::getTreinoA()
 {
     return A;
