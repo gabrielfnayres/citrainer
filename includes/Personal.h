@@ -7,7 +7,6 @@ class Personal
   {
   private:
       vector<Aluno> aluno = vector<Aluno>(15);
-
   public:
       Personal();
       
@@ -19,7 +18,7 @@ class Personal
       void alterarAluno();
       Aluno buscarAluno(string nomeAluno, vector<Aluno> als);
       void exibirTodosAlunos();
-      void removerAluno(string nomeAluno, vector<Aluno> als);
+      void removerAluno(string nomeAluno, vector<Aluno> &als);
       void exibir();
       void gerarID();
       void menu();

@@ -21,13 +21,17 @@ void Personal::cadastrarAluno()
 {
   string n;
   int idade;
+  Medidas m;;
   Aluno al;
   cout << "Informe o nome do aluno: " << "\n";
   cin >> n;
   cout << "Informe a idade do aluno: " << "\n";
   cin >> idade;
+  cout << "Infome o tamanho da coxa: ";
   al.setNomeCompleto(n);
   al.setIdade(idade);
+  
+  
   aluno.push_back(al);
 }
 
@@ -59,11 +63,10 @@ void Personal::exibirTodosAlunos()
 }
 
 
-void Personal::removerAluno(string nomeAluno, vector<Aluno> als)
+void Personal::removerAluno(string nomeAluno, vector<Aluno> &als)
 {
   vector<Aluno>::iterator a;
   Aluno temp;
-  int ind = 0;
   for(Aluno al : als)
   {
     if(al.getNomeCompleto() == nomeAluno)
@@ -71,7 +74,6 @@ void Personal::removerAluno(string nomeAluno, vector<Aluno> als)
       temp = al;
       break;
     }
-    ind++;
   }
 
   for(a = als.begin(); a != als.end(); a++)

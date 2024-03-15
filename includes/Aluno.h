@@ -14,6 +14,12 @@ class Aluno: public Pessoa
         int treino = 0;
         Aluno();
         Aluno(string nomeCompleto, int idade, Medidas medidas, Treino treinos);
+        
+        Medidas getMedidas();
+        Treino getTreino();
+
+        void setTreino(Treino treinos);
+        void setMedidas(Medidas medidas);  
         void exibir();
         void menu();
 };

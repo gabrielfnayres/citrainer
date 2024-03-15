@@ -21,6 +21,26 @@ void Aluno::exibir()
   cout << "Idade: " << idade << endl;
 }
 
+Medidas getMedidas()
+{
+  return medidas;
+}
+
+void setMedidas(Medidas medidas)
+{
+  this->medidas = medidas;
+}
+
+Treino getTreino()
+{
+  return treino;
+}
+  
+void setTreino(Treino treinos)
+{
+  this->treinos = treinos;
+}
+
 void Aluno::menu()
 {
   int escolha;
@@ -50,7 +70,7 @@ void Aluno::menu()
 
       cout << endl;
     }
-
+    
     else if(escolha == 3){
 
       if(treino == 2)
