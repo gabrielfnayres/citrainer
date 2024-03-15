@@ -12,6 +12,7 @@ class Personal
       Personal();
       
       vector<Aluno> getAluno();
+      Aluno getAlunoInd(int index);
       void setAluno(Aluno aluno, int index);
 
       void cadastrarAluno();

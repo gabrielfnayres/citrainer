@@ -1,21 +1,21 @@
 #include "../includes/Personal.h"
 
-
-Personal::Personal()
-{
-
-}
+Personal::Personal(){}
 
 vector<Aluno> Personal::getAluno()
 {
   return aluno;
 }
 
+Aluno Personal::getAlunoInd(int index)
+{
+  return aluno[index-1];
+}
+
 void  Personal::setAluno(Aluno aluno, int index)
 {
   this->aluno[index] = aluno;
 }
-
 
 void Personal::cadastrarAluno()
 {
@@ -27,7 +27,6 @@ void Personal::cadastrarAluno()
   cout << "Informe a idade do aluno: " << "\n";
   aluno.setNomeCompleto(n);
   aluno.setIdade(idade);
-  
 }
 
 void Personal::alterarAluno(){}
@@ -44,7 +43,7 @@ void Personal::menu()
 {
   int escolha;
   while(1){  
-    cout << "-----------------------------" <<endl;
+    cout << "----------------------------" <<endl;
 
     cout << "   1 - Adicionar aluno    " << endl;
     cout << "   2 - Alterar aluno    " << endl;
@@ -53,7 +52,7 @@ void Personal::menu()
     cout << "   4 - Remover aluno" << endl;
     cout << "   5 - Sair" << endl;
 
-    cout << "----------------------------" << endl;
+    cout << "---------------------------" << endl;
     cin >> escolha;
     cin.ignore();
     
@@ -91,8 +90,10 @@ void Personal::menu()
     {
       break;
     }
+
+    else
+    {
+      cout << "Opção inválida. Insira uma opção válida." << endl;
+    }
   }
 }
-
-
-
