@@ -35,7 +35,51 @@ void Personal::cadastrarAluno()
   aluno.push_back(al);
 }
 
-void Personal::alterarAluno(){}
+void Personal::alterarAluno(string nome, vector<Aluno> &als)
+{
+  cout << " O que deseja alterar no seu aluno? " << "\n";
+  int alter;
+  cout << " ------------------" << "\n";
+  cout << " 1-Nome" << "\n";
+  cout << " 2-Idade" << "\n";
+  cout << " 3-Data de nascimento" << "\n";
+  cout << " 4-Medidas" << "\n";
+  cout << " 5-Treino" << "\n";
+
+  cin >> alter;
+
+  if(alter == 1)
+  {
+    cout << "Informe o novo nome:" << "\n";
+    string nom;
+    cin >> nom;
+    
+    for(Aluno a : als)
+    {
+      if(a.getNomeCompleto() == nome)
+      {
+        a.setNomeCompleto(nom);
+        break;
+      }
+    }
+  }
+  else if(alter == 2)
+  {
+    cout << "Informe a idade do aluno: \n";
+    int ida;
+    cin >> ida;
+
+    for(Aluno a : als)
+    {
+      if(a.getNomeCompleto() == nome)
+      {
+        a.setIdade(ida);
+        break;
+      }
+    }
+  }
+  
+}
 
 Aluno Personal::buscarAluno(string nomeAluno, vector<Aluno> als)
 {
@@ -87,7 +131,7 @@ void Personal::removerAluno(string nomeAluno, vector<Aluno> &als)
 
 void Personal::exibir()
 {
-
+  
 }
 
 void Personal::menu()
