@@ -1,5 +1,5 @@
 #include "../includes/Personal.h"
-
+#include <iterator>
 Personal::Personal(){}
 
 vector<Aluno> Personal::getAluno()
@@ -21,23 +21,72 @@ void Personal::cadastrarAluno()
 {
   string n;
   int idade;
-  Aluno aluno;
+  Aluno al;
   cout << "Informe o nome do aluno: " << "\n";
   cin >> n;
   cout << "Informe a idade do aluno: " << "\n";
-  aluno.setNomeCompleto(n);
-  aluno.setIdade(idade);
+  cin >> idade;
+  al.setNomeCompleto(n);
+  al.setIdade(idade);
+  aluno.push_back(al);
 }
 
 void Personal::alterarAluno(){}
 
-void Personal::buscarAluno(string nomeAluno){}
+Aluno Personal::buscarAluno(string nomeAluno, vector<Aluno> als)
+{
+  string resp;
+  Aluno exibido;
+  for(Aluno al : als)
+  {
+    if((al.getNomeCompleto()) == nomeAluno)
+    {
+      exibido = al;
+      break;
+    }
+  }
+  
+  return exibido;
+}
 
-void Personal::verAluno(){}
+void Personal::exibirTodosAlunos()
+{
+  for(Aluno a : aluno)
+  {
+    a.exibir();
+    cout << "\n";
+  }
+}
 
-void Personal::removerAluno(){}
 
-void Personal::exibir(){}
+void Personal::removerAluno(string nomeAluno, vector<Aluno> als)
+{
+  vector<Aluno>::iterator a;
+  Aluno temp;
+  int ind = 0;
+  for(Aluno al : als)
+  {
+    if(al.getNomeCompleto() == nomeAluno)
+    {
+      temp = al;
+      break;
+    }
+    ind++;
+  }
+
+  for(a = als.begin(); a != als.end(); a++)
+  {
+    if(a->getNomeCompleto() == temp.getNomeCompleto())
+    {
+      als.erase(a);
+    }
+  }
+}
+
+void Personal::exibir()
+{
+
+}
 
 void Personal::menu()
 {
@@ -58,16 +107,15 @@ void Personal::menu()
     
     if(escolha == 1)
     {
-      alterarAluno();
-      
+      cadastrarAluno();
     }
     else if(escolha == 3)
     {
       cout << "Informe o nome do aluno: " << "\n";
       string busca;
       getline(cin, busca);
-      buscarAluno(busca);
-      
+      Aluno busc = buscarAluno(busca, aluno);
+      cout << busc.getNomeCompleto() << " encontrado!" << "\n";
     }
     else if(escolha == 2)
     {
@@ -83,7 +131,9 @@ void Personal::menu()
 
       cout <<"Informe o aluno que deseja remover: " << "\n";
       getline(cin, remo);
-      
+      removerAluno(remo, aluno);
+      cout << "Aluno " << remo <<  " removido com sucesso!" << "\n";
+      exibirTodosAlunos();
     }
 
     else if(escolha == 5)

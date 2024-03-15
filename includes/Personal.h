@@ -6,7 +6,7 @@ using namespace std;
 class Personal
   {
   private:
-      vector<Aluno> aluno = vector<Aluno>(100);
+      vector<Aluno> aluno = vector<Aluno>(15);
 
   public:
       Personal();
@@ -17,9 +17,9 @@ class Personal
 
       void cadastrarAluno();
       void alterarAluno();
-      void buscarAluno(string nomeAluno);
-      void removerAluno();
-      void verAluno();
+      Aluno buscarAluno(string nomeAluno, vector<Aluno> als);
+      void exibirTodosAlunos();
+      void removerAluno(string nomeAluno, vector<Aluno> als);
       void exibir();
       void gerarID();
       void menu();
