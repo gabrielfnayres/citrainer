@@ -4,7 +4,6 @@
 #include "Medidas.h"
 #include "Treino.h"
 
-
 class Aluno: public Pessoa
 {
     private:

@@ -8,29 +8,38 @@ int main()
     int cargo;
 
     cout << "------------------------------ Bem-vindo ao CI Trainer ------------------------------" << endl;
-    cout << "Você é aluno ou personal? (1 - Personal | 2 - Aluno)" << endl;
-    cin >> cargo;
 
     while(1)
     {
+        cout << "Você é Personal ou Aluno? (1 - Personal | 2 - Aluno | 3 - Sair)" << endl;
+        cin >> cargo;
+
         if (cargo == 1)
         {
             Personal personal;
             personal.menu();
-
-            break;
         }
+
         else if (cargo == 2)
         {
-            Aluno aluno;
-            aluno.menu();
+            Personal personal;
+            int id;
 
+            cout << "Qual seu ID de aluno?" << endl;
+            cin >> id;
+
+            Aluno aluno = personal.getAlunoInd(id);
+            aluno.menu();
+        }
+
+        else if(cargo == 3)
+        {
             break;
         }
+
         else
         {
             cout << "Opção inválida. Insira uma opção válida:" << endl;
-            cin >> cargo;
         }
     }
 

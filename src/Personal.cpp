@@ -7,6 +7,11 @@ vector<Aluno> Personal::getAluno()
   return aluno;
 }
 
+Aluno Personal::getAlunoInd(int index)
+{
+  return aluno[index-1];
+}
+
 void  Personal::setAluno(Aluno aluno, int index)
 {
   this->aluno[index] = aluno;
@@ -22,7 +27,6 @@ void Personal::cadastrarAluno()
   cout << "Informe a idade do aluno: " << "\n";
   aluno.setNomeCompleto(n);
   aluno.setIdade(idade);
-  
 }
 
 void Personal::alterarAluno(){}
