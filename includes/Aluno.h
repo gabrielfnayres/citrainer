@@ -11,7 +11,7 @@ class Aluno: public Pessoa
         Treino treinos;
 
     public:
-        bool status;
+        int treino = 0;
         Aluno();
         Aluno(string nomeCompleto, int idade, Medidas medidas, Treino treinos);
         void exibir();
