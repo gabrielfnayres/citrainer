@@ -1,10 +1,6 @@
 #include "../includes/Personal.h"
 
-
-Personal::Personal()
-{
-
-}
+Personal::Personal(){}
 
 vector<Aluno> Personal::getAluno()
 {
@@ -15,7 +11,6 @@ void  Personal::setAluno(Aluno aluno, int index)
 {
   this->aluno[index] = aluno;
 }
-
 
 void Personal::cadastrarAluno()
 {
@@ -93,6 +88,3 @@ void Personal::menu()
     }
   }
 }
-
-
-

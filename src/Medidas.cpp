@@ -2,95 +2,96 @@
 #include <iostream>
 using namespace std;
 
-Medidas::Medidas(){
-
+Medidas::Medidas()
+{
+    peso = 0;
+    altura = 0;
+    cintura = 0;
+    busto = 0;
+    quadril = 0;
+    coxa = 0;
+    panturrilha = 0;
 }
 
-Medidas:: Medidas(float peso, float altura, float cintura, float busto, float quadril, float coxa, float panturrilha){
-this->peso=peso;
-this->altura=altura;
-this->cintura=cintura;
-this->busto=busto;
-this->quadril=quadril;
-this->coxa=coxa;
-this->panturrilha=panturrilha;
+Medidas:: Medidas(float peso, float altura, float cintura, float busto, float quadril, float coxa, float panturrilha)
+{
+    this->peso=peso;
+    this->altura=altura;
+    this->cintura=cintura;
+    this->busto=busto;
+    this->quadril=quadril;
+    this->coxa=coxa;
+    this->panturrilha=panturrilha;
 
 }
 
 float Medidas:: calculaIMC(){
-return peso/(altura * altura);
+    return peso/(altura * altura);
 }
 
 void Medidas:: setPeso(float peso){
-this->peso = peso;
-
-
+    this->peso = peso;
 }
+
 void Medidas::setAltura(float altura){
-this-> altura = altura;
+    this-> altura = altura;
 }
 
 void Medidas :: setCintura(float cintura){
-this-> cintura = cintura;
+    this-> cintura = cintura;
 }
 
 void Medidas:: setBusto(float busto){
-this->busto = busto;
-
+    this->busto = busto;
 }
+
 void Medidas :: setQuadril(float quadril){
-this->quadril = quadril;
+    this->quadril = quadril;
 }
-
 
 void Medidas:: setCoxa(float coxa){
-this->coxa = coxa;
+    this->coxa = coxa;
 }
 
 void Medidas:: setPanturrilha(float panturrilha){
-this->panturrilha = panturrilha;
+    this->panturrilha = panturrilha;
 }
 
-
 float Medidas:: getPeso(){
-return peso;
+    return peso;
 }
 
 float Medidas:: getAltura(){
-return altura;
+    return altura;
 }
 
 float Medidas:: getCintura(){
-return cintura;
+    return cintura;
 }
 
 float Medidas:: getBusto(){
-return busto;
+    return busto;
 }
 
 float Medidas:: getQuadril(){
-return quadril;
+    return quadril;
 }
 
 float Medidas:: getCoxa(){
-return coxa;
+    return coxa;
 }
 
 float Medidas:: getPanturrilha(){
-return panturrilha;
+    return panturrilha;
 }
-
-
 
 void Medidas:: exibir(){
-cout<<"Medidas:" << endl;
-cout<<"Peso: " << peso <<endl;
-cout<<"Altura: "<< altura << endl;
-cout<<"Cintura: "<< cintura<< endl;
-cout<<"Busto: "<< busto<<endl;
-cout<<"Quadril: "<< quadril<< endl;
-cout<<"Coxa: "<< coxa << endl;
-cout<<"Panturrilha: "<< panturrilha<< endl;
+    cout<<"Medidas:" << endl;
+    cout<<"Peso: " << peso <<endl;
+    cout<<"Altura: "<< altura << endl;
+    cout<<"Cintura: "<< cintura<< endl;
+    cout<<"Busto: "<< busto<<endl;
+    cout<<"Quadril: "<< quadril<< endl;
+    cout<<"Coxa: "<< coxa << endl;
+    cout<<"Panturrilha: "<< panturrilha<< endl;
 }
-
-
