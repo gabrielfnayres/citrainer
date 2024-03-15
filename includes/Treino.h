@@ -28,6 +28,7 @@ class Treino
         void exibir();
         void alterarTreino();
         void adicionarExercicio();
+        void treinoDoDia(int n);
 
         //gets&sets
         void setTreinoA(tipo a);
