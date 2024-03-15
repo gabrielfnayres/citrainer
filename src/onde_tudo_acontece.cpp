@@ -23,7 +23,7 @@ int main()
         else if (cargo == 2)
         {
             Aluno aluno;
-            //aluno.menu();
+            aluno.menu();
 
             break;
         }
