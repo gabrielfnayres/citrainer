@@ -65,7 +65,7 @@ float Medidas:: getAltura(){
     return altura;
 }
 
-float Medidas:: getCintura(){
+float Medidas:: getCintura(){  
     return cintura;
 }
 
@@ -85,13 +85,17 @@ float Medidas:: getPanturrilha(){
     return panturrilha;
 }
 
-void Medidas:: exibir(){
-    cout<<"Medidas:" << endl;
-    cout<<"Peso: " << peso <<endl;
-    cout<<"Altura: "<< altura << endl;
-    cout<<"Cintura: "<< cintura<< endl;
-    cout<<"Busto: "<< busto<<endl;
-    cout<<"Quadril: "<< quadril<< endl;
-    cout<<"Coxa: "<< coxa << endl;
-    cout<<"Panturrilha: "<< panturrilha<< endl;
+void Medidas:: exibir()
+{
+    cout<<"--------- Medidas ---------" << endl;
+
+    cout<<"Peso(kg): " << peso <<endl;
+    cout<<"Altura(m): "<< altura << endl;
+    cout<<"Cintura(cm): "<< cintura<< endl;
+    cout<<"Busto(cm): "<< busto<<endl;
+    cout<<"Quadril(cm): "<< quadril<< endl;
+    cout<<"Coxa(cm): "<< coxa << endl;
+    cout<<"Panturrilha(cm): "<< panturrilha<< endl;
+
+    cout << "---------------------------" << endl;
 }

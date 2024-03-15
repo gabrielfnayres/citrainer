@@ -43,7 +43,7 @@ void Personal::menu()
 {
   int escolha;
   while(1){  
-    cout << "-----------------------------" <<endl;
+    cout << "----------------------------" <<endl;
 
     cout << "   1 - Adicionar aluno    " << endl;
     cout << "   2 - Alterar aluno    " << endl;
@@ -52,7 +52,7 @@ void Personal::menu()
     cout << "   4 - Remover aluno" << endl;
     cout << "   5 - Sair" << endl;
 
-    cout << "----------------------------" << endl;
+    cout << "---------------------------" << endl;
     cin >> escolha;
     cin.ignore();
     
@@ -89,6 +89,11 @@ void Personal::menu()
     else if(escolha == 5)
     {
       break;
+    }
+
+    else
+    {
+      cout << "Opção inválida. Insira uma opção válida." << endl;
     }
   }
 }

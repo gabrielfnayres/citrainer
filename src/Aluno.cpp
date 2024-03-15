@@ -15,6 +15,8 @@ Aluno::Aluno(string nomeCompleto, int idade, Medidas medidas, Treino treinos) : 
 
 void Aluno::exibir()
 {
+  cout << "------ Dados Pessoais -----" << endl;
+
   cout << "Nome: " << nomeCompleto << endl;
   cout << "Idade: " << idade << endl;
 }
@@ -23,36 +25,44 @@ void Aluno::menu()
 {
   int escolha;
 
-  while(1){
+  while(1)
+  {
+    cout << "---------------------------" << endl;
 
-    cout << "-----------------------------" <<endl;
+    cout << "   1 - Ver treinos"     << endl;
+    cout << "   2 - Ver informações" << endl;
+    cout << "   3 - Concluir treino" << endl;
+    cout << "   4 - Sair"            << endl;
 
-    cout << "   1 - Ver treino    " << endl;
-    cout << "   2 - Ver informações    " << endl;
-    cout << "   3 - Concluir treino    " << endl;
-    cout << "   4 - Sair" << endl;
+    cout << "---------------------------" << endl;
 
-    cout << "----------------------------" << endl;
+    cin >> escolha;
 
-      cin >> escolha;
+    if(escolha == 1){
+      status = false;
+      treinos.exibir();
+    }
 
-      if(escolha == 1){
-        status = false;
-        treinos.exibir();
-      }
+    else if(escolha == 2){
+      cout << endl;
 
-      else if(escolha == 2){
-        exibir();
-        medidas.exibir();
-      }
+      exibir();
+      medidas.exibir();
 
-      else if(escolha == 3){
-        status = true;
-        cout << "Treino concluído" << endl;
-      }
+      cout << endl;
+    }
 
-      else if(escolha == 4){
-          return;
+    else if(escolha == 3){
+      status = true;
+      cout << "Treino concluído" << endl;
+    }
+
+    else if(escolha == 4){
+        return;
+    }
+
+    else{
+      cout << "Opção inválida. Insira uma opção válida." << endl;
     }
   }
 }
