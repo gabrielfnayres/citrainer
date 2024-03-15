@@ -40,13 +40,13 @@ void Aluno::menu(){
   cin >> escolha;
 
   if(escolha == 1){
-      status = false;
-      treinos.exibir();
+    status = false;
+    treinos.exibir();
   }
 
   if(escolha == 2){
-  exibir();
-  medidas.exibir();
+    exibir();
+    medidas.exibir();
   }
 
   if(escolha == 3){
