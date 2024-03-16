@@ -14,6 +14,7 @@ int numero;
 
 public:
 Endereco();
+Endereco(string b, string c, string r, string cep, int n);
 void setBairro(string b);
 void setCidade(string c);
 void setCep(string cep);
@@ -25,4 +26,4 @@ string getCep();
 string getRua();
 int getNumero();
 void exibirEndereco();
-}
+};
