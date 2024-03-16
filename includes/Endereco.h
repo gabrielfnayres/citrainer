@@ -6,13 +6,14 @@ using namespace std;
 
 class Endereco{
 protected:
-string bairro;
-string cidade;
-string CEP;
-string rua;
-int numero;
+  string bairro;
+  string cidade;
+  string CEP;
+  string rua;
+  int numero;
 
 public:
+
 Endereco();
 Endereco(string b, string c, string r, string cep, int n);
 void setBairro(string b);
@@ -27,3 +28,4 @@ string getRua();
 int getNumero();
 void exibirEndereco();
 };
+

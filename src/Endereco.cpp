@@ -1,12 +1,14 @@
-#include <iostream>
-#include "Endereco.h"
+#include "../includes/Endereco.h"
 
 
-Endereco::Endereco(){
+Endereco::Endereco()
+{
 
 }
 
-Endereco::Endereco(string b, string c, string r, string cep, int n){
+Endereco::Endereco(string b, string c, string r, string cep, int n)
+{
+
     bairro=b;
     cidade=c;
     rua=r;
@@ -61,3 +63,4 @@ void Endereco:: exibirEndereco(){
     cout << "Bairro: "<< bairro<< endl;
     cout << "Número: "<< numero << endl;
 }
+
