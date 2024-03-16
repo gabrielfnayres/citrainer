@@ -7,10 +7,12 @@ Pessoa::Pessoa()
     int idade = 0;
 }
 
-Pessoa::Pessoa(string n, int i)
+Pessoa::Pessoa(string n, int i, string d, Endereco e)
 {
     nomeCompleto = n;
     idade = i;
+    dataDeNascimento = d;
+    endereco = e;
 }
 
 void Pessoa::exibir(){}
@@ -25,6 +27,11 @@ void Pessoa::setIdade(int i)
     idade = i;
 }
 
+void Pessoa::setEndereco(Endereco e)
+{
+    endereco = e;
+}
+
 string Pessoa::getNomeCompleto()
 {
     return nomeCompleto;
@@ -35,10 +42,17 @@ int Pessoa::getIdade()
     return idade;
 }
 
-
- void Pessoa:: setDataDeNascimento(string data){
+void Pessoa:: setDataDeNascimento(string data)
+{
     dataDeNascimento=data;
- }
-    string Pessoa:: getDataDeNascimento(){
-      return dataDeNascimento;
-    }
+}
+
+string Pessoa:: getDataDeNascimento()
+{
+    return dataDeNascimento;
+}
+
+Endereco Pessoa::getEndereco()
+{
+    return endereco;
+}
