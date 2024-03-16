@@ -34,3 +34,11 @@ int Pessoa::getIdade()
 {
     return idade;
 }
+
+
+ void Pessoa:: setDataDeNascimento(string data){
+    dataDeNascimento=data;
+ }
+    string Pessoa:: getDataDeNascimento(){
+      return dataDeNascimento;
+    }
