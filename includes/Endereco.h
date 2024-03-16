@@ -14,6 +14,7 @@ protected:
 
 public:
   Endereco();
+  Endereco(string bairro, string cidade, string CEP, string rua, int numero);
   void setBairro(string b);
   void setCidade(string c);
   void setCep(string cep);
