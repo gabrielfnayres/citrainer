@@ -13,17 +13,19 @@ protected:
   int numero;
 
 public:
-  Endereco();
-  Endereco(string bairro, string cidade, string CEP, string rua, int numero);
-  void setBairro(string b);
-  void setCidade(string c);
-  void setCep(string cep);
-  void setRua(string r);  
-  void setNumero(int n);
-  string getBairro();
-  string getCidade();
-  string getCep();
-  string getRua();
-  int getNumero();
-  void exibirEndereco();
+
+Endereco();
+Endereco(string b, string c, string r, string cep, int n);
+void setBairro(string b);
+void setCidade(string c);
+void setCep(string cep);
+void setRua(string r);
+void setNumero(int n);
+string getBairro();
+string getCidade();
+string getCep();
+string getRua();
+int getNumero();
+void exibirEndereco();
 };
+
