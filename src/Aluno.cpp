@@ -7,7 +7,7 @@ using namespace std;
 
 Aluno::Aluno(){}
 
-Aluno::Aluno(string nomeCompleto, int idade, Medidas medidas, Treino treinos) : Pessoa(nomeCompleto, idade)
+Aluno::Aluno(string nomeCompleto, int idade, Medidas medidas, Treino treinos)
 {
   this->medidas = medidas;
   this->treinos = treinos;
