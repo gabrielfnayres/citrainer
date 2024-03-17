@@ -1,13 +1,233 @@
 ----- Alunos Cadastrados -----
 
-Nome: abriel
-Idade: 19
-Data de Nascimento: 13/04/2004
+Nome: 
+Idade: 0
+Data de Nascimento: 
 CEP: 
 Cidade: 
 Rua: 
 Bairro: 
-Número: 1936876880
+Número: 0
+Peso(kg): 0.000000
+Altura(m): 0.000000
+Cintura(cm): 0.000000
+Busto(cm): 0.000000
+ Quadril(cm): 0.000000
+Coxa(cm): 0.000000
+Panturrilha(cm): 0.000000------------------------------
+
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+Peso(kg): 0.000000
+Altura(m): 0.000000
+Cintura(cm): 0.000000
+Busto(cm): 0.000000
+ Quadril(cm): 0.000000
+Coxa(cm): 0.000000
+Panturrilha(cm): 0.000000------------------------------
+
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+Peso(kg): 0.000000
+Altura(m): 0.000000
+Cintura(cm): 0.000000
+Busto(cm): 0.000000
+ Quadril(cm): 0.000000
+Coxa(cm): 0.000000
+Panturrilha(cm): 0.000000------------------------------
+
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+Peso(kg): 0.000000
+Altura(m): 0.000000
+Cintura(cm): 0.000000
+Busto(cm): 0.000000
+ Quadril(cm): 0.000000
+Coxa(cm): 0.000000
+Panturrilha(cm): 0.000000------------------------------
+
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+Peso(kg): 0.000000
+Altura(m): 0.000000
+Cintura(cm): 0.000000
+Busto(cm): 0.000000
+ Quadril(cm): 0.000000
+Coxa(cm): 0.000000
+Panturrilha(cm): 0.000000------------------------------
+
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+Peso(kg): 0.000000
+Altura(m): 0.000000
+Cintura(cm): 0.000000
+Busto(cm): 0.000000
+ Quadril(cm): 0.000000
+Coxa(cm): 0.000000
+Panturrilha(cm): 0.000000------------------------------
+
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+Peso(kg): 0.000000
+Altura(m): 0.000000
+Cintura(cm): 0.000000
+Busto(cm): 0.000000
+ Quadril(cm): 0.000000
+Coxa(cm): 0.000000
+Panturrilha(cm): 0.000000------------------------------
+
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+Peso(kg): 0.000000
+Altura(m): 0.000000
+Cintura(cm): 0.000000
+Busto(cm): 0.000000
+ Quadril(cm): 0.000000
+Coxa(cm): 0.000000
+Panturrilha(cm): 0.000000------------------------------
+
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+Peso(kg): 0.000000
+Altura(m): 0.000000
+Cintura(cm): 0.000000
+Busto(cm): 0.000000
+ Quadril(cm): 0.000000
+Coxa(cm): 0.000000
+Panturrilha(cm): 0.000000------------------------------
+
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+Peso(kg): 0.000000
+Altura(m): 0.000000
+Cintura(cm): 0.000000
+Busto(cm): 0.000000
+ Quadril(cm): 0.000000
+Coxa(cm): 0.000000
+Panturrilha(cm): 0.000000------------------------------
+
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: abriel
+Idade: 90
+Data de Nascimento: 19023004
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 16711935
 Peso(kg): 0.000000
 Altura(m): 0.000000
 Cintura(cm): 0.000000

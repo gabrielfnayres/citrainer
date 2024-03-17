@@ -26,7 +26,6 @@ void Personal::cadastrarAluno(vector<Aluno> &als)
   string data, bairro, cep, cidade, rua;
   float peso, altura, cintura, busto, quadril, coxa, panturrilha;
   cout << "Informe o nome do aluno: " << "\n";
-  cin.ignore();
   getline(cin, n);
   cout << "Informe a idade do aluno: " << "\n";
   cin >> idade;
