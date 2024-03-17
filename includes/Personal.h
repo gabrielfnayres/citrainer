@@ -14,7 +14,7 @@ class Personal
       Aluno getAlunoInd(int index);
       void setAluno(Aluno aluno, int index);
 
-      void cadastrarAluno();
+      void cadastrarAluno(vector<Aluno> &als);
       void alterarAluno(string nomeAluno, vector<Aluno> &als);
       Aluno buscarAluno(string nomeAluno, vector<Aluno> als);
       void exibirTodosAlunos();
