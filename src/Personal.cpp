@@ -285,10 +285,6 @@ void Personal::removerAluno(string nomeAluno, vector<Aluno> &als)
   }
 }
 
-void Personal::exibir()
-{
-  
-}
 
 void Personal::menu()
 {
@@ -299,9 +295,9 @@ void Personal::menu()
     cout << "   1 - Adicionar aluno    " << endl;
     cout << "   2 - Alterar aluno    " << endl;
     cout << "   3 - Buscar aluno     " << endl; 
-    cout << "   3 - Lista de alunos" << endl;
-    cout << "   4 - Remover aluno" << endl;
-    cout << "   5 - Sair" << endl;
+    cout << "   4 - Lista de alunos" << endl;
+    cout << "   5 - Remover aluno" << endl;
+    cout << "   6 - Sair" << endl;
 
     cout << "---------------------------" << endl;
     cin >> escolha;
@@ -321,11 +317,10 @@ void Personal::menu()
     }
     else if(escolha == 2)
     {
-      cout << "O que deseja alterar ?" << "\n";
-      cout << "1 - Nome" << "\n";
-      cout << "2 - Idade" << "\n";
-      cout << "3 - Treino" << "\n";
-      
+      cout << "Informe o nome o aluno que deseja alterar:  " <<endl;
+      string s;
+      getline(cin,s);
+      alterarAluno(s, aluno);
     }
     else if(escolha == 4)
     {
@@ -340,7 +335,10 @@ void Personal::menu()
 
     else if(escolha == 5)
     {
-      break;
+      cout << "Informe o nome do aluno que deseja remover:" <<endl;
+      string remoAluno;
+      getline(cin,remoAluno);
+      removerAluno(remoAluno, aluno);
     }
 
     else

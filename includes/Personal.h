@@ -20,6 +20,5 @@ class Personal
       void exibirTodosAlunos();
       void removerAluno(string nomeAluno, vector<Aluno> &als);
       void exibir();
-      void gerarID();
       void menu();
   };
