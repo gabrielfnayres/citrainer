@@ -73,7 +73,7 @@ CEP:
 Cidade: 
 Rua: 
 Bairro: 
-Número: 0
+Número: 14516224
 Peso(kg): 0.000000
 Altura(m): 0.000000
 Cintura(cm): 0.000000
@@ -220,35 +220,35 @@ Panturrilha(cm): 0.000000------------------------------
 ----------------------------
 --------- Treino C ---------
 ----------------------------
-Nome: gabriel 
+Nome: gabriel
 Idade: 19
-Data de Nascimento: 20
-CEP: 5416270857
-Cidade: oao pessoa
-Rua: orre
-Bairro: reze
-Número: 100
-Peso(kg): 10.000000
-Altura(m): 10.000000
-Cintura(cm): 10.000000
-Busto(cm): 10.000000
+Data de Nascimento: 
+CEP: 
+Cidade: esfera
+Rua: circulo
+Bairro: boloa
+Número: 0
+Peso(kg): 0.000000
+Altura(m): 9.000000
+Cintura(cm): 8.000000
+Busto(cm): 7.000000
  Quadril(cm): 0.000000
-Coxa(cm): 10.000000
-Panturrilha(cm): 10.000000------------------------------
+Coxa(cm): 6.000000
+Panturrilha(cm): 5.000000------------------------------
 
 --------- Treino A ---------
-1 - supino
-Repeticoes: 1       Series: 1       Descanso: 1seg
+1 - tomar agua
+Repeticoes: 1       Series: 1       Descanso: 12seg
 
 ----------------------------
 --------- Treino B ---------
-1 - agachamento
-Repeticoes: 1       Series: 1       Descanso: 1seg
+1 - deixar de ser trouxa
+Repeticoes: 2       Series: 8       Descanso: 30seg
 
 ----------------------------
 --------- Treino C ---------
-1 - romildo
-Repeticoes: 1       Series: 1       Descanso: 1seg
+1 - dois quartos
+Repeticoes: 3       Series: 1       Descanso: 90seg
 
 ----------------------------
 
