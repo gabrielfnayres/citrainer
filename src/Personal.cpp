@@ -314,7 +314,7 @@ void Personal::menu()
     cout << "   1 - Adicionar aluno    " << endl;
     cout << "   2 - Alterar aluno    " << endl;
     cout << "   3 - Buscar aluno     " << endl; 
-    cout << "   4 - Lista de alunos" << endl;
+    cout << "   4 - Remover aluno" << endl;
     cout << "   5 - Remover aluno" << endl;
     cout << "   6 - Sair" << endl;
 
@@ -354,10 +354,8 @@ void Personal::menu()
 
     else if(escolha == 5)
     {
-      cout << "Informe o nome do aluno que deseja remover:" <<endl;
-      string remoAluno;
-      getline(cin,remoAluno);
-      removerAluno(remoAluno, aluno);
+      cout << "Aí está a lista dos seus alunos: " << "\n";
+      exibirTodosAlunos();
     }
 
     else if(escolha == 6)
