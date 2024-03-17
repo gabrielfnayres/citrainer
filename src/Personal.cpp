@@ -1,5 +1,6 @@
 #include "../includes/Personal.h"
 #include <iterator>
+
 Personal::Personal(){}
 
 vector<Aluno> Personal::getAluno()
@@ -78,7 +79,20 @@ void Personal::alterarAluno(string nome, vector<Aluno> &als)
       }
     }
   }
-  
+  else if(alter == 3)
+  {
+    cout << "Informe a nova data: " << endl;
+    string novaData;
+    getline(cin, novaData);
+    for(Aluno a : als)
+    {
+      if(a.getNomeCompleto() == nome)
+      {
+        a.setDataDeNascimento(novaData);
+        break;
+      }
+    }
+  }
 }
 
 Aluno Personal::buscarAluno(string nomeAluno, vector<Aluno> als)
