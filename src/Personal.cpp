@@ -17,22 +17,42 @@ void  Personal::setAluno(Aluno aluno, int index)
   this->aluno[index] = aluno;
 }
 
-void Personal::cadastrarAluno()
+void Personal::cadastrarAluno(vector<Aluno> &als)
 {
+  Aluno criado;
   string n;
   int idade;
-  Medidas m;;
-  Aluno al;
+  string data;
+  float peso, altura, cintura, busto, quadril, coxa, panturrilha;
   cout << "Informe o nome do aluno: " << "\n";
-  cin >> n;
+  getline(cin, n);
   cout << "Informe a idade do aluno: " << "\n";
   cin >> idade;
-  cout << "Infome o tamanho da coxa: ";
-  al.setNomeCompleto(n);
-  al.setIdade(idade);
+  cout << "Infome a data de nascimento: " << "\n";
+  getline(cin, data);
+  cout << "Informe peso do aluno: " << endl;
+  cin >> peso;
+  cout << "Informe a altura do aluno: " << endl;
+  cin >> altura;
+  cout << "Informe a medida da cintura do aluno:" << endl;
+  cin >> cintura;
+  cout << "Informe a medida do busto do aluno:" << endl;
+  cin >> busto;
+  cout << "Informe a medida do coxa do aluno: " << endl;
+  cin >> coxa;
+  cout << "Informe a medida da panturrilha do aluno: " << endl;
+  cin >> panturrilha;
+  criado.setNomeCompleto(n);  
+  criado.setIdade(idade);
+  criado.setDataDeNascimento(data);
+  criado.getMedidas().setPeso(peso);
+  criado.getMedidas().setAltura(altura);
+  criado.getMedidas().setCintura(cintura);
+  criado.getMedidas().setBusto(busto);
+  criado.getMedidas().setCoxa(coxa);
+  criado.getMedidas().setPanturrilha(panturrilha);
   
-  
-  aluno.push_back(al);
+  als.push_back(criado);
 }
 
 void Personal::alterarAluno(string nome, vector<Aluno> &als)
@@ -304,7 +324,7 @@ void Personal::menu()
     
     if(escolha == 1)
     {
-      cadastrarAluno();
+      cadastrarAluno(aluno);
     }
     else if(escolha == 3)
     {
@@ -342,7 +362,7 @@ void Personal::menu()
 
     else if(escolha == 6)
     {
-      return;
+      break;
     }
   }
 }
