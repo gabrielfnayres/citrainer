@@ -25,10 +25,12 @@ void Personal::cadastrarAluno(vector<Aluno> &als)
   string data;
   float peso, altura, cintura, busto, quadril, coxa, panturrilha;
   cout << "Informe o nome do aluno: " << "\n";
+  cin.ignore();
   getline(cin, n);
   cout << "Informe a idade do aluno: " << "\n";
   cin >> idade;
   cout << "Infome a data de nascimento: " << "\n";
+  cin.ignore();
   getline(cin, data);
   cout << "Informe peso do aluno: " << endl;
   cin >> peso;
@@ -42,6 +44,8 @@ void Personal::cadastrarAluno(vector<Aluno> &als)
   cin >> coxa;
   cout << "Informe a medida da panturrilha do aluno: " << endl;
   cin >> panturrilha;
+  criado.getTreino().montarTreino();
+
   criado.setNomeCompleto(n);  
   criado.setIdade(idade);
   criado.setDataDeNascimento(data);
