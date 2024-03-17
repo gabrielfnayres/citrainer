@@ -17,12 +17,13 @@ void  Personal::setAluno(Aluno aluno, int index)
   this->aluno[index] = aluno;
 }
 
-void Personal::cadastrarAluno(vector<Aluno> &als)
+void Personal::cadastrarAluno(vector<Aluno> &als) 
 {
   Aluno criado;
   string n;
   int idade;
-  string data;
+  int numero;
+  string data, bairro, cep, cidade, rua;
   float peso, altura, cintura, busto, quadril, coxa, panturrilha;
   cout << "Informe o nome do aluno: " << "\n";
   cin.ignore();
@@ -32,6 +33,20 @@ void Personal::cadastrarAluno(vector<Aluno> &als)
   cout << "Infome a data de nascimento: " << "\n";
   cin.ignore();
   getline(cin, data);
+  cout << "Informe o bairro do aluno: " << "\n";
+  cin.ignore();
+  getline(cin, bairro);
+  cout << "Informe a cidade do aluno: " << "\n";
+  cin.ignore();
+  getline(cin, cidade);
+  cout << "Informe a rua do aluno: " << "\n";
+  cin.ignore();
+  getline(cin, rua);
+  cout << "Informe o número do aluno: " << "\n";
+  cin >> numero;
+  cout << "Informe o CEP do aluno: " << "\n";
+  cin.ignore();
+  getline(cin, cep);
   cout << "Informe peso do aluno: " << endl;
   cin >> peso;
   cout << "Informe a altura do aluno: " << endl;
@@ -44,8 +59,13 @@ void Personal::cadastrarAluno(vector<Aluno> &als)
   cin >> coxa;
   cout << "Informe a medida da panturrilha do aluno: " << endl;
   cin >> panturrilha;
-  criado.getTreino().montarTreino();
 
+  criado.getTreino().montarTreino();
+  criado.getEndereco().setBairro(bairro);
+  criado.getEndereco().setCep(cep);
+  criado.getEndereco().setCidade(cidade);
+  criado.getEndereco().setNumero(numero);
+  criado.getEndereco().setRua(rua);
   criado.setNomeCompleto(n);  
   criado.setIdade(idade);
   criado.setDataDeNascimento(data);
@@ -334,6 +354,7 @@ void Personal::menu()
     {
       cout << "Informe o nome do aluno: " << "\n";
       string busca;
+      cin.ignore();
       getline(cin, busca);
       Aluno busc = buscarAluno(busca, aluno);
       cout << busc.getNomeCompleto() << " encontrado!" << "\n";
@@ -343,6 +364,7 @@ void Personal::menu()
     {
       cout << "Informe o nome o aluno que deseja alterar:  " <<endl;
       string s;
+      cin.ignore();
       getline(cin,s);
       alterarAluno(s, aluno);
     }
@@ -351,6 +373,7 @@ void Personal::menu()
       string remo;
 
       cout <<"Informe o aluno que deseja remover: " << "\n";
+      cin.ignore();
       getline(cin, remo);
       removerAluno(remo, aluno);
       cout << "Aluno " << remo <<  " removido com sucesso!" << "\n";
