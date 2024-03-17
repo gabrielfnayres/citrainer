@@ -105,6 +105,6 @@ void Medidas:: exibir()
 
 string Medidas::toStringMedidas(){
   string stmedidas;
-  stmedidas = "Peso(kg): " + pto_string(peso) + "Altura(m): " + to_string(altura) + "Cintura(cm): " + to_string(cintura) + "Busto(cm): " + to_string(busto) + "Quadril(cm): " + to_string(quadril) + "Coxa(cm): " + to_string(quadril) + "Panturrilha(cm): " + to_string(panturrilha);
+  stmedidas = "Peso(kg): " + pto_string(peso) + "\n" + "Altura(m): " + to_string(altura) + "\n" + "Cintura(cm): " + to_string(cintura) + "\n" + "Busto(cm): " + to_string(busto) + "\n " + "Quadril(cm): " + to_string(quadril) + "\n" + "Coxa(cm): " + to_string(coxa) + "\n" + "Panturrilha(cm): " + to_string(panturrilha);
   return stmedidas;
 }
