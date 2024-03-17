@@ -93,6 +93,114 @@ void Personal::alterarAluno(string nome, vector<Aluno> &als)
       }
     }
   }
+  else if(alter == 4)
+  {
+    int esc;
+  
+    cout << "Informe informe a medida que deseja alterar: " << "\n";
+    cout << " --------------------------------------- " << "\n";
+    cout << " 1 - Peso" << "\n";
+    cout << " 2 - Altura" << "\n";
+    cout << " 3 - Cintura" << "\n";
+    cout << " 4 - Busto" << "\n";
+    cout << " 5 - Quadril" << "\n";
+    cout << " 6 - Coxa" << "\n";
+    cout << " 7 - Panturrilha" << "\n";
+
+    cin >> esc;
+    switch(esc)
+    {
+      case 1:
+        cout << "Informe o peso do aluno: " << "\n";
+        for(Aluno a : als)
+        {
+          if(a.getNomeCompleto() == nome){
+            float newPeso;
+            cin >> newPeso;
+            a.getMedidas().setPeso(newPeso);
+            cout << "Peso alterado com sucesso!" << "\n";
+            break;
+          }
+        }
+      case 2:
+        cout << "Informe a altura do aluno:" << "\n";
+        for(Aluno a : als)
+        {
+          if(a.getNomeCompleto() == nome)
+          {
+            float newAltura;
+            cin >> newAltura;
+            a.getMedidas().setAltura(newAltura);
+            cout << "Altura alterada com sucesso!" << "\n";
+            break;
+          }
+        }
+      case 3:
+        cout << "Informe a cintura do aluno: " << "\n";
+        for(Aluno a : als)
+        {
+          if(a.getNomeCompleto() == nome)
+          {
+            float newCintura;
+            cin >> newCintura;
+            a.getMedidas().setCintura(newCintura);
+            cout << "Cintura alterada com sucesso! " << "\n";
+            break;
+          }
+        }
+      case 4:
+        cout << "Inforeme o busto do aluno:" << "\n";
+        for(Aluno a : als)
+        {
+          if(a.getNomeCompleto() == nome)
+          {
+            float newBusto;
+            cin >> newBusto;
+            a.getMedidas().setBusto(newBusto);
+            cout << "Busto alterado com sucesso!" << "\n";
+            break;
+          }
+        }
+      case 5:
+        cout << "Informe o quadril do aluno: " << "\n";
+        for(Aluno a : als)
+        {
+          if(a.getNomeCompleto() == nome)
+          {
+            float newQuadril;
+            cin >> newQuadril;
+            a.getMedidas().setQuadril(newQuadril);
+            cout << "Quadril alterado com sucesso!" << "\n";
+            break;
+          }
+        }
+      case 6:
+        cout << "Informe a coxa do aluno: " << "\n";
+        for(Aluno a : als)
+        {
+          if(a.getNomeCompleto() == nome)
+          {
+            float newCoxa;
+            cin >> newCoxa;
+            a.getMedidas().setCoxa(newCoxa);
+            cout << "Coxa alterada com sucesso!" << "\n";
+            break;
+          }
+        }
+      case 7:
+        cout << "Informe a panturrilha do aluno: " << "\n";
+        for(Aluno a : als)
+        {
+          float newPant;
+          cin >> newPant;
+          a.getMedidas().setPanturrilha(newPant);
+          cout << "Panturrilha alterada com sucesso!" << "\n";
+          break;
+        }
+      default:
+        cout << "Informaçã inválida" << "\n";
+    }
+  }
 }
 
 Aluno Personal::buscarAluno(string nomeAluno, vector<Aluno> als)
