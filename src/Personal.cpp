@@ -93,7 +93,7 @@ void Personal::alterarAluno(string nome, vector<Aluno> &als)
       }
     }
   }
-else if(alter == 4)
+  else if(alter == 4)
   {
     int esc;
   
@@ -341,9 +341,9 @@ void Personal::menu()
       removerAluno(remoAluno, aluno);
     }
 
-    else
+    else if(escolha == 6)
     {
-      cout << "Opção inválida. Insira uma opção válida." << endl;
+      return;
     }
   }
 }
