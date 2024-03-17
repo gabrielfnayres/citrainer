@@ -25,7 +25,8 @@ int main()
         {
             Personal personal;
             personal.menu();
-            getline(arquivo, personal.toString());
+            string relatorio = personal.toString();
+            getline(arquivo, relatorio);
 
         }
 
