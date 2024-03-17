@@ -201,6 +201,40 @@ void Personal::alterarAluno(string nome, vector<Aluno> &als)
         cout << "Informaçã inválida" << "\n";
     }
   }
+  else if(alter == 5)
+  {
+    int escolha;
+    cin >> escolha;
+  
+    cout << "Informe as alterações do treino do aluno:" << endl;
+    cout << " -------------------------------------- " << endl;
+    cout << " 1 - Alterar treino" << endl;
+    cout << " 2 - Adicionar exercicio" << endl;
+    if(escolha == 1)
+    {
+      for(Aluno a : als)
+      {
+        if(a.getNomeCompleto() == nome)
+        {
+          a.getTreino().alterarTreino();
+          cout << "Treino alterado com sucesso!" << endl;
+          break;
+        }
+      }
+    }
+    else if(escolha == 2)
+    {
+      for(Aluno a : als)
+      {
+        if(a.getNomeCompleto() == nome)
+        {
+          a.getTreino().adicionarExercicio();
+          cout << "Execício adicionado com sucesso!" << endl;
+          break;
+        }
+      }
+    }
+  }
 }
 
 Aluno Personal::buscarAluno(string nomeAluno, vector<Aluno> als)
