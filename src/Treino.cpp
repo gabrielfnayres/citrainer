@@ -1,4 +1,6 @@
 #include "../includes/Treino.h"
+#include <iostream>
+using namespace std;
 
 Treino::Treino(){}
 
