@@ -44,11 +44,13 @@ void Personal::cadastrarAluno(vector<Aluno> &als)
   cin >> coxa;
   cout << "Informe a medida da panturrilha do aluno: " << endl;
   cin >> panturrilha;
+  
   criado.getTreino().montarTreino();
 
-  criado.setNomeCompleto(n);  
+  criado.setNomeCompleto(n);
   criado.setIdade(idade);
   criado.setDataDeNascimento(data);
+
   criado.getMedidas().setPeso(peso);
   criado.getMedidas().setAltura(altura);
   criado.getMedidas().setCintura(cintura);
