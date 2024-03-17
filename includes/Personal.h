@@ -6,7 +6,7 @@ using namespace std;
 class Personal
   {
   private:
-      vector<Aluno> aluno = vector<Aluno>(15);
+      vector<Aluno> aluno;
   public:
       Personal();
       

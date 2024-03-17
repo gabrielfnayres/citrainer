@@ -337,6 +337,7 @@ void Personal::menu()
       getline(cin, busca);
       Aluno busc = buscarAluno(busca, aluno);
       cout << busc.getNomeCompleto() << " encontrado!" << "\n";
+      busc.exibir();
     }
     else if(escolha == 2)
     {
