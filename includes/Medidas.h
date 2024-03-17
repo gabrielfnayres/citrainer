@@ -26,4 +26,6 @@ class Medidas{
         float getCoxa();
         float getPanturrilha();
         void exibir();
+        string toStringMedidas();
+
 };
