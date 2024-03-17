@@ -22,4 +22,5 @@ class Aluno: public Pessoa
         void setMedidas(Medidas medidas);  
         void exibir();
         void menu();
+        string toStringAluno();
 };
