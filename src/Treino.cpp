@@ -339,6 +339,58 @@ void Treino::treinoDoDia(int i)
         exibirTreinoC(); 
 }
 
+string Treino::toString()
+{
+    string treino = "--------- Treino A ---------\n";
+
+    for(int i = 0; i<15; i++)
+    {
+        if(A.exercicio[i].repeticoes == 0)
+        {
+            treino += "----------------------------\n";
+            break;
+        }
+        else
+        {
+            treino += to_string(i+1) + " - " + A.exercicio[i].descricao + "\n";
+            treino += "Repeticoes: " + to_string(A.exercicio[i].repeticoes) + "       " + "Series: " + to_string(A.exercicio[i].series) + "       " + "Descanso: " + to_string(A.exercicio[i].descanso) + "seg\n\n";
+        }
+    }
+
+    treino += "--------- Treino B ---------\n";
+
+    for(int i = 0; i<15; i++)
+    {
+        if(B.exercicio[i].repeticoes == 0)
+        {
+            treino += "----------------------------\n";
+            break;
+        }
+        else
+        {
+            treino += to_string(i+1) + " - " + B.exercicio[i].descricao + "\n";
+            treino += "Repeticoes: " + to_string(B.exercicio[i].repeticoes) + "       " + "Series: " + to_string(B.exercicio[i].series) + "       " + "Descanso: " + to_string(B.exercicio[i].descanso) + "seg\n\n";
+        }
+    }
+
+    treino += "--------- Treino C ---------\n";
+
+    for(int i = 0; i<15; i++)
+    {
+        if(C.exercicio[i].repeticoes == 0)
+        {
+            treino += "----------------------------\n";
+            break;
+        }
+        else
+        {
+            treino += to_string(i+1) + " - " + C.exercicio[i].descricao + "\n";
+            treino += "Repeticoes: " + to_string(C.exercicio[i].repeticoes) + "       " + "Series: " + to_string(C.exercicio[i].series) + "       " + "Descanso: " + to_string(C.exercicio[i].descanso) + "seg\n\n";
+        }
+    }
+    return treino;
+}
+
 tipo Treino::getTreinoA()
 {
     return A;

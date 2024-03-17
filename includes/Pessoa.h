@@ -9,6 +9,7 @@ class Pessoa
     Pessoa();
     Pessoa(string nomeCompleto, int idade, string data, Endereco endereco);
     virtual void exibir() = 0;
+    string toString();
 
     void setNomeCompleto(string n);
     void setIdade(int i);

@@ -13,7 +13,7 @@ class Aluno: public Pessoa
     public:
         int treinoDoDia = 0;
         Aluno();
-        Aluno(string nomeCompleto, int idade, Medidas medidas, Treino treinos);
+        Aluno(string nomeCompleto, int idade, string data, Endereco endereco, Medidas medidas, Treino treinos);
         
         Medidas getMedidas();
         Treino getTreino();
