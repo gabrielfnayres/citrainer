@@ -29,7 +29,7 @@ class Treino
         void alterarTreino();
         void adicionarExercicio();
         void treinoDoDia(int n);
-        string toString();
+        string toStringTreino();
 
         void setTreinoA(tipo a);
         void setTreinoB(tipo b);

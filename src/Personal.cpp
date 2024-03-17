@@ -93,7 +93,7 @@ void Personal::alterarAluno(string nome, vector<Aluno> &als)
       }
     }
   }
-  else if(alter == 4)
+else if(alter == 4)
   {
     int esc;
   
@@ -346,4 +346,16 @@ void Personal::menu()
       cout << "Opção inválida. Insira uma opção válida." << endl;
     }
   }
+}
+
+string Personal::toString()
+{
+  string str = "----- Alunos Cadastrados -----";
+
+    for(Aluno a : aluno)
+    {
+      str += a.toStringPessoa() + "\n" + a.toStringAluno();
+    }
+
+  return str;
 }
