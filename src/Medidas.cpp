@@ -99,12 +99,10 @@ void Medidas:: exibir()
     cout<<"Panturrilha(cm): "<< panturrilha<< endl;
 
     cout << "---------------------------" << endl;
-
-
 }
 
 string Medidas::toStringMedidas(){
-  string stmedidas;
-  stmedidas = "Peso(kg): " + pto_string(peso) + "\n" + "Altura(m): " + to_string(altura) + "\n" + "Cintura(cm): " + to_string(cintura) + "\n" + "Busto(cm): " + to_string(busto) + "\n " + "Quadril(cm): " + to_string(quadril) + "\n" + "Coxa(cm): " + to_string(coxa) + "\n" + "Panturrilha(cm): " + to_string(panturrilha);
-  return stmedidas;
+    string stmedidas;
+    stmedidas = "Peso(kg): " + to_string(peso) + "\n" + "Altura(m): " + to_string(altura) + "\n" + "Cintura(cm): " + to_string(cintura) + "\n" + "Busto(cm): " + to_string(busto) + "\n " + "Quadril(cm): " + to_string(quadril) + "\n" + "Coxa(cm): " + to_string(coxa) + "\n" + "Panturrilha(cm): " + to_string(panturrilha);
+    return stmedidas;
 }
