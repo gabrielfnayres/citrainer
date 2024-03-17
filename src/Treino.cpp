@@ -67,60 +67,87 @@ void Treino::montarTreino()
 
 void Treino::exibirTreinoA()
 {
-    cout << "--------- Treino A ---------\n" << endl;
-
-    for(int i = 0; i<15; i++)
+    if(A.exercicio[0].repeticoes == 0)
     {
-        if(A.exercicio[i].repeticoes == 0)
-        {
-            cout << "----------------------------\n" << endl;
-            break;
-        }
-        else
-        {
-            cout << i+1 << " - " << A.exercicio[i].descricao << endl;
-            cout << "Repeticoes: " << A.exercicio[i].repeticoes << "       " << "Series: " << A.exercicio[i].series << "       " << "Descanso: " << A.exercicio[i].descanso << "seg\n" << endl;
+        cout << "Treino A não cadastrado\n" << endl;
+        return;
+    }
 
+    else 
+    {
+        cout << "--------- Treino A ---------\n" << endl;
+
+        for(int i = 0; i<15; i++)
+        {
+            if(A.exercicio[i].repeticoes == 0)
+            {
+                cout << "----------------------------\n" << endl;
+                break;
+            }
+            else
+            {
+                cout << i+1 << " - " << A.exercicio[i].descricao << endl;
+                cout << "Repeticoes: " << A.exercicio[i].repeticoes << "       " << "Series: " << A.exercicio[i].series << "       " << "Descanso: " << A.exercicio[i].descanso << "seg\n" << endl;
+
+            }
         }
     }
 }
 
 void Treino::exibirTreinoB()
 {
-    cout << "--------- Treino B ---------\n" << endl;
-
-    for(int i = 0; i<15; i++)
+    if(B.exercicio[0].repeticoes == 0)
     {
-        if(B.exercicio[i].repeticoes == 0)
-        {
-            cout << "----------------------------\n" << endl;
-            break;
-        }
-        else
-        {
-            cout << i+1 << " - " << B.exercicio[i].descricao << endl;
-            cout << "Repeticoes: " << B.exercicio[i].repeticoes << "       " << "Series: " << B.exercicio[i].series << "       " << "Descanso: " << B.exercicio[i].descanso << "seg\n" << endl;
+        cout << "Treino B não cadastrado\n" << endl;
+        return;
+    }
 
+    else 
+    {
+        cout << "--------- Treino B ---------\n" << endl;
+
+        for(int i = 0; i<15; i++)
+        {
+            if(B.exercicio[i].repeticoes == 0)
+            {
+                cout << "----------------------------\n" << endl;
+                break;
+            }
+            else
+            {
+                cout << i+1 << " - " << B.exercicio[i].descricao << endl;
+                cout << "Repeticoes: " << B.exercicio[i].repeticoes << "       " << "Series: " << B.exercicio[i].series << "       " << "Descanso: " << B.exercicio[i].descanso << "seg\n" << endl;
+
+            }
         }
     }
 }
 
 void Treino::exibirTreinoC()
 {
-    cout << "--------- Treino C ---------\n" << endl;
-
-    for(int i = 0; i<15; i++)
+    if(C.exercicio[0].repeticoes == 0)
     {
-        if(C.exercicio[i].repeticoes == 0)
-        {
-            cout << "----------------------------\n" << endl;
-            break;
-        }
-        else
-        {
-            cout << i+1 << " - " << C.exercicio[i].descricao << endl;
-            cout << "Repeticoes: " << C.exercicio[i].repeticoes << "       " << "Series: " << C.exercicio[i].series << "       " << "Descanso: " << C.exercicio[i].descanso << "seg\n" << endl;
+        cout << "Treino C não cadastrado\n" << endl;
+        return;
+    }
 
+    else 
+    {
+        cout << "--------- Treino C ---------\n" << endl;
+
+        for(int i = 0; i<15; i++)
+        {
+            if(C.exercicio[i].repeticoes == 0)
+            {
+                cout << "----------------------------\n" << endl;
+                break;
+            }
+            else
+            {
+                cout << i+1 << " - " << C.exercicio[i].descricao << endl;
+                cout << "Repeticoes: " << C.exercicio[i].repeticoes << "       " << "Series: " << C.exercicio[i].series << "       " << "Descanso: " << C.exercicio[i].descanso << "seg\n" << endl;
+
+            }
         }
     }
 }
