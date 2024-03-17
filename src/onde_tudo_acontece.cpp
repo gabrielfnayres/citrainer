@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <string>
 #include "../includes/Aluno.h"
 #include "../includes/Personal.h"
 using namespace std;
@@ -26,7 +27,7 @@ int main()
             Personal personal;
             personal.menu();
             string relatorio = personal.toString();
-            getline(arquivo, relatorio);
+            arquivo << relatorio << endl;
 
         }
 
