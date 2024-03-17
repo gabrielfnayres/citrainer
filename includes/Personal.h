@@ -22,4 +22,5 @@ class Personal
       void exibir();
       void gerarID();
       void menu();
+      string toString();
   };

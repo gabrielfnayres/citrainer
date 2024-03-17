@@ -339,7 +339,7 @@ void Treino::treinoDoDia(int i)
         exibirTreinoC(); 
 }
 
-string Treino::toString()
+string Treino::toStringTreino()
 {
     string treino = "--------- Treino A ---------\n";
 
@@ -388,6 +388,7 @@ string Treino::toString()
             treino += "Repeticoes: " + to_string(C.exercicio[i].repeticoes) + "       " + "Series: " + to_string(C.exercicio[i].series) + "       " + "Descanso: " + to_string(C.exercicio[i].descanso) + "seg\n\n";
         }
     }
+    
     return treino;
 }
 

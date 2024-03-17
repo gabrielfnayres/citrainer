@@ -17,6 +17,11 @@ Pessoa::Pessoa(string n, int i, string d, Endereco e)
 
 void Pessoa::exibir(){}
 
+string Pessoa::toStringPessoa()
+{
+    return "Nome: " + nomeCompleto + "\nIdade: " + to_string(idade) + "\nData de Nascimento: " + dataDeNascimento + endereco.toString();
+}
+
 void Pessoa::setNomeCompleto(string n)
 {
     nomeCompleto = n;
