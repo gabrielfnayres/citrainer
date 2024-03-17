@@ -1,6 +1,7 @@
 #include "../includes/Medidas.h"
 #include <iostream>
 #include <string>
+#include <bits/stdc++.h> 
 using namespace std;
 
 Medidas::Medidas()
@@ -102,7 +103,26 @@ void Medidas::exibir()
 }
 
 string Medidas::toStringMedidas(){
+
+    string stmedidas;
+    stringstream p;
+    stringstream a;
+    stringstream c;
+    stringstream b;
+    stringstream q;
+    stringstream co;
+    stringstream pa;
+
+     p << fixed << setprecision(2) << peso;
+     a << fixed << setprecision(2) << altura;
+     c << fixed << setprecision(2) << cintura;
+     b << fixed << setprecision(2) << busto;
+     q << fixed << setprecision(2) << quadril;
+     co << fixed << setprecision(2) << coxa;
+     pa << fixed << setprecision(2) << panturrilha;
+    
     string stmedidas = "---------- Medidas -----------\n";
-    stmedidas = "Peso(kg): " + to_string(peso) + "\n" + "Altura(m): " + to_string(altura) + "\n" + "Cintura(cm): " + to_string(cintura) + "\n" + "Busto(cm): " + to_string(busto) + "\n " + "Quadril(cm): " + to_string(quadril) + "\n" + "Coxa(cm): " + to_string(coxa) + "\n" + "Panturrilha(cm): " + to_string(panturrilha) + "------------------------------\n";
+    stmedidas = "Peso(kg): " + p.str() + "\n" + "Altura(m): " + a.str() + "\n" + "Cintura(cm): " + c.str() + "\n" + "Busto(cm): " + b.str() + "\n " + "Quadril(cm): " + q.str() + "\n" + "Coxa(cm): " + co.str() + "\n" + "Panturrilha(cm): " + pa.str();
+
     return stmedidas;
 }

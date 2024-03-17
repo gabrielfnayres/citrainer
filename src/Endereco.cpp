@@ -16,7 +16,7 @@ Endereco::Endereco(string b, string c, string r, string cep, int n)
     numero=n;
 }
 
-string Endereco::toString()
+string Endereco::toStringEndereco()
 {
     return "\nCEP: " + CEP + "\nCidade: " + cidade + "\nRua: " + rua + "\nBairro: " + bairro + "\nNúmero: " + to_string(numero);
 }
