@@ -92,13 +92,11 @@ void Aluno::menu()
       cout << "Opção inválida. Insira uma opção válida." << endl;
     }
   }
-
-
 }
 
- string Aluno:: toStringAluno(){
-string staluno;
-staluno = medidas.toStringMedidas() + "\n" + treinos.toStringTreino();
-return staluno; 
-    
-  }
+string Aluno:: toStringAluno()
+{
+  string staluno = medidas.toStringMedidas() + "\n" + treinos.toStringTreino();
+
+  return staluno;  
+}

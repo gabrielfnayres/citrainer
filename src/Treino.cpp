@@ -499,4 +499,3 @@ void Treino::setTreinoC(tipo c)
 {
     C = c;
 }
-

@@ -349,12 +349,14 @@ void Personal::menu()
 
 string Personal::toString()
 {
-  string str = "----- Alunos Cadastrados -----";
+  string str = "----- Alunos Cadastrados -----\n\n";
 
     for(Aluno a : aluno)
     {
       str += a.toStringPessoa() + "\n" + a.toStringAluno();
     }
+
+    str += "\n------------------------------";
 
   return str;
 }
