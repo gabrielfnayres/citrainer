@@ -315,7 +315,7 @@ void Personal::menu()
     cout << "   2 - Alterar aluno    " << endl;
     cout << "   3 - Buscar aluno     " << endl; 
     cout << "   4 - Remover aluno" << endl;
-    cout << "   5 - Remover aluno" << endl;
+    cout << "   5 - Listar alunos" << endl;
     cout << "   6 - Sair" << endl;
 
     cout << "---------------------------" << endl;
