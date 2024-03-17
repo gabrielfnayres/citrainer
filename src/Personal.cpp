@@ -17,21 +17,38 @@ void  Personal::setAluno(Aluno aluno, int index)
   this->aluno[index] = aluno;
 }
 
-void Personal::cadastrarAluno(vector<Aluno> &als)
+void Personal::cadastrarAluno(vector<Aluno> &als) 
 {
   Aluno criado;
   string n;
   int idade;
-  string data;
+  Medidas med;
+  Endereco end;
+  Treino tre;
+  int numero;
+  string data, bairro, cep, cidade, rua;
   float peso, altura, cintura, busto, quadril, coxa, panturrilha;
   cout << "Informe o nome do aluno: " << "\n";
-  cin.ignore();
   getline(cin, n);
   cout << "Informe a idade do aluno: " << "\n";
   cin >> idade;
   cout << "Infome a data de nascimento: " << "\n";
-  cin.ignore();
+  
   getline(cin, data);
+  cout << "Informe o bairro do aluno: " << "\n";
+  
+  getline(cin, bairro);
+  cout << "Informe a cidade do aluno: " << "\n";
+  
+  getline(cin, cidade);
+  cout << "Informe a rua do aluno: " << "\n";
+  
+  getline(cin, rua);
+  cout << "Informe o número do aluno: " << "\n";
+  cin >> numero;
+  cout << "Informe o CEP do aluno: " << "\n";
+  
+  getline(cin, cep);
   cout << "Informe peso do aluno: " << endl;
   cin >> peso;
   cout << "Informe a altura do aluno: " << endl;
@@ -44,17 +61,30 @@ void Personal::cadastrarAluno(vector<Aluno> &als)
   cin >> coxa;
   cout << "Informe a medida da panturrilha do aluno: " << endl;
   cin >> panturrilha;
-  criado.getTreino().montarTreino();
+  tre.montarTreino();
+  criado.setTreino(tre);
 
+  end.setBairro(bairro);
+  end.setCep(cep);
+  end.setCidade(cidade);
+  end.setNumero(numero);
+  end.setRua(rua);
+  
+  criado.setEndereco(end);
+  
   criado.setNomeCompleto(n);  
+
   criado.setIdade(idade);
   criado.setDataDeNascimento(data);
-  criado.getMedidas().setPeso(peso);
-  criado.getMedidas().setAltura(altura);
-  criado.getMedidas().setCintura(cintura);
-  criado.getMedidas().setBusto(busto);
-  criado.getMedidas().setCoxa(coxa);
-  criado.getMedidas().setPanturrilha(panturrilha);
+
+  med.setPeso(peso);
+  med.setAltura(altura);  
+  med.setCintura(cintura);
+  med.setBusto(busto);
+  med.setCoxa(coxa);
+  med.setPanturrilha(panturrilha);
+
+  criado.setMedidas(med);
   
   als.push_back(criado);
 }
@@ -334,6 +364,7 @@ void Personal::menu()
     {
       cout << "Informe o nome do aluno: " << "\n";
       string busca;
+      cin.ignore();
       getline(cin, busca);
       Aluno busc = buscarAluno(busca, aluno);
       cout << busc.getNomeCompleto() << " encontrado!" << "\n";
@@ -343,6 +374,7 @@ void Personal::menu()
     {
       cout << "Informe o nome o aluno que deseja alterar:  " <<endl;
       string s;
+      cin.ignore();
       getline(cin,s);
       alterarAluno(s, aluno);
     }
@@ -351,6 +383,7 @@ void Personal::menu()
       string remo;
 
       cout <<"Informe o aluno que deseja remover: " << "\n";
+      cin.ignore();
       getline(cin, remo);
       removerAluno(remo, aluno);
       cout << "Aluno " << remo <<  " removido com sucesso!" << "\n";

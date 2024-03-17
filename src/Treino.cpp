@@ -28,7 +28,7 @@ void Treino::montarTreino()
         cin >> A.exercicio[i].repeticoes;
         cout << "\nSéries: ";
         cin >> A.exercicio[i].series;
-        cout << "\nDescanso: ";
+        cout << "\nDescanso(seg): ";
         cin >> A.exercicio[i].descanso;
     }
 
@@ -45,7 +45,7 @@ void Treino::montarTreino()
         cin >> B.exercicio[i].repeticoes;
         cout << "\nSéries: ";
         cin >> B.exercicio[i].series;
-        cout << "\nDescanso: ";
+        cout << "\nDescanso(seg): ";
         cin >> B.exercicio[i].descanso;
     }
 

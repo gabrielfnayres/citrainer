@@ -15,7 +15,7 @@ Medidas::Medidas()
     panturrilha = 0;
 }
 
-Medidas:: Medidas(float peso, float altura, float cintura, float busto, float quadril, float coxa, float panturrilha)
+Medidas::Medidas(float peso, float altura, float cintura, float busto, float quadril, float coxa, float panturrilha)
 {
     this->peso=peso;
     this->altura=altura;
@@ -27,11 +27,11 @@ Medidas:: Medidas(float peso, float altura, float cintura, float busto, float qu
 
 }
 
-float Medidas:: calculaIMC(){
+float Medidas::calculaIMC(){
     return peso/(altura * altura);
 }
 
-void Medidas:: setPeso(float peso){
+void Medidas::setPeso(float peso){
     this->peso = peso;
 }
 
@@ -39,55 +39,55 @@ void Medidas::setAltura(float altura){
     this-> altura = altura;
 }
 
-void Medidas :: setCintura(float cintura){
+void Medidas::setCintura(float cintura){
     this-> cintura = cintura;
 }
 
-void Medidas:: setBusto(float busto){
+void Medidas::setBusto(float busto){
     this->busto = busto;
 }
 
-void Medidas :: setQuadril(float quadril){
+void Medidas::setQuadril(float quadril){
     this->quadril = quadril;
 }
 
-void Medidas:: setCoxa(float coxa){
+void Medidas::setCoxa(float coxa){
     this->coxa = coxa;
 }
 
-void Medidas:: setPanturrilha(float panturrilha){
+void Medidas::setPanturrilha(float panturrilha){
     this->panturrilha = panturrilha;
 }
 
-float Medidas:: getPeso(){
+float Medidas::getPeso(){
     return peso;
 }
 
-float Medidas:: getAltura(){
+float Medidas::getAltura(){
     return altura;
 }
 
-float Medidas:: getCintura(){  
+float Medidas::getCintura(){  
     return cintura;
 }
 
-float Medidas:: getBusto(){
+float Medidas::getBusto(){
     return busto;
 }
 
-float Medidas:: getQuadril(){
+float Medidas::getQuadril(){
     return quadril;
 }
 
-float Medidas:: getCoxa(){
+float Medidas::getCoxa(){
     return coxa;
 }
 
-float Medidas:: getPanturrilha(){
+float Medidas::getPanturrilha(){
     return panturrilha;
 }
 
-void Medidas:: exibir()
+void Medidas::exibir()
 {
     cout<<"--------- Medidas ---------" << endl;
 
@@ -103,6 +103,7 @@ void Medidas:: exibir()
 }
 
 string Medidas::toStringMedidas(){
+
     string stmedidas;
     stringstream p;
     stringstream a;
@@ -119,7 +120,9 @@ string Medidas::toStringMedidas(){
      q << fixed << setprecision(2) << quadril;
      co << fixed << setprecision(2) << coxa;
      pa << fixed << setprecision(2) << panturrilha;
-
+    
+    string stmedidas = "---------- Medidas -----------\n";
     stmedidas = "Peso(kg): " + p.str() + "\n" + "Altura(m): " + a.str() + "\n" + "Cintura(cm): " + c.str() + "\n" + "Busto(cm): " + b.str() + "\n " + "Quadril(cm): " + q.str() + "\n" + "Coxa(cm): " + co.str() + "\n" + "Panturrilha(cm): " + pa.str();
+
     return stmedidas;
 }
