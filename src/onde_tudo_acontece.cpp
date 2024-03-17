@@ -12,6 +12,8 @@ int main()
     {
       cout << "Falha ao gerar relatório!" << "\n"; 
     }
+
+
     cout << "------------------------------ Bem-vindo ao CI Trainer ------------------------------" << endl;
 
     while(1)
@@ -19,10 +21,12 @@ int main()
         cout << "Você é Personal ou Aluno? (1 - Personal | 2 - Aluno | 3 - Sair)" << endl;
         cin >> cargo;
 
-        if (cargo ==   1)
+        if (cargo ==  1)
         {
             Personal personal;
             personal.menu();
+            getline(arquivo, personal.toString());
+
         }
 
         else if (cargo == 2)
