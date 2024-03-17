@@ -16,10 +16,7 @@ Aluno::Aluno(string nomeCompleto, int idade, string data, Endereco endereco, Med
 
 void Aluno::exibir()
 {
-  cout << "------ Dados Pessoais -----" << endl;
-
   cout << "Nome: " << nomeCompleto << endl;
-  cout << "Idade: " << idade << endl;
 }
 
 Medidas Aluno::getMedidas()
@@ -65,6 +62,7 @@ void Aluno::menu()
 
     else if(escolha == 2){
       cout << endl;
+      cout << "------ Dados Pessoais -----" << endl;
 
       exibir();
       medidas.exibir();
