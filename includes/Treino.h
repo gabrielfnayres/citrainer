@@ -29,8 +29,8 @@ class Treino
         void alterarTreino();
         void adicionarExercicio();
         void treinoDoDia(int n);
+        string toString();
 
-        //gets&sets
         void setTreinoA(tipo a);
         void setTreinoB(tipo b);
         void setTreinoC(tipo c);
