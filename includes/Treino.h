@@ -28,6 +28,7 @@ class Treino
         void exibir();
         void alterarTreino();
         void adicionarExercicio();
+        void removerExercicio();
         void treinoDoDia(int n);
         string toStringTreino();
 

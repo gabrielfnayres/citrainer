@@ -317,6 +317,84 @@ void Treino::adicionarExercicio()
     }
 }
 
+void Treino::removerExercicio()
+{
+    string t;
+
+    cout << "Em qual treino você deseja remover um exercício? (A, B ou C)" << endl;
+    getline(cin, t);
+    cout << endl;
+
+    while(((t == "A")||(t == "a"))&&((t == "A")||(t == "a"))&&((t == "A")||(t == "a")))
+    {
+        cout << "Treino inválido ou inexistente. Insira um treino válido (A,B ou C):" << endl;
+        getline(cin, t);
+    }
+
+    if((t == "A")||(t == "a"))
+    {
+       exibirTreinoA();
+
+        int e;
+
+        cout << "Qual exercício deseja remover? (Índice)" << endl;
+        cin >> e;
+
+        while((e<=0)||(e>15))
+        {
+            cout << "Exercício inválido ou inexistente. Insira um exercício válido: ";
+            cin >> e;
+        }
+
+        A.exercicio[e-1].descricao = "";
+        A.exercicio[e-1].repeticoes = 0;
+        A.exercicio[e-1].series = 0;
+        A.exercicio[e-1].descanso = 0;
+    }
+
+    else if((t == "B")||(t == "b"))
+    {
+       exibirTreinoB();
+
+        int e;
+
+        cout << "Qual exercício deseja remover? (Índice)" << endl;
+        cin >> e;
+
+        while((e<=0)||(e>15))
+        {
+            cout << "Exercício inválido ou inexistente. Insira um exercício válido: ";
+            cin >> e;
+        }
+
+        B.exercicio[e-1].descricao = "";
+        B.exercicio[e-1].repeticoes = 0;
+        B.exercicio[e-1].series = 0;
+        B.exercicio[e-1].descanso = 0;
+    }
+
+    else if((t == "C")||(t == "c"))
+    {
+       exibirTreinoC();
+
+        int e;
+
+        cout << "Qual exercício deseja remover? (Índice)" << endl;
+        cin >> e;
+
+        while((e<=0)||(e>15))
+        {
+            cout << "Exercício inválido ou inexistente. Insira um exercício válido: ";
+            cin >> e;
+        }
+
+        C.exercicio[e-1].descricao = "";
+        C.exercicio[e-1].repeticoes = 0;
+        C.exercicio[e-1].series = 0;
+        C.exercicio[e-1].descanso = 0;
+    }
+}
+
 void Treino::exibir()
 {
     cout << endl;
@@ -388,7 +466,7 @@ string Treino::toStringTreino()
             treino += "Repeticoes: " + to_string(C.exercicio[i].repeticoes) + "       " + "Series: " + to_string(C.exercicio[i].series) + "       " + "Descanso: " + to_string(C.exercicio[i].descanso) + "seg\n\n";
         }
     }
-    
+
     return treino;
 }
 
@@ -421,4 +499,3 @@ void Treino::setTreinoC(tipo c)
 {
     C = c;
 }
-
