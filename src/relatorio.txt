@@ -3,20 +3,20 @@
 ------- Dados Pessoais -------
 Nome: gabriel
 Idade: 19
-Data de Nascimento: 291478109
+Data de Nascimento: 20
 ---------- Endereco ----------
-CEP: 862198006
-Cidade: joao pessoa
-Rua: ala
-Bairro: torre
-Número: 190
-Peso(kg): 2.00
-Altura(m): 2.00
-Cintura(cm): 22.00
-Busto(cm): 2.00
+CEP: 20
+Cidade: 20
+Rua: 20
+Bairro: 20
+Número: 20
+Peso(kg): 20.00
+Altura(m): 20.00
+Cintura(cm): 20.00
+Busto(cm): 20.00
  Quadril(cm): 0.00
-Coxa(cm): 2.00
-Panturrilha(cm): 2.00
+Coxa(cm): 20.00
+Panturrilha(cm): 20.00
 --------- Treino A ---------
 1 - 1
 Repeticoes: 1       Series: 1       Descanso: 1seg
