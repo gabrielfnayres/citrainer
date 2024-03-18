@@ -2,6 +2,7 @@
 #include "../includes/Aluno.h"
 #include "../includes/Treino.h"
 #include "../includes/Medidas.h"
+#include <iomanip>
 
 using namespace std;
 
@@ -45,12 +46,18 @@ void Aluno::setTreino(Treino treinos)
   this->treinos = treinos;
 }
 
+void Aluno :: clearScreen() {
+    cout << "\033[2J\033[1;1H";
+}
+
 void Aluno::menu()
 {
   int escolha;
-
+  
   while(1)
   {
+    clearScreen();
+    cout << setw(40) << "MENU PRINCIPAL" << endl;
     cout << "---------------------------" << endl;
 
     cout << "   1 - Ver treinos"     << endl;

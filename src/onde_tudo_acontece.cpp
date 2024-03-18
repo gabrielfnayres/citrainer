@@ -4,6 +4,9 @@
 #include "../includes/Aluno.h"
 #include "../includes/Personal.h"
 using namespace std;
+#include <locale.h>
+
+setlocale(LC_ALL, "pt_BR.UTF-8", 1);
 
 int main()
 {

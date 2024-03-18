@@ -1,4 +1,5 @@
 #include "../includes/Personal.h"
+#include <iomanip>
 
 Personal::Personal(){}
 
@@ -336,12 +337,16 @@ void Personal::removerAluno(string nomeAluno, vector<Aluno> &als)
     }
   }
 }
-
+void Personal :: clearScreen() {
+    cout << "\033[2J\033[1;1H";
+}
 
 void Personal::menu()
 {
   int escolha;
   while(1){  
+    clearScreen();
+    cout << setw(40) << "MENU PRINCIPAL" << endl;
     cout << "----------------------------" <<endl;
 
     cout << "   1 - Adicionar aluno    " << endl;

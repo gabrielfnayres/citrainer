@@ -23,4 +23,5 @@ class Aluno: public Pessoa
         void exibir();
         void menu();
         string toStringAluno();
+        void clearScreen();
 };
