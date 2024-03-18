@@ -56,7 +56,7 @@ void Aluno::menu()
   
   while(1)
   {
-    clearScreen();
+    
     cout << setw(40) << "MENU PRINCIPAL" << endl;
     cout << "---------------------------" << endl;
 
@@ -70,6 +70,7 @@ void Aluno::menu()
     cin >> escolha;
 
     if(escolha == 1){
+      clearScreen();
       treinos.exibir();
     }
 
@@ -96,6 +97,7 @@ void Aluno::menu()
     }
 
     else if(escolha == 4){
+      clearScreen();
         return;
     }
 
