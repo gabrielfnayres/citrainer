@@ -122,8 +122,10 @@ string Medidas::toStringMedidas(){
      pa << fixed << setprecision(2) << panturrilha;
     
 
+
     stmedidas = "---------- Medidas -----------\n";
     stmedidas = + "Peso(kg): " + p.str() + "\n" + "Altura(m): " + a.str() + "\n" + "Cintura(cm): " + c.str() + "\n" + "Busto(cm): " + b.str() + "\n " + "Quadril(cm): " + q.str() + "\n" + "Coxa(cm): " + co.str() + "\n" + "Panturrilha(cm): " + pa.str();
+
 
 
     return stmedidas;
