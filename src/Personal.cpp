@@ -419,7 +419,7 @@ string Personal::toString()
 
     for(Aluno a : aluno)
     {
-      str += a.toStringPessoa() + "\n" + a.toStringAluno();
+      str += a.toStringPessoa() + "\n" + a.toStringAluno() + "\n";
     }
 
     str += "\n------------------------------";
