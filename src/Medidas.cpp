@@ -121,18 +121,13 @@ string Medidas::toStringMedidas(){
      co << fixed << setprecision(2) << coxa;
      pa << fixed << setprecision(2) << panturrilha;
     
-<<<<<<< HEAD
-    stmedidas = "---------- Medidas -----------\n";
-    stmedidas += "Peso(kg): " + p.str() + "\n" + "Altura(m): " + a.str() + "\n" + "Cintura(cm): " + c.str() + "\n" + "Busto(cm): " + b.str() + "\n " + "Quadril(cm): " + q.str() + "\n" + "Coxa(cm): " + co.str() + "\n" + "Panturrilha(cm): " + pa.str();
-
-
-=======
 
 
     stmedidas = "---------- Medidas -----------\n";
     stmedidas = + "Peso(kg): " + p.str() + "\n" + "Altura(m): " + a.str() + "\n" + "Cintura(cm): " + c.str() + "\n" + "Busto(cm): " + b.str() + "\n " + "Quadril(cm): " + q.str() + "\n" + "Coxa(cm): " + co.str() + "\n" + "Panturrilha(cm): " + pa.str();
-    
->>>>>>> e917228ad2a30490b96b0451a6294739272f553d
+
+
+   
 
     return stmedidas;
 }
