@@ -1,6 +1,6 @@
 #include "../includes/Personal.h"
 #include <iomanip>
-
+#include <iterator>
 Personal::Personal(){}
 
 vector<Aluno> Personal::getAluno()
