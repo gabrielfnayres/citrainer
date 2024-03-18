@@ -8,14 +8,14 @@ Cidade:
 Rua: 
 Bairro: 
 Número: 0
-Peso(kg): 0.000000
-Altura(m): 0.000000
-Cintura(cm): 0.000000
-Busto(cm): 0.000000
- Quadril(cm): 0.000000
-Coxa(cm): 0.000000
-Panturrilha(cm): 0.000000------------------------------
-
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
 --------- Treino A ---------
 ----------------------------
 --------- Treino B ---------
@@ -30,14 +30,14 @@ Cidade:
 Rua: 
 Bairro: 
 Número: 0
-Peso(kg): 0.000000
-Altura(m): 0.000000
-Cintura(cm): 0.000000
-Busto(cm): 0.000000
- Quadril(cm): 0.000000
-Coxa(cm): 0.000000
-Panturrilha(cm): 0.000000------------------------------
-
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
 --------- Treino A ---------
 ----------------------------
 --------- Treino B ---------
@@ -52,14 +52,14 @@ Cidade:
 Rua: 
 Bairro: 
 Número: 0
-Peso(kg): 0.000000
-Altura(m): 0.000000
-Cintura(cm): 0.000000
-Busto(cm): 0.000000
- Quadril(cm): 0.000000
-Coxa(cm): 0.000000
-Panturrilha(cm): 0.000000------------------------------
-
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
 --------- Treino A ---------
 ----------------------------
 --------- Treino B ---------
@@ -73,37 +73,15 @@ CEP:
 Cidade: 
 Rua: 
 Bairro: 
-Número: 14516224
-Peso(kg): 0.000000
-Altura(m): 0.000000
-Cintura(cm): 0.000000
-Busto(cm): 0.000000
- Quadril(cm): 0.000000
-Coxa(cm): 0.000000
-Panturrilha(cm): 0.000000------------------------------
-
---------- Treino A ---------
-----------------------------
---------- Treino B ---------
-----------------------------
---------- Treino C ---------
-----------------------------
-Nome: 
-Idade: 0
-Data de Nascimento: 
-CEP: 
-Cidade: 
-Rua: 
-Bairro: 
-Número: 0
-Peso(kg): 0.000000
-Altura(m): 0.000000
-Cintura(cm): 0.000000
-Busto(cm): 0.000000
- Quadril(cm): 0.000000
-Coxa(cm): 0.000000
-Panturrilha(cm): 0.000000------------------------------
-
+Número: 7176192
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
 --------- Treino A ---------
 ----------------------------
 --------- Treino B ---------
@@ -118,14 +96,14 @@ Cidade:
 Rua: 
 Bairro: 
 Número: 0
-Peso(kg): 0.000000
-Altura(m): 0.000000
-Cintura(cm): 0.000000
-Busto(cm): 0.000000
- Quadril(cm): 0.000000
-Coxa(cm): 0.000000
-Panturrilha(cm): 0.000000------------------------------
-
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
 --------- Treino A ---------
 ----------------------------
 --------- Treino B ---------
@@ -140,14 +118,14 @@ Cidade:
 Rua: 
 Bairro: 
 Número: 0
-Peso(kg): 0.000000
-Altura(m): 0.000000
-Cintura(cm): 0.000000
-Busto(cm): 0.000000
- Quadril(cm): 0.000000
-Coxa(cm): 0.000000
-Panturrilha(cm): 0.000000------------------------------
-
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
 --------- Treino A ---------
 ----------------------------
 --------- Treino B ---------
@@ -162,14 +140,14 @@ Cidade:
 Rua: 
 Bairro: 
 Número: 0
-Peso(kg): 0.000000
-Altura(m): 0.000000
-Cintura(cm): 0.000000
-Busto(cm): 0.000000
- Quadril(cm): 0.000000
-Coxa(cm): 0.000000
-Panturrilha(cm): 0.000000------------------------------
-
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
 --------- Treino A ---------
 ----------------------------
 --------- Treino B ---------
@@ -184,14 +162,14 @@ Cidade:
 Rua: 
 Bairro: 
 Número: 0
-Peso(kg): 0.000000
-Altura(m): 0.000000
-Cintura(cm): 0.000000
-Busto(cm): 0.000000
- Quadril(cm): 0.000000
-Coxa(cm): 0.000000
-Panturrilha(cm): 0.000000------------------------------
-
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
 --------- Treino A ---------
 ----------------------------
 --------- Treino B ---------
@@ -206,50 +184,296 @@ Cidade:
 Rua: 
 Bairro: 
 Número: 0
-Peso(kg): 0.000000
-Altura(m): 0.000000
-Cintura(cm): 0.000000
-Busto(cm): 0.000000
- Quadril(cm): 0.000000
-Coxa(cm): 0.000000
-Panturrilha(cm): 0.000000------------------------------
-
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
 --------- Treino A ---------
 ----------------------------
 --------- Treino B ---------
 ----------------------------
 --------- Treino C ---------
 ----------------------------
-Nome: gabriel
-Idade: 19
+Nome: 
+Idade: 0
 Data de Nascimento: 
 CEP: 
-Cidade: esfera
-Rua: circulo
-Bairro: boloa
+Cidade: 
+Rua: 
+Bairro: 
 Número: 0
-Peso(kg): 0.000000
-Altura(m): 9.000000
-Cintura(cm): 8.000000
-Busto(cm): 7.000000
- Quadril(cm): 0.000000
-Coxa(cm): 6.000000
-Panturrilha(cm): 5.000000------------------------------
-
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
 --------- Treino A ---------
-1 - tomar agua
-Repeticoes: 1       Series: 1       Descanso: 12seg
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: gabriell
+Idade: 10
+Data de Nascimento: 101010
+CEP: djdjjd101
+Cidade: jddjdj
+Rua: djdjddj
+Bairro: djdjdj
+Número: 101010
+---------- Medidas -----------
+Peso(kg): 10.00
+Altura(m): 1.00
+Cintura(cm): 10.00
+Busto(cm): 10.00
+ Quadril(cm): 0.00
+Coxa(cm): 10.00
+Panturrilha(cm): 10.00
+--------- Treino A ---------
+1 - shdasdh
+Repeticoes: 1       Series: 1       Descanso: 1seg
 
 ----------------------------
 --------- Treino B ---------
-1 - deixar de ser trouxa
-Repeticoes: 2       Series: 8       Descanso: 30seg
+1 - djdjjd
+Repeticoes: 1       Series: 1       Descanso: 1seg
 
 ----------------------------
 --------- Treino C ---------
-1 - dois quartos
-Repeticoes: 3       Series: 1       Descanso: 90seg
+1 - djdjdjd
+Repeticoes: 1       Series: 1       Descanso: 1seg
 
+----------------------------
+
+------------------------------
+----- Alunos Cadastrados -----
+
+Nome: 
+Idade: 774910240
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 540090426
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 757089056
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 1634891124
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 757935405
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 757935405
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 1684302368
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 1866664496
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+Nome: 
+Idade: 0
+Data de Nascimento: 
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+ Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
 ----------------------------
 
 ------------------------------
