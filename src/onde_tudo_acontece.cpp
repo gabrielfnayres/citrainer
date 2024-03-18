@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
     int cargo;
-    ofstream arquivo("relatorio_personal.txt");
+    ofstream arquivo("relatorio_personal.txt", ios::out | ios::in); 
     if(!arquivo.is_open())
     {
       cout << "Falha ao gerar relatório!" << "\n"; 

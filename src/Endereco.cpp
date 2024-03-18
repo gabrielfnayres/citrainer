@@ -1,24 +1,20 @@
 #include "../includes/Endereco.h"
 
 
-Endereco::Endereco()
-{
-    
-}
+Endereco::Endereco(){}
 
 Endereco::Endereco(string b, string c, string r, string cep, int n)
 {
-
-    bairro=b;
-    cidade=c;
-    rua=r;
-    CEP=cep;
-    numero=n;
+    bairro = b;
+    cidade = c;
+    rua = r;
+    CEP = cep;
+    numero = n;
 }
 
 string Endereco::toStringEndereco()
 {
-    return "\nCEP: " + CEP + "\nCidade: " + cidade + "\nRua: " + rua + "\nBairro: " + bairro + "\nNúmero: " + to_string(numero);
+    return "---------- Endereco ----------\nCEP: " + CEP + "\nCidade: " + cidade + "\nRua: " + rua + "\nBairro: " + bairro + "\nNúmero: " + to_string(numero);
 }
 
 void Endereco :: setBairro(string b){

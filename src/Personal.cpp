@@ -33,7 +33,7 @@ void Personal::cadastrarAluno(vector<Aluno> &als)
   cout << "Informe a idade do aluno: " << "\n";
   cin >> idade;
   cout << "Infome a data de nascimento: " << "\n";
-  
+  cin.ignore();
   getline(cin, data);
   cout << "Informe o bairro do aluno: " << "\n";
   
@@ -47,7 +47,7 @@ void Personal::cadastrarAluno(vector<Aluno> &als)
   cout << "Informe o número do aluno: " << "\n";
   cin >> numero;
   cout << "Informe o CEP do aluno: " << "\n";
-  
+  cin.ignore();
   getline(cin, cep);
   cout << "Informe peso do aluno: " << endl;
   cin >> peso;
@@ -302,7 +302,6 @@ Aluno Personal::buscarAluno(string nomeAluno, vector<Aluno> als)
       break;
     }
   }
-  
   return exibido;
 }
 
@@ -354,7 +353,6 @@ void Personal::menu()
 
     cout << "---------------------------" << endl;
     cin >> escolha;
-    cin.ignore();
     
     if(escolha == 1)
     {
@@ -364,11 +362,18 @@ void Personal::menu()
     {
       cout << "Informe o nome do aluno: " << "\n";
       string busca;
-      cin.ignore();
       getline(cin, busca);
       Aluno busc = buscarAluno(busca, aluno);
-      cout << busc.getNomeCompleto() << " encontrado!" << "\n";
-      busc.exibir();
+
+      if(busc.getNomeCompleto() == busca)
+      {
+        cout << busc.getNomeCompleto() << " encontrado" << "\n";
+        busc.exibir();
+      }
+      else
+      {
+        cout << "Aluno não encontrado" << "\n";
+      }
     }
     else if(escolha == 2)
     {
