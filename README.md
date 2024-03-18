@@ -27,14 +27,14 @@
 
 #### Importe o repositório remoto do Github para sua máquina com:
 
-´´´
+
     git clone https://github.com/gabrielfnayres/citrainer.git
-´´´
+
 
 #### Entre na pasta src/ e compile o código com o seguinte comando e após isso use o executável:
 
-´´´
+
     cd src/
     g++ *.cpp -o citrainer
     ./citrainer
-´´´
+
