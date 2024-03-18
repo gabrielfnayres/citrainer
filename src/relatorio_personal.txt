@@ -84,31 +84,6 @@ CEP:
 Cidade: 
 Rua: 
 Bairro: 
-Número: 16154624
----------- Medidas -----------
-Peso(kg): 0.00
-Altura(m): 0.00
-Cintura(cm): 0.00
-Busto(cm): 0.00
-Quadril(cm): 0.00
-Coxa(cm): 0.00
-Panturrilha(cm): 0.00
---------- Treino A ---------
-----------------------------
---------- Treino B ---------
-----------------------------
---------- Treino C ---------
-----------------------------
-
-------- Dados Pessoais -------
-Nome: 
-Idade: 0
-Data de Nascimento: 
----------- Endereco ----------
-CEP: 
-Cidade: 
-Rua: 
-Bairro: 
 Número: 0
 ---------- Medidas -----------
 Peso(kg): 0.00
@@ -251,41 +226,67 @@ Panturrilha(cm): 0.00
 ----------------------------
 
 ------- Dados Pessoais -------
-Nome: gabrb
-Idade: 10
-Data de Nascimento: 101010101
+Nome: 
+Idade: 0
+Data de Nascimento: 
 ---------- Endereco ----------
-CEP: kdkkd10dk10k
-Cidade: djdjddkddk
-Rua: kdiekkd
-Bairro: djdjjd
-Número: 10101
+CEP: 
+Cidade: 
+Rua: 
+Bairro: 
+Número: 0
+---------- Medidas -----------
+Peso(kg): 0.00
+Altura(m): 0.00
+Cintura(cm): 0.00
+Busto(cm): 0.00
+Quadril(cm): 0.00
+Coxa(cm): 0.00
+Panturrilha(cm): 0.00
+--------- Treino A ---------
+----------------------------
+--------- Treino B ---------
+----------------------------
+--------- Treino C ---------
+----------------------------
+
+------- Dados Pessoais -------
+Nome: gabri
+Idade: 29
+Data de Nascimento: 18298
+---------- Endereco ----------
+CEP: ddjad
+Cidade: abd
+Rua: adbajh
+Bairro: dihavd
+Número: 1818
 ---------- Medidas -----------
 Peso(kg): 10.00
 Altura(m): 10.00
 Cintura(cm): 10.00
 Busto(cm): 10.00
 Quadril(cm): 0.00
-Coxa(cm): 100.00
+Coxa(cm): 10.00
 Panturrilha(cm): 10.00
 --------- Treino A ---------
-1 - dkdkdk
-Repeticoes: 1       Series: 1       Descanso: 1seg
+1 - nadar na agua
+Repeticoes: 2       Series: 2       Descanso: 1seg
 
 ----------------------------
 --------- Treino B ---------
-1 - dkdkdk
-Repeticoes: 1       Series: 1       Descanso: 1seg
+1 - abdiajbd
+Repeticoes: 1       Series: 1       Descanso: 21seg
 
 ----------------------------
 --------- Treino C ---------
-1 - kdkdkdkdk
+1 - gdagdd
 Repeticoes: 1       Series: 1       Descanso: 1seg
 
 ----------------------------
 
 
 ------------------------------
+-------------------
 ha(cm): 0.00
 --------- Treino A ---------
 ----------------------------
