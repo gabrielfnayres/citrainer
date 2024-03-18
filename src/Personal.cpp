@@ -346,8 +346,9 @@ void Personal :: clearScreen() {
 void Personal::menu()
 {
   int escolha;
+  clearScreen();
   while(1){  
-    clearScreen();
+    
     cout << setw(40) << "MENU PRINCIPAL" << endl;
     cout << "----------------------------" <<endl;
 
