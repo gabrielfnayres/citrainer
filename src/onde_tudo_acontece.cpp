@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <iterator>
 #include <string>
 #include "../includes/Aluno.h"
 #include "../includes/Personal.h"
@@ -8,12 +9,18 @@ using namespace std;
 int main()
 {
     int cargo;
-    ofstream arquivo("relatorio_personal.txt", ios::out | ios::in); 
-    if(!arquivo.is_open())
+    ifstream iFile;
+    ofstream oFile;
+  
+    iFile.open("relatorio_personal.txt");
+    
+
+    if(!iFile.is_open())
     {
       cout << "Falha ao gerar relatório!" << "\n"; 
     }
-
+    oFile.open("relatorio.txt");
+    
 
     cout << "------------------------------ Bem-vindo ao CI Trainer ------------------------------" << endl;
 
@@ -27,7 +34,7 @@ int main()
             Personal personal;
             personal.menu();
             string relatorio = personal.toString();
-            arquivo << relatorio << endl;
+            oFile << relatorio << endl;
 
         }
 
@@ -55,6 +62,6 @@ int main()
     }
 
     cout << "------------------------------ Obrigado por usar o CI Trainer --------------------------------" << endl;
-    arquivo.close();
+    iFile.close();
     return 0;
 }
