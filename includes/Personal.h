@@ -21,4 +21,6 @@ class Personal
       void removerAluno(string nomeAluno, vector<Aluno> &als);
       void menu();
       string toString();
+     void clearScreen();
+
   };
