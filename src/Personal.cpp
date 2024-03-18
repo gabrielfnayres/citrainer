@@ -346,7 +346,7 @@ void Personal :: clearScreen() {
 void Personal::menu()
 {
   int escolha;
-  clearScreen();
+  
   while(1){  
     
     cout << setw(40) << "MENU PRINCIPAL" << endl;
@@ -393,6 +393,7 @@ void Personal::menu()
     }
     else if(escolha == 4)
     {
+      clearScreen();
       string remo;
 
       cout <<"Informe o aluno que deseja remover: " << "\n";
@@ -401,6 +402,7 @@ void Personal::menu()
       removerAluno(remo, aluno);
       cout << "Aluno " << remo <<  " removido com sucesso!" << "\n";
       exibirTodosAlunos();
+      
     }
 
     else if(escolha == 5)
@@ -412,6 +414,7 @@ void Personal::menu()
     else if(escolha == 6)
     {
       break;
+      clearScreen();
     }
   }
 }
