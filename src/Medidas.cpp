@@ -1,7 +1,7 @@
 #include "../includes/Medidas.h"
 #include <iostream>
 #include <string>
-#include <bits/stdc++.h> 
+#include <iomanip> 
 using namespace std;
 
 Medidas::Medidas()
