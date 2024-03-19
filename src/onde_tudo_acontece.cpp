@@ -12,14 +12,14 @@ int main()
     int cargo;
     fstream arquivo;
 
-    arquivo.open("relatorio.txt", ios::out | ios::in | ios::app);
+    arquivo.open("relatorio_personal.txt", ios::out);
+
 
     if(!arquivo.is_open())
     {
-      cout << "Falha ao gerar relatório!" << "\n"; 
+        cout << "Erro ao abrir o arquivo" << endl;
     }
-    
-    
+
 
     cout << "------------------------------ Bem-vindo ao CI Trainer ------------------------------" << endl;
 
@@ -59,8 +59,12 @@ int main()
             cout << "Opção inválida. Insira uma opção válida:" << endl;
         }
     }
-
     cout << "------------------------------ Obrigado por usar o CI Trainer --------------------------------" << endl;
-    arquivo.close();
+    arquivo.open("relatorio_personal.txt", ios::in);
+    string linha;
+    while(getline(arquivo, linha))
+    {
+        cout << linha << endl;
+    }
     return 0;
 }
