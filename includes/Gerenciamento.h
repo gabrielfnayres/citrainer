@@ -1,6 +1,9 @@
+
 #include <iostream>
+#include <iomanip>
+#include <iterator>
 #include <string>
-#include "Aluno.h"
+#include <vector>
 #include "Personal.h"
 #include "Endereco.h"
 #include "Medidas.h"
@@ -11,21 +14,35 @@ using namespace std;
 
 class Gerenciamento
 {
+
+    private:
+        Personal personal;
+        vector<Aluno> aluno;
     public:
+
+        void setPersonal(Personal personal)
+        {
+            this->personal = personal;
+        }
+        Personal getPersonal()
+        {
+            return personal;
+        }
         void abrirArquivo()
         {
             string line;
             ifstream arquivo("relatorio_personal.txt");
-            if(arquivo.is_open())
+            if( arquivo.is_open() )
             {
-                Aluno aluno = personal1.getAlunoInd(id);
-                aluno.menu();
-                string relatorio = aluno.toStringAluno();
-                arquivo << relatorio << endl;   
+                while( getline(arquivo, line) )
+                {
+                    cout << line << endl;
+                }
+                arquivo.close();
             }
             else
             {
-                cout << "Erro ao abrir o arquivo" << endl;
+                cout << "Não foi possível abrir o arquivo" << endl;
             }
         }
 
@@ -36,7 +53,7 @@ class Gerenciamento
 
             for(Aluno a : aluno)
             {
-                if(a != null)
+                if(a.getNomeCompleto() != "")
                 {
                     arquivo << a.toStringAluno() << endl;
                 }
@@ -444,7 +461,7 @@ class Gerenciamento
 
             }
         }
-        }
+    }
 
         
 };

@@ -5,17 +5,17 @@
 Personal::Personal(){}
 Personal::~Personal(){}
 
-vector<Aluno> Personal::getAluno()
+vector<Aluno> Personal::getAlunoPersonal()
 {
   return aluno;
 }
 
-Aluno Personal::getAlunoInd(int index)
+Aluno Personal::getAlunoIndPersonal(int index)
 {
   return aluno[index-1];
 }
 
-void  Personal::setAluno(Aluno aluno, int index)
+void  Personal::setAlunoPersonal(Aluno aluno, int index)
 {
   this->aluno[index] = aluno;
 }
@@ -342,7 +342,7 @@ void  Personal::setAluno(Aluno aluno, int index)
     }
   }*/
 
-  void Personal::menu(Gerenciamento *crud)
+ /* void Personal::menuPersonal(Gerenciamento *crud)
   {
     int escolha;
     
@@ -418,7 +418,7 @@ void  Personal::setAluno(Aluno aluno, int index)
       }
     }
   }
-
+*/
 string Personal::toString()
 {
   string str = "----- Alunos Cadastrados -----\n\n";
