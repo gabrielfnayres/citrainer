@@ -1,15 +1,15 @@
 #include <iostream>
 #include <vector>
 #include "Aluno.h"
+
 using namespace std;
 
 class Personal
-  {
-    private:
-      vector<Aluno> alunosPersonal;
+{
   public:
       Personal();
       ~Personal();
+        vector<Aluno> aluno;
       
       vector<Aluno> getAlunoPersonal();
       Aluno  getAlunoIndPersonal(int index);

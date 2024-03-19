@@ -2,6 +2,7 @@
 #include <fstream>
 #include <iterator>
 #include <string>
+
 #include "../includes/Aluno.h"
 
 #include "../includes/Gerenciamento.h"
@@ -41,8 +42,8 @@ int main()
             cout << "Qual seu ID de aluno?" << endl;
             cin >> id;
 
-            Personal temp = crud->getPersonal();
-            Aluno aluno = temp.getAlunoIndPersonal(id);
+            Personal p = crud->getPersonal();
+            Aluno aluno = p.getAlunoIndPersonal(id);
             aluno.menu();
             string relatorio = aluno.toStringAluno();
 

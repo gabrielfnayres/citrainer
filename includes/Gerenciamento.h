@@ -4,10 +4,10 @@
 #include <iterator>
 #include <string>
 #include <vector>
-#include "Personal.h"
 #include "Endereco.h"
 #include "Medidas.h"
 #include "Treino.h"
+#include "Personal.h"
 #include <fstream>
 using namespace std;
 
@@ -15,9 +15,9 @@ using namespace std;
 class Gerenciamento
 {
 
-    private:
+    protected:
         Personal personal;
-        vector<Aluno> aluno;
+        
     public:
 
         void setPersonal(Personal personal)

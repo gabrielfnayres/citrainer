@@ -1,9 +1,9 @@
 #include "../includes/Personal.h"
-#include "../includes/Gerenciamento.h"
+
 #include <iomanip>
 
 Personal::Personal(){}
-Personal::~Personal(){}
+Personal::~Personal(){} 
 
 vector<Aluno> Personal::getAlunoPersonal()
 {
@@ -419,7 +419,7 @@ void  Personal::setAlunoPersonal(Aluno aluno, int index)
     }
   }
 */
-string Personal::toString()
+string Personal::toStringPersonal ()
 {
   string str = "----- Alunos Cadastrados -----\n\n";
 
