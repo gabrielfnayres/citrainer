@@ -2,7 +2,7 @@
 #include <string>
 #include "Pessoa.h"
 
-class Academia
+class Academia : public Pessoa
 {
     protected:
         string nomeAcademia, telefoneAcademia;
@@ -12,7 +12,7 @@ class Academia
         ~Academia();
         Academia(string nomeCompleto, int idade, string dataDeNascimento, string nomeAcademia, string telefoneAcademia);
         string toStringAcademia();
-        void exibirEndereco();
+        void exibirAcademia();
 
         void setNomeAcademia(string n);
         void setTelefoneAcademia(string t);
