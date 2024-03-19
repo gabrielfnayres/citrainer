@@ -9,6 +9,7 @@ using namespace std;
 
 Aluno::Aluno()
 {
+
   nomeCompleto = " ";
   idade = 0;
   dataDeNascimento = " ";
@@ -19,6 +20,7 @@ Aluno::Aluno()
   numero = 0;
   medidas = Medidas();
   treinos = Treino();
+
 }
 Aluno::~Aluno(){}
 

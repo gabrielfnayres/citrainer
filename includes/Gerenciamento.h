@@ -146,8 +146,10 @@ class Gerenciamento
             
             for(Aluno a : als)
             {
+                
                 if(a.getNomeCompleto() == nome)
                 {
+                    cout << "aqui" << endl;
                     a.setNomeCompleto(nom);
                     break;
                 }
@@ -157,7 +159,7 @@ class Gerenciamento
         {
             cout << "Informe a idade do aluno: \n";
             int ida;
-            cin.ignore();
+            
             cin >> ida;
 
             for(Aluno a : als)
@@ -379,7 +381,16 @@ class Gerenciamento
             {
                 if(a->getNomeCompleto() == temp.getNomeCompleto())
                 {
-                    als.erase(a);
+                    Aluno ze = Aluno();
+                    temp = ze;
+                }
+            }
+            for(Aluno al : als)
+            {
+                if(al.getNomeCompleto() == nomeAluno)
+                {
+                al = temp;
+                break;
                 }
             }
         }

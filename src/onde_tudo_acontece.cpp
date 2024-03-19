@@ -17,8 +17,6 @@ int main()
     
     crud->abrirArquivo();
     
-    
-
     cout << "------------------------------ Bem-vindo ao CI Trainer ------------------------------" << endl;
 
     while(1)
@@ -44,7 +42,7 @@ int main()
             cin.ignore();
             Personal p = crud->getPersonal();
             Aluno aluno = p.getAlunoIndPersonal(id);
-            aluno.menu();
+    
             string relatorio = aluno.toStringAluno();
 
         }
