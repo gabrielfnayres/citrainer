@@ -367,7 +367,7 @@ class Gerenciamento
         void removerAluno(string nomeAluno, vector<Aluno> &als)
         {
             vector<Aluno>::iterator a;
-            
+            Aluno temp;
             for(Aluno al : als)
             {
                 if(al.getNomeCompleto() == nomeAluno)
@@ -377,7 +377,7 @@ class Gerenciamento
                 }
             }
 
-            /*for(a = als.begin(); a != als.end(); a++)
+            for(a = als.begin(); a != als.end(); a++)
             {
                 if(a->getNomeCompleto() == temp.getNomeCompleto())
                 {
@@ -392,7 +392,7 @@ class Gerenciamento
                 al = temp;
                 break;
                 }
-            }*/
+            }
         }
 
         void menu()
