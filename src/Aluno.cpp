@@ -7,7 +7,10 @@
 
 using namespace std;
 
-Aluno::Aluno(){}
+Aluno::Aluno()
+{
+
+}
 Aluno::~Aluno(){}
 
 Aluno::Aluno(string nomeCompleto, int idade, string data, string bairro, string cidade, string rua, string cep, int numero, Medidas medidas, Treino treinos):Endereco(nomeCompleto, idade, data, bairro, cidade, rua, cep, numero)
