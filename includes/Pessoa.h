@@ -1,5 +1,7 @@
 #pragma once
 #include <iostream>
+#include <string>
+#include "Endereco.h"
 using namespace std;
 
 class Pessoa
@@ -22,4 +24,5 @@ class Pessoa
     string nomeCompleto;
     int idade;
     string dataDeNascimento;
+    Endereco endereco;
 };
