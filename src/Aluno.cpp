@@ -2,6 +2,7 @@
 #include "../includes/Aluno.h"
 #include "../includes/Treino.h"
 #include "../includes/Medidas.h"
+#include "../includes/Endereco.h"
 #include <iomanip>
 
 using namespace std;
@@ -11,7 +12,6 @@ Aluno::~Aluno(){}
 
 Aluno::Aluno(string nomeCompleto, int idade, string data, string bairro, string cidade, string rua, string cep, int numero, Medidas medidas, Treino treinos):Endereco(nomeCompleto, idade, data, bairro, cidade, rua, cep, numero)
 {
-  
   this->medidas = medidas;
   this->treinos = treinos;
 }
@@ -25,6 +25,36 @@ void Aluno::exibir()
   exibirEndereco();
   medidas.exibir();
   treinos.exibir();
+}
+
+void Aluno::setNomeCompleto(string n)
+{
+  nomeCompleto = n;
+}
+
+void Aluno::setIdade(int i)
+{
+  idade = i;
+}
+
+void Aluno::setDataDeNascimento(string d)
+{
+  dataDeNascimento = d;
+}
+
+string Aluno::getNomeCompleto()
+{
+  return nomeCompleto;
+}
+
+int Aluno::getIdade()
+{
+  return idade;
+}
+
+string Aluno::getDataDeNascimento()
+{
+  return dataDeNascimento;
 }
 
 Medidas Aluno::getMedidas()
@@ -47,6 +77,14 @@ void Aluno::setTreino(Treino treinos)
   this->treinos = treinos;
 }
 
+void Aluno::setEndereco(string b, string c, string r, string cep, int n)
+{
+  bairro = b;
+  cidade = c;
+  rua = r;
+  CEP = cep;
+  numero = n;
+}
 
 void Aluno::menu()
 {

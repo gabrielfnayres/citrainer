@@ -1,6 +1,5 @@
 #pragma once
 #include <iostream>
-#include "Endereco.h"
 using namespace std;
 
 class Pessoa
