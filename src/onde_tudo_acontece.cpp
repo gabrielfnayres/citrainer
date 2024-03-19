@@ -7,9 +7,17 @@
 using namespace std;
 
 
-bool verificarSeAlunoExiste(fstream& arquivo, int id);
+bool verificarSeAlunoExiste(fstream& arquivo, int id)
 {
-
+    string li;
+    while(getline(arquivo, li))
+    {
+        if(li.find("ID: " + to_string(id)) != string::npos)
+        {
+            return true;
+        }
+    }
+    return false;
 }
 
 
@@ -17,9 +25,9 @@ int main()
 {
     int cargo;
     fstream arquivo;
-    Personal personal1, personal2;
+    Personal personal1;
 
-    arquivo.open("relatorio_personal.txt", ios::in | ios::out);
+    arquivo.open("relatorio_personal.txt", ios::in | ios::out | ios::app);
 
 
     if(!arquivo.is_open())
@@ -51,8 +59,17 @@ int main()
             cout << "Qual seu ID de aluno?" << endl;
             cin >> id;
 
-            Aluno aluno = personal2.getAlunoInd(id);
-            aluno.menu();
+            if(verificarSeAlunoExiste(arquivo, id))
+            {
+                cout << "Aluno não encontrado" << endl; 
+            }
+            else
+            {
+                Aluno aluno = personal1.getAlunoInd(id);
+                aluno.menu();
+                string relatorio = aluno.toStringAluno();
+                arquivo << relatorio << endl;   
+            }
         }
 
         else if(cargo == 3)
