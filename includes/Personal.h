@@ -9,6 +9,7 @@ class Personal
       vector<Aluno> aluno;
   public:
       Personal();
+      ~Personal();
       
       vector<Aluno> getAluno();
       Aluno getAlunoInd(int index);
@@ -21,6 +22,6 @@ class Personal
       void removerAluno(string nomeAluno, vector<Aluno> &als);
       void menu();
       string toString();
-     void clearScreen();
+    
 
   };

@@ -7,6 +7,10 @@ Pessoa::Pessoa()
     int idade = 0;
 }
 
+Pessoa::~Pessoa(){
+
+}
+
 Pessoa::Pessoa(string n, int i, string d, Endereco e)
 {
     nomeCompleto = n;

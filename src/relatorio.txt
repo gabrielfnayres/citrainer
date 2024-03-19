@@ -1,0 +1,37 @@
+----- Alunos Cadastrados -----
+
+------- Dados Pessoais -------
+Nome: adriane
+Idade: 18
+Data de Nascimento: 26072004
+---------- Endereco ----------
+CEP: 1234567
+Cidade: itapetim
+Rua: joaquim 
+Bairro: centro
+Número: 11
+Peso(kg): 60.00
+Altura(m): 33.00
+Cintura(cm): 2.00
+Busto(cm): 2.00
+ Quadril(cm): 0.00
+Coxa(cm): 2.00
+Panturrilha(cm): 2.00
+--------- Treino A ---------
+1 - 1
+Repeticoes: 1       Series: 1       Descanso: 1seg
+
+----------------------------
+--------- Treino B ---------
+1 - 1
+Repeticoes: 1       Series: 1       Descanso: 1seg
+
+----------------------------
+--------- Treino C ---------
+1 - 1
+Repeticoes: 1       Series: 1       Descanso: 1seg
+
+----------------------------
+
+
+------------------------------

@@ -14,6 +14,7 @@ class Aluno: public Pessoa
         int treinoDoDia = 0;
         Aluno();
         Aluno(string nomeCompleto, int idade, string data, Endereco endereco, Medidas medidas, Treino treinos);
+        ~Aluno();
         
         Medidas getMedidas();
         Treino getTreino();
@@ -23,5 +24,6 @@ class Aluno: public Pessoa
         void exibir();
         void menu();
         string toStringAluno();
-        void clearScreen();
+        
+
 };

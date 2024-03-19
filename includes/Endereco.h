@@ -14,6 +14,7 @@ class Endereco
 
   public:
     Endereco();
+    ~Endereco();
     Endereco(string b, string c, string r, string cep, int n);
     string toStringEndereco();
     void setBairro(string b);

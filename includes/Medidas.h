@@ -9,6 +9,7 @@ class Medidas{
 
     public:
         Medidas();
+        ~Medidas();
         Medidas(float peso, float altura, float cintura, float busto, float quadril, float coxa, float panturrilha);
         float calculaIMC();
         void setPeso(float peso);

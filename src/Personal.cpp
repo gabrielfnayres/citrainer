@@ -1,7 +1,8 @@
 #include "../includes/Personal.h"
 #include <iomanip>
-#include <iterator>
+
 Personal::Personal(){}
+Personal::~Personal(){}
 
 vector<Aluno> Personal::getAluno()
 {
@@ -339,9 +340,7 @@ void Personal::removerAluno(string nomeAluno, vector<Aluno> &als)
     }
   }
 }
-void Personal :: clearScreen() {
-    cout << "\033[2J\033[1;1H";
-}
+
 
 void Personal::menu()
 {
@@ -393,7 +392,7 @@ void Personal::menu()
     }
     else if(escolha == 4)
     {
-      clearScreen();
+  
       string remo;
 
       cout <<"Informe o aluno que deseja remover: " << "\n";
@@ -414,7 +413,7 @@ void Personal::menu()
     else if(escolha == 6)
     {
       break;
-      clearScreen();
+    
     }
   }
 }

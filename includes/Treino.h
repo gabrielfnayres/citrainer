@@ -20,6 +20,7 @@ class Treino
 {
     public:
         Treino();
+        ~Treino();
         Treino(tipo a, tipo b, tipo c);
         void montarTreino();
         void exibirTreinoA();

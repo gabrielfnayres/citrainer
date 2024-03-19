@@ -3,6 +3,7 @@
 using namespace std;
 
 Treino::Treino(){}
+Treino::~Treino(){}
 
 Treino::Treino(tipo a, tipo b, tipo c)
 {
