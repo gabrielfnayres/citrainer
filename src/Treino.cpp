@@ -16,7 +16,7 @@ void Treino::montarTreino()
 {
     int e;
 
-    cout << "Treino A:\n" << endl;
+    cout << "\nTreino A:\n" << endl;
     cout << "Quantos exercícios: ";
     cin >> e;
 
@@ -25,15 +25,15 @@ void Treino::montarTreino()
         cout << "\nExercício: ";
         cin.ignore();
         getline(cin, A.exercicio[i].descricao);
-        cout << "\nRepetições: ";
+        cout << "Repetições: ";
         cin >> A.exercicio[i].repeticoes;
-        cout << "\nSéries: ";
+        cout << "Séries: ";
         cin >> A.exercicio[i].series;
-        cout << "\nDescanso(seg): ";
+        cout << "Descanso(seg): ";
         cin >> A.exercicio[i].descanso;
     }
 
-    cout << "Treino B:\n" << endl;
+    cout << "\nTreino B:\n" << endl;
     cout << "Quantos exercícios: ";
     cin >> e;
 
@@ -42,28 +42,28 @@ void Treino::montarTreino()
         cout << "\nExercício: ";
         cin.ignore();
         getline(cin, B.exercicio[i].descricao);
-        cout << "\nRepetições: ";
+        cout << "Repetições: ";
         cin >> B.exercicio[i].repeticoes;
-        cout << "\nSéries: ";
+        cout << "Séries: ";
         cin >> B.exercicio[i].series;
-        cout << "\nDescanso(seg): ";
+        cout << "Descanso(seg): ";
         cin >> B.exercicio[i].descanso;
     }
 
-    cout << "Treino C:\n" << endl;
+    cout << "\nTreino C:\n" << endl;
     cout << "Quantos exercícios: ";
     cin >> e;
 
     for(int i= 0; i<e; i++)
     {
-        cout << "\nExercício: ";
+        cout << "Exercício: ";
         cin.ignore();
         getline(cin, C.exercicio[i].descricao);
-        cout << "\nRepetições: ";
+        cout << "Repetições: ";
         cin >> C.exercicio[i].repeticoes;
-        cout << "\nSéries: ";
+        cout << "Séries: ";
         cin >> C.exercicio[i].series;
-        cout << "\nDescanso(seg): ";
+        cout << "Descanso(seg): ";
         cin >> C.exercicio[i].descanso;
     }
 }

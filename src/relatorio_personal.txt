@@ -152,3 +152,77 @@ Repeticoes: 1       Series: 1       Descanso: 1seg
 
 
 ------------------------------
+----- Alunos Cadastrados -----
+
+------- Dados Pessoais -------
+Nome: Gabriel]
+Idade: 19
+Data de Nascimento: 1001191
+---------- Endereco ----------
+CEP: kdkd010d1
+Cidade: kdidkddi
+Rua: kddolek
+Bairro: jdjjd
+Número: 19
+Peso(kg): 1.00
+Altura(m): 1.00
+Cintura(cm): 1.00
+Busto(cm): 1.00
+ Quadril(cm): 0.00
+Coxa(cm): 1.00
+Panturrilha(cm): 1.00
+--------- Treino A ---------
+1 - kdkd
+Repeticoes: 1       Series: 1       Descanso: 1seg
+
+----------------------------
+--------- Treino B ---------
+1 - 
+Repeticoes: 1       Series: 11       Descanso: 1seg
+
+----------------------------
+--------- Treino C ---------
+1 - 1
+Repeticoes: 1       Series: 1       Descanso: 1seg
+
+----------------------------
+
+
+------------------------------
+----- Alunos Cadastrados -----
+
+------- Dados Pessoais -------
+Nome: Gabriel]
+Idade: 19
+Data de Nascimento: 1001191
+---------- Endereco ----------
+CEP: kdkd010d1
+Cidade: kdidkddi
+Rua: kddolek
+Bairro: jdjjd
+Número: 19
+Peso(kg): 1.00
+Altura(m): 1.00
+Cintura(cm): 1.00
+Busto(cm): 1.00
+ Quadril(cm): 0.00
+Coxa(cm): 1.00
+Panturrilha(cm): 1.00
+--------- Treino A ---------
+1 - kdkd
+Repeticoes: 1       Series: 1       Descanso: 1seg
+
+----------------------------
+--------- Treino B ---------
+1 - 
+Repeticoes: 1       Series: 11       Descanso: 1seg
+
+----------------------------
+--------- Treino C ---------
+1 - 1
+Repeticoes: 1       Series: 1       Descanso: 1seg
+
+----------------------------
+
+
+------------------------------
