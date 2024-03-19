@@ -341,7 +341,6 @@ void Personal::removerAluno(string nomeAluno, vector<Aluno> &als)
   }
 }
 
-
 void Personal::menu()
 {
   int escolha;
@@ -369,6 +368,7 @@ void Personal::menu()
     {
       cout << "Informe o nome do aluno: " << "\n";
       string busca;
+      cin.ignore();
       getline(cin, busca);
       Aluno busc = buscarAluno(busca, aluno);
 
@@ -413,7 +413,7 @@ void Personal::menu()
     else if(escolha == 6)
     {
       break;
-    
+
     }
   }
 }

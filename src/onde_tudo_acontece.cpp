@@ -10,17 +10,15 @@ using namespace std;
 int main()
 {
     int cargo;
-    ifstream iFile;
-    ofstream oFile;
-  
-    iFile.open("relatorio_personal.txt");
-    
+    fstream arquivo;
 
-    if(!iFile.is_open())
+    arquivo.open("relatorio.txt", ios::out | ios::in | ios::app);
+
+    if(!arquivo.is_open())
     {
       cout << "Falha ao gerar relatório!" << "\n"; 
     }
-    oFile.open("relatorio.txt");
+    
     
 
     cout << "------------------------------ Bem-vindo ao CI Trainer ------------------------------" << endl;
@@ -35,7 +33,7 @@ int main()
             Personal personal;
             personal.menu();
             string relatorio = personal.toString();
-            oFile << relatorio << endl;
+            arquivo << relatorio << endl;
 
         }
 
@@ -63,6 +61,6 @@ int main()
     }
 
     cout << "------------------------------ Obrigado por usar o CI Trainer --------------------------------" << endl;
-    iFile.close();
+    arquivo.close();
     return 0;
 }
