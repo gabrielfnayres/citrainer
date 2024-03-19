@@ -63,6 +63,10 @@ int main()
     cout << "------------------------------ Obrigado por usar o CI Trainer --------------------------------" << endl;
     
    
+    crud->salvarArquivo();
+
+    
+    delete crud;
 
     return 0;
 }
