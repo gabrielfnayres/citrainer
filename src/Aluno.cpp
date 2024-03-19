@@ -7,7 +7,19 @@
 
 using namespace std;
 
-Aluno::Aluno(){}
+Aluno::Aluno()
+{
+  nomeCompleto = " ";
+  idade = 0;
+  dataDeNascimento = " ";
+  bairro = " ";
+  cidade = " ";
+  rua = " ";
+  CEP = " ";
+  numero = 0;
+  medidas = Medidas();
+  treinos = Treino();
+}
 Aluno::~Aluno(){}
 
 Aluno::Aluno(string nomeCompleto, int idade, string data, string bairro, string cidade, string rua, string cep, int numero, Medidas medidas, Treino treinos):Endereco(nomeCompleto, idade, data, bairro, cidade, rua, cep, numero)
