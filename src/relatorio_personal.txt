@@ -149,7 +149,7 @@ Panturrilha(cm): 0.00
 ----------------------------
 
 ---------- Medidas -----------
-Peso(kg): 1.00
+Peso(kg): 11.00
 Altura(m): 1.00
 Cintura(cm): 1.00
 Busto(cm): 1.00

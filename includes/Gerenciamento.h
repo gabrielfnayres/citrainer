@@ -57,7 +57,7 @@ class Gerenciamento
             }
         }
 
-        void cadastrarAluno(vector<Aluno> *als)
+        void cadastrarAluno(vector<Aluno> &als)
         {
             Aluno criado;
             string n;
@@ -121,7 +121,7 @@ class Gerenciamento
 
             criado.setMedidas(med);
             
-            als->push_back(criado);
+            als.push_back(criado);
         }
 
         void alterarAluno(string nome, vector<Aluno> &als)
@@ -364,35 +364,9 @@ class Gerenciamento
         }
 
 
-        void removerAluno(string nomeAluno, vector<Aluno> &als)
+        void removerAluno( Aluno &als)
         {
-            vector<Aluno>::iterator a;
-            Aluno temp;
-            for(Aluno al : als)
-            {
-                if(al.getNomeCompleto() == nomeAluno)
-                {
-                al = Aluno();
-                break;
-                }
-            }
-
-            for(a = als.begin(); a != als.end(); a++)
-            {
-                if(a->getNomeCompleto() == temp.getNomeCompleto())
-                {
-                    Aluno ze = Aluno();
-                    temp = ze;
-                }
-            }
-            for(Aluno al : als)
-            {
-                if(al.getNomeCompleto() == nomeAluno)
-                {
-                al = temp;
-                break;
-                }
-            }
+            als = Aluno();
         }
 
         void menu()
@@ -416,7 +390,7 @@ class Gerenciamento
             
             if(escolha == 1)
             {
-            cadastrarAluno(&personal.aluno);
+            cadastrarAluno(personal.aluno);
             }
             else if(escolha == 3)
             {
@@ -452,7 +426,8 @@ class Gerenciamento
             cout <<"Informe o aluno que deseja remover: " << "\n";
             cin.ignore();
             getline(cin, remo);
-            removerAluno(remo, personal.aluno);
+            Aluno a = buscarAluno(remo, personal.aluno);
+            removerAluno(a);
             cout << "Aluno " << remo <<  " removido com sucesso!" << "\n";
             exibirTodosAlunos();
             
