@@ -1,9 +1,8 @@
 #pragma once
-#include <iostream>
 #include <string>
-using namespace std;
+#include "Pessoa.h"
 
-class Endereco
+class Endereco: public Pessoa
 {
   protected:
     string bairro;
@@ -15,8 +14,10 @@ class Endereco
   public:
     Endereco();
     ~Endereco();
-    Endereco(string b, string c, string r, string cep, int n);
+    Endereco(string no, int i, string d,string b, string c, string r, string cep, int nu);
     string toStringEndereco();
+    void exibirEndereco();
+
     void setBairro(string b);
     void setCidade(string c);
     void setCep(string cep);
@@ -27,5 +28,4 @@ class Endereco
     string getCep();
     string getRua();
     int getNumero();
-    void exibirEndereco();
 };
