@@ -9,22 +9,16 @@ using namespace std;
 
 Aluno::Aluno()
 {
-
-  nomeCompleto = " ";
+  nomeCompleto = "";
   idade = 0;
-  dataDeNascimento = " ";
-  bairro = " ";
-  cidade = " ";
-  rua = " ";
-  CEP = " ";
-  numero = 0;
+  dataDeNascimento = "";
   medidas = Medidas();
   treinos = Treino();
-
 }
+
 Aluno::~Aluno(){}
 
-Aluno::Aluno(string nomeCompleto, int idade, string data, string bairro, string cidade, string rua, string cep, int numero, Medidas medidas, Treino treinos):Endereco(nomeCompleto, idade, data, bairro, cidade, rua, cep, numero)
+Aluno::Aluno(string nomeCompleto, int idade, string data, Endereco, Medidas medidas, Treino treinos):Pessoa(nomeCompleto, idade, data)
 {
   this->medidas = medidas;
   this->treinos = treinos;
@@ -36,7 +30,6 @@ void Aluno::exibir()
   cout << "Nome: " << nomeCompleto << endl;
   cout << "Idade: " << idade << endl;
   cout << "Data de nascimento: " << dataDeNascimento << endl;
-  exibirEndereco();
   medidas.exibir();
   treinos.exibir();
 }
@@ -89,15 +82,6 @@ Treino Aluno::getTreino()
 void Aluno::setTreino(Treino treinos)
 {
   this->treinos = treinos;
-}
-
-void Aluno::setEndereco(string b, string c, string r, string cep, int n)
-{
-  bairro = b;
-  cidade = c;
-  rua = r;
-  CEP = cep;
-  numero = n;
 }
 
 void Aluno::menu()
