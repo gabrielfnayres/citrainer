@@ -70,7 +70,6 @@ class Gerenciamento
             string n;
             int idade;
             Medidas med;
-            Endereco end;
             Treino tre;
             int numero;
             string data, bairro, cep, cidade, rua;
@@ -112,14 +111,8 @@ class Gerenciamento
             cin >> panturrilha;
             tre.montarTreino();
             criado.setTreino(tre);
-
-            end.setBairro(bairro);
-            end.setCep(cep);
-            end.setCidade(cidade);
-            end.setNumero(numero);
-            end.setRua(rua);
             
-            criado.setEndereco(end);
+            criado.setEndereco(bairro, cidade, rua, cep, numero);
             
             criado.setNomeCompleto(n);  
 

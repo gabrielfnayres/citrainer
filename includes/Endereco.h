@@ -1,6 +1,8 @@
 #pragma once
+#include <iostream>
 #include <string>
 #include "Pessoa.h"
+using namespace std;
 
 class Endereco: public Pessoa
 {
