@@ -41,7 +41,7 @@ int main()
             
             cout << "Qual seu ID de aluno?" << endl;
             cin >> id;
-
+            cin.ignore();
             Personal p = crud->getPersonal();
             Aluno aluno = p.getAlunoIndPersonal(id);
             aluno.menu();
@@ -65,8 +65,8 @@ int main()
    
     crud->salvarArquivo();
 
-    
-    delete crud;
+
+   
 
     return 0;
 }

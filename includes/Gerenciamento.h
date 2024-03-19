@@ -17,7 +17,7 @@ class Gerenciamento
 
     protected:
         Personal personal;
-        vector<Aluno> aluno;
+        
     public:
 
         void setPersonal(Personal personal)
@@ -51,7 +51,7 @@ class Gerenciamento
             ofstream arquivo;
             arquivo.open("relatorio_personal.txt");
 
-            for(Aluno a : aluno)
+            for(Aluno a : personal.aluno)
             {
                 if(a.getNomeCompleto() != "")
                 {
@@ -64,7 +64,7 @@ class Gerenciamento
             }
         }
 
-        void cadastrarAluno(vector<Aluno> &als)
+        void cadastrarAluno(vector<Aluno> *als)
         {
             Aluno criado;
             string n;
@@ -128,10 +128,10 @@ class Gerenciamento
 
             criado.setMedidas(med);
             
-            als.push_back(criado);
+            als->push_back(criado);
         }
 
-        void alterarAluno(string nome, vector<Aluno> &als)
+        void alterarAluno(string nome, vector<Aluno> *als)
         {
         cout << " O que deseja alterar no seu aluno? " << "\n";
         int alter;
@@ -148,30 +148,32 @@ class Gerenciamento
         {
             cout << "Informe o novo nome:" << "\n";
             string nom;
-            cin >> nom;
             
-            for(Aluno a : als)
+            getline(cin, nom);
+            
+            for(Aluno a : *als)
             {
-            if(a.getNomeCompleto() == nome)
-            {
-                a.setNomeCompleto(nom);
-                break;
-            }
+                if(a.getNomeCompleto() == nome)
+                {
+                    a.setNomeCompleto(nom);
+                    break;
+                }
             }
         }
         else if(alter == 2)
         {
             cout << "Informe a idade do aluno: \n";
             int ida;
+            cin.ignore();
             cin >> ida;
 
-            for(Aluno a : als)
+            for(Aluno a : *als)
             {
-            if(a.getNomeCompleto() == nome)
-            {
-                a.setIdade(ida);
-                break;
-            }
+                if(a.getNomeCompleto() == nome)
+                {
+                    a.setIdade(ida);
+                    break;
+                }
             }
         }
         else if(alter == 3)
@@ -179,18 +181,19 @@ class Gerenciamento
             cout << "Informe a nova data: " << endl;
             string novaData;
             getline(cin, novaData);
-            for(Aluno a : als)
+            for(Aluno a : *als)
             {
-            if(a.getNomeCompleto() == nome)
-            {
-                a.setDataDeNascimento(novaData);
-                break;
-            }
+                if(a.getNomeCompleto() == nome)
+                {
+                    a.setDataDeNascimento(novaData);
+                    break;
+                }
             }
         }
         else if(alter == 4)
         {
             int esc;
+            Medidas tempo;
         
             cout << "Informe informe a medida que deseja alterar: " << "\n";
             cout << " --------------------------------------- " << "\n";
@@ -207,88 +210,95 @@ class Gerenciamento
             {
             case 1:
                 cout << "Informe o peso do aluno: " << "\n";
-                for(Aluno a : als)
+                for(Aluno a : *als)
                 {
                 if(a.getNomeCompleto() == nome){
+                    Medidas tempo = a.getMedidas();
                     float newPeso;
                     cin >> newPeso;
-                    a.getMedidas().setPeso(newPeso);
+                    tempo.setPeso(newPeso);
                     cout << "Peso alterado com sucesso!" << "\n";
                     break;
                 }
                 }
             case 2:
                 cout << "Informe a altura do aluno:" << "\n";
-                for(Aluno a : als)
+                for(Aluno a : *als)
                 {
                 if(a.getNomeCompleto() == nome)
                 {
+                    Medidas tempo = a.getMedidas();
                     float newAltura;
                     cin >> newAltura;
-                    a.getMedidas().setAltura(newAltura);
+                    tempo.setAltura(newAltura);
                     cout << "Altura alterada com sucesso!" << "\n";
                     break;
                 }
                 }
             case 3:
                 cout << "Informe a cintura do aluno: " << "\n";
-                for(Aluno a : als)
+                for(Aluno a : *als)
                 {
                 if(a.getNomeCompleto() == nome)
                 {
                     float newCintura;
+                    Medidas tempo = a.getMedidas();
                     cin >> newCintura;
-                    a.getMedidas().setCintura(newCintura);
+                    tempo.setCintura(newCintura);
                     cout << "Cintura alterada com sucesso! " << "\n";
                     break;
                 }
                 }
             case 4:
-                cout << "Inforeme o busto do aluno:" << "\n";
-                for(Aluno a : als)
+                cout << "Informe o busto do aluno:" << "\n";
+                for(Aluno a : *als)
                 {
                 if(a.getNomeCompleto() == nome)
                 {
                     float newBusto;
+                    Medidas tempo = a.getMedidas();
                     cin >> newBusto;
-                    a.getMedidas().setBusto(newBusto);
+                    tempo.setBusto(newBusto);
                     cout << "Busto alterado com sucesso!" << "\n";
                     break;
                 }
                 }
             case 5:
                 cout << "Informe o quadril do aluno: " << "\n";
-                for(Aluno a : als)
+                for(Aluno a : *als)
                 {
-                if(a.getNomeCompleto() == nome)
-                {
-                    float newQuadril;
-                    cin >> newQuadril;
-                    a.getMedidas().setQuadril(newQuadril);
-                    cout << "Quadril alterado com sucesso!" << "\n";
-                    break;
-                }
+                    if(a.getNomeCompleto() == nome)
+                    {
+                        float newQuadril;
+                        Medidas tempo = a.getMedidas();
+                        cin >> newQuadril;
+                        tempo.setQuadril(newQuadril);
+                        cout << "Quadril alterado com sucesso!" << "\n";
+                        break;
+                    }
                 }
             case 6:
                 cout << "Informe a coxa do aluno: " << "\n";
-                for(Aluno a : als)
+                for(Aluno a : *als)
                 {
                 if(a.getNomeCompleto() == nome)
                 {
                     float newCoxa;
+                    Medidas tempo = a.getMedidas();
                     cin >> newCoxa;
-                    a.getMedidas().setCoxa(newCoxa);
+                    tempo.setCoxa(newCoxa);
                     cout << "Coxa alterada com sucesso!" << "\n";
                     break;
                 }
                 }
             case 7:
                 cout << "Informe a panturrilha do aluno: " << "\n";
-                for(Aluno a : als)
+                for(Aluno a : *als)
                 {
                 float newPant;
+                Medidas tempo = a.getMedidas();
                 cin >> newPant;
-                a.getMedidas().setPanturrilha(newPant);
+                tempo.setPanturrilha(newPant);
                 cout << "Panturrilha alterada com sucesso!" << "\n";
                 break;
                 }
@@ -307,11 +317,12 @@ class Gerenciamento
             cout << " 2 - Adicionar exercicio" << endl;
             if(escolha == 1)
             {
-            for(Aluno a : als)
+            for(Aluno a : *als)
             {
                 if(a.getNomeCompleto() == nome)
                 {
-                a.getTreino().alterarTreino();
+                Treino t = a.getTreino();
+                t.alterarTreino();
                 cout << "Treino alterado com sucesso!" << endl;
                 break;
                 }
@@ -319,11 +330,12 @@ class Gerenciamento
             }
             else if(escolha == 2)
             {
-            for(Aluno a : als)
+            for(Aluno a : *als)
             {
                 if(a.getNomeCompleto() == nome)
                 {
-                a.getTreino().adicionarExercicio();
+                Treino t = a.getTreino();
+                t.adicionarExercicio();
                 cout << "Execício adicionado com sucesso!" << endl;
                 break;
                 }
@@ -332,11 +344,11 @@ class Gerenciamento
         }
         }
 
-        Aluno buscarAluno(string nomeAluno, vector<Aluno> als)
+        Aluno buscarAluno(string nomeAluno, vector<Aluno> *als)
         {
         string resp;
         Aluno exibido;
-        for(Aluno al : als)
+        for(Aluno al : *als)
         {
             if((al.getNomeCompleto()) == nomeAluno)
             {
@@ -349,7 +361,7 @@ class Gerenciamento
 
         void exibirTodosAlunos()
         {
-        for(Aluno a : aluno)
+        for(Aluno a : personal.aluno)
         {
             a.exibir();
             cout << "\n";
@@ -357,11 +369,11 @@ class Gerenciamento
         }
 
 
-        void removerAluno(string nomeAluno, vector<Aluno> &als)
+        void removerAluno(string nomeAluno, vector<Aluno> *als)
         {
         vector<Aluno>::iterator a;
         Aluno temp;
-        for(Aluno al : als)
+        for(Aluno al : *als)
         {
             if(al.getNomeCompleto() == nomeAluno)
             {
@@ -370,11 +382,11 @@ class Gerenciamento
             }
         }
 
-        for(a = als.begin(); a != als.end(); a++)
+        for(a = als->begin(); a != als->end(); a++)
         {
             if(a->getNomeCompleto() == temp.getNomeCompleto())
             {
-            als.erase(a);
+            als->erase(a);
             }
         }
         }
@@ -400,7 +412,7 @@ class Gerenciamento
             
             if(escolha == 1)
             {
-            cadastrarAluno(aluno);
+            cadastrarAluno(&personal.aluno);
             }
             else if(escolha == 3)
             {
@@ -408,7 +420,7 @@ class Gerenciamento
             string busca;
             cin.ignore();
             getline(cin, busca);
-            Aluno busc = buscarAluno(busca, aluno);
+            Aluno busc = buscarAluno(busca, &personal.aluno);
 
             if(busc.getNomeCompleto() == busca)
             {
@@ -426,7 +438,7 @@ class Gerenciamento
             string s;
             cin.ignore();
             getline(cin,s);
-            alterarAluno(s, aluno);
+            alterarAluno(s, &personal.aluno);
             }
             else if(escolha == 4)
             {
@@ -436,7 +448,7 @@ class Gerenciamento
             cout <<"Informe o aluno que deseja remover: " << "\n";
             cin.ignore();
             getline(cin, remo);
-            removerAluno(remo, aluno);
+            removerAluno(remo, &personal.aluno);
             cout << "Aluno " << remo <<  " removido com sucesso!" << "\n";
             exibirTodosAlunos();
             

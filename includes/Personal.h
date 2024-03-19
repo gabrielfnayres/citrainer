@@ -9,7 +9,7 @@ class Personal
   public:
       Personal();
       ~Personal();
-        vector<Aluno> aluno;
+      vector<Aluno> aluno;
       
       vector<Aluno> getAlunoPersonal();
       Aluno  getAlunoIndPersonal(int index);
