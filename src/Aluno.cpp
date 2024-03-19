@@ -9,7 +9,7 @@ using namespace std;
 Aluno::Aluno(){}
 Aluno::~Aluno(){}
 
-Aluno::Aluno(string nomeCompleto, int idade, string data, Endereco endereco, Medidas medidas, Treino treinos):Pessoa(nomeCompleto, idade, data, endereco)
+Aluno::Aluno(string nomeCompleto, int idade, string data, string bairro, string cidade, string rua, string cep, int numero, Medidas medidas, Treino treinos):Endereco(nomeCompleto, idade, data, bairro, cidade, rua, cep, numero)
 {
   
   this->medidas = medidas;
@@ -22,7 +22,7 @@ void Aluno::exibir()
   cout << "Nome: " << nomeCompleto << endl;
   cout << "Idade: " << idade << endl;
   cout << "Data de nascimento: " << dataDeNascimento << endl;
-  endereco.exibirEndereco();
+  exibirEndereco();
   medidas.exibir();
   treinos.exibir();
 }

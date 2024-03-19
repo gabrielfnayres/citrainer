@@ -1,16 +1,15 @@
 #include "../includes/Endereco.h"
 
-
 Endereco::Endereco(){}
 Endereco::~Endereco(){}
 
-Endereco::Endereco(string b, string c, string r, string cep, int n)
+Endereco::Endereco(string nomeCompleto, int idade, string data, string bairro, string cidade, string rua, string cep, int numero) : Pessoa(nomeCompleto, idade, data)
 {
-    bairro = b;
-    cidade = c;
-    rua = r;
+    bairro = bairro;
+    cidade = cidade;
+    rua = rua;
     CEP = cep;
-    numero = n;
+    numero = numero;
 }
 
 string Endereco::toStringEndereco()
@@ -66,4 +65,3 @@ void Endereco:: exibirEndereco(){
     cout << "Bairro: "<< bairro<< endl;
     cout << "Número: "<< numero << endl;
 }
-
