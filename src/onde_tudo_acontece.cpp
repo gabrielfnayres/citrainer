@@ -51,6 +51,12 @@ int main()
 
         else if(cargo == 3)
         {
+            arquivo.open("relatorio_personal.txt", ios::in);
+            string linha;
+            while(getline(arquivo, linha))
+            {
+                cout << linha << endl;
+            }
             break;
         }
 
@@ -60,11 +66,6 @@ int main()
         }
     }
     cout << "------------------------------ Obrigado por usar o CI Trainer --------------------------------" << endl;
-    arquivo.open("relatorio_personal.txt", ios::in);
-    string linha;
-    while(getline(arquivo, linha))
-    {
-        cout << linha << endl;
-    }
+    
     return 0;
 }
