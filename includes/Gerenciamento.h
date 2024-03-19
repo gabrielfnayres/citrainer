@@ -17,7 +17,7 @@ class Gerenciamento
 
     protected:
         Personal personal;
-        
+        vector<Aluno> aluno;
     public:
 
         void setPersonal(Personal personal)
