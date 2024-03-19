@@ -2,7 +2,12 @@
 #include <iostream>
 using namespace std;
 
-Treino::Treino(){}
+Treino::Treino()
+{
+    A = tipo();
+    B = tipo();
+    C = tipo();
+}
 Treino::~Treino(){}
 
 Treino::Treino(tipo a, tipo b, tipo c)

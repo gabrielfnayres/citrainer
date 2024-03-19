@@ -17,8 +17,6 @@ int main()
     
     crud->abrirArquivo();
     
-    
-
     cout << "------------------------------ Bem-vindo ao CI Trainer ------------------------------" << endl;
 
     while(1)
@@ -36,7 +34,6 @@ int main()
             //arquivo << relatorio << endl;
             crud->menu();
         }
-
    
         else if(cargo == 2)
         {
