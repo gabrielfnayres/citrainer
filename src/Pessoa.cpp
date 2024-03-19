@@ -11,19 +11,18 @@ Pessoa::~Pessoa(){
 
 }
 
-Pessoa::Pessoa(string n, int i, string d, Endereco e)
+Pessoa::Pessoa(string n, int i, string d)
 {
     nomeCompleto = n;
     idade = i;
     dataDeNascimento = d;
-    endereco = e;
 }
 
 void Pessoa::exibir(){}
 
 string Pessoa::toStringPessoa()
 {
-    return "------- Dados Pessoais -------\nNome: " + nomeCompleto + "\nIdade: " + to_string(idade) + "\nData de Nascimento: " + dataDeNascimento + endereco.toStringEndereco();
+    return "------- Dados Pessoais -------\nNome: " + nomeCompleto + "\nIdade: " + to_string(idade) + "\nData de Nascimento: " + dataDeNascimento;
 }
 
 void Pessoa::setNomeCompleto(string n)
@@ -34,11 +33,6 @@ void Pessoa::setNomeCompleto(string n)
 void Pessoa::setIdade(int i)
 {
     idade = i;
-}
-
-void Pessoa::setEndereco(Endereco e)
-{
-    endereco = e;
 }
 
 string Pessoa::getNomeCompleto()
@@ -59,9 +53,4 @@ void Pessoa:: setDataDeNascimento(string data)
 string Pessoa:: getDataDeNascimento()
 {
     return dataDeNascimento;
-}
-
-Endereco Pessoa::getEndereco()
-{
-    return endereco;
 }

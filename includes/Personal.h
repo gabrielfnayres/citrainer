@@ -20,8 +20,10 @@ class Personal
       Aluno buscarAluno(string nomeAluno, vector<Aluno> als);
       void exibirTodosAlunos();
       void removerAluno(string nomeAluno, vector<Aluno> &als);
+
       void menuPersonal(Gerenciamento* crud);*/
       string toStringPersonal();
     
+
 
   };

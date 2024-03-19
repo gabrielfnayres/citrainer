@@ -8,22 +8,19 @@ class Pessoa
   public:
     Pessoa();
     ~Pessoa();
-    Pessoa(string nomeCompleto, int idade, string data, Endereco endereco);
+    Pessoa(string nomeCompleto, int idade, string data);
     virtual void exibir() = 0;
     string toStringPessoa();
 
     void setNomeCompleto(string n);
     void setIdade(int i);
     void setDataDeNascimento(string d);
-    void setEndereco(Endereco e);
     string getNomeCompleto();
     int getIdade();
     string getDataDeNascimento();
-    Endereco getEndereco();
 
   protected:
     string nomeCompleto;
     int idade;
     string dataDeNascimento;
-    Endereco endereco;
 };
