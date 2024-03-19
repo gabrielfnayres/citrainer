@@ -22,7 +22,4 @@ class Personal
 
       void menuPersonal(Gerenciamento* crud);*/
       string toStringPersonal();
-    
-
-
   };

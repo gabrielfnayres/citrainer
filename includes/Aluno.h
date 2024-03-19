@@ -5,7 +5,7 @@
 #include "Medidas.h"
 #include "Treino.h"
 
-class Aluno: public Endereco
+class Aluno: public Pessoa
 {
     private:
         Medidas medidas;
@@ -15,7 +15,7 @@ class Aluno: public Endereco
         int treinoDoDia = 0;
         Aluno();
         ~Aluno();
-        Aluno(string nomeCompleto, int idade, string data, string bairro, string cidade, string rua, string cep, int numero, Medidas medidas, Treino treinos);
+        Aluno(string nomeCompleto, int idade, string data, Endereco endereco, Medidas medidas, Treino treinos);
         void exibir();
         void menu();
         string toStringAluno();
@@ -31,7 +31,4 @@ class Aluno: public Endereco
         string getDataDeNascimento(); 
         Medidas getMedidas();
         Treino getTreino();
-
-        
-
 };

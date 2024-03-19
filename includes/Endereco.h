@@ -4,19 +4,19 @@
 #include "Pessoa.h"
 using namespace std;
 
-class Endereco: public Pessoa
+class Endereco
 {
   protected:
+    string rua;
     string bairro;
     string cidade;
     string CEP;
-    string rua;
     int numero;
 
   public:
     Endereco();
     ~Endereco();
-    Endereco(string no, int i, string d,string b, string c, string r, string cep, int nu);
+    Endereco(string b, string c, string r, string cep, int n);
     string toStringEndereco();
     void exibirEndereco();
 
