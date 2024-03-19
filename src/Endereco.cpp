@@ -14,7 +14,7 @@ Endereco::Endereco(string nomeCompleto, int idade, string data, string bairro, s
 
 string Endereco::toStringEndereco()
 {
-    return "\n---------- Endereco ----------\nCEP: " + CEP + "\nCidade: " + cidade + "\nRua: " + rua + "\nBairro: " + bairro + "\nNúmero: " + to_string(numero);
+    return "---------- Endereco ----------\nCEP: " + CEP + "\nCidade: " + cidade + "\nRua: " + rua + "\nBairro: " + bairro + "\nNúmero: " + to_string(numero);
 }
 
 void Endereco :: setBairro(string b){

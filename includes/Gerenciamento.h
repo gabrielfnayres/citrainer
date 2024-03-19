@@ -372,7 +372,7 @@ class Gerenciamento
             {
                 if(al.getNomeCompleto() == nomeAluno)
                 {
-                temp = al;
+                al = Aluno();
                 break;
                 }
             }
