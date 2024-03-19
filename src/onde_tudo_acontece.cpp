@@ -4,37 +4,18 @@
 #include <string>
 #include "../includes/Aluno.h"
 #include "../includes/Personal.h"
+#include "../includes/Gerenciamento.h"
 using namespace std;
 
-
-bool verificarSeAlunoExiste(fstream& arquivo, int id)
-{
-    string li;
-    while(getline(arquivo, li))
-    {
-        if(li.find("ID: " + to_string(id)) != string::npos)
-        {
-            return true;
-        }
-    }
-    return false;
-}
 
 
 int main()
 {
     int cargo;
-    fstream arquivo;
+    Gerenciamento* crud = new class Gerenciamento(); 
     Personal personal1;
-
-    arquivo.open("relatorio_personal.txt", ios::in | ios::out | ios::app);
-
-
-    if(!arquivo.is_open())
-    {
-        cout << "Erro ao abrir o arquivo" << endl;
-    }
-
+    crud->abrirArquivo();
+    
 
     cout << "------------------------------ Bem-vindo ao CI Trainer ------------------------------" << endl;
 
@@ -46,10 +27,10 @@ int main()
         if (cargo ==  1)
         {
             
-            personal1.menu();
-            string relatorio = personal1.toString();
-            arquivo << relatorio << endl;
-
+            //personal1.menu();
+            //string relatorio = personal1.toString();
+            //arquivo << relatorio << endl;
+            crud.
         }
 
         else if (cargo == 2)

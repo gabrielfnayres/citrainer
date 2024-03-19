@@ -1,4 +1,5 @@
 #include "../includes/Personal.h"
+#include "../includes/Gerenciamento.h"
 #include <iomanip>
 
 Personal::Personal(){}
@@ -19,7 +20,7 @@ void  Personal::setAluno(Aluno aluno, int index)
   this->aluno[index] = aluno;
 }
 
-void Personal::cadastrarAluno(vector<Aluno> &als) 
+/*void Personal::cadastrarAluno(vector<Aluno> &als) 
 {
   Aluno criado;
   string n;
@@ -339,9 +340,9 @@ void Personal::cadastrarAluno(vector<Aluno> &als)
         als.erase(a);
       }
     }
-  }
+  }*/
 
-  void Personal::menu()
+  void Personal::menu(Gerenciamento *crud)
   {
     int escolha;
     
@@ -362,7 +363,7 @@ void Personal::cadastrarAluno(vector<Aluno> &als)
       
       if(escolha == 1)
       {
-        cadastrarAluno(aluno);
+          crud->cadastrarAluno(aluno);
       }
       else if(escolha == 3)
       {
@@ -370,7 +371,7 @@ void Personal::cadastrarAluno(vector<Aluno> &als)
         string busca;
         cin.ignore();
         getline(cin, busca);
-        Aluno busc = buscarAluno(busca, aluno);
+        Aluno busc = crud->buscarAluno(busca, aluno);
 
         if(busc.getNomeCompleto() == busca)
         {
@@ -388,7 +389,7 @@ void Personal::cadastrarAluno(vector<Aluno> &als)
         string s;
         cin.ignore();
         getline(cin,s);
-        alterarAluno(s, aluno);
+        crud->alterarAluno(s, aluno);
       }
       else if(escolha == 4)
       {
@@ -398,16 +399,16 @@ void Personal::cadastrarAluno(vector<Aluno> &als)
         cout <<"Informe o aluno que deseja remover: " << "\n";
         cin.ignore();
         getline(cin, remo);
-        removerAluno(remo, aluno);
+        crud->removerAluno(remo, aluno);
         cout << "Aluno " << remo <<  " removido com sucesso!" << "\n";
-        exibirTodosAlunos();
+        crud->salvarAluno(aluno);
         
       }
 
       else if(escolha == 5)
       {
         cout << "Aí está a lista dos seus alunos: " << "\n";
-        exibirTodosAlunos();
+        crud->exibirTodosAlunos();
       }
 
       else if(escolha == 6)
