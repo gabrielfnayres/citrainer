@@ -21,7 +21,9 @@ int main()
 
     while(1)
     {
-        cout << "Você é Personal ou Aluno? (1 - Personal | 2 - Aluno | 3 - Sair)" << endl;
+        cout << "Olá Personal" << endl;
+        cout << "Para iniciar o seu MUX: - digite 1" << endl;
+        cout << "Para sair: - digite 2" << endl;
         cin >> cargo;
 
         if (cargo ==  1)
@@ -32,22 +34,8 @@ int main()
             //arquivo << relatorio << endl;
             crud->menu();
         }
-
-        else if (cargo == 2)
-        {
-            int id;
-            
-            cout << "Qual seu ID de aluno?" << endl;
-            cin >> id;
-            cin.ignore();
-            Personal p = crud->getPersonal();
-            Aluno aluno = p.getAlunoIndPersonal(id);
-    
-            string relatorio = aluno.toStringAluno();
-
-        }
-
-        else if(cargo == 3)
+   
+        else if(cargo == 2)
         {
             
             break;
