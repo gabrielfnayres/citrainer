@@ -10,6 +10,17 @@ using namespace std;
 Aluno::Aluno()
 {
 
+  nomeCompleto = " ";
+  idade = 0;
+  dataDeNascimento = " ";
+  bairro = " ";
+  cidade = " ";
+  rua = " ";
+  CEP = " ";
+  numero = 0;
+  medidas = Medidas();
+  treinos = Treino();
+
 }
 Aluno::~Aluno(){}
 
