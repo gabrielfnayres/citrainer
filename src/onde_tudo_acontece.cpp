@@ -7,12 +7,19 @@
 using namespace std;
 
 
+bool verificarSeAlunoExiste(fstream& arquivo, int id);
+{
+
+}
+
+
 int main()
 {
     int cargo;
     fstream arquivo;
+    Personal personal1, personal2;
 
-    arquivo.open("relatorio_personal.txt", ios::out);
+    arquivo.open("relatorio_personal.txt", ios::in | ios::out);
 
 
     if(!arquivo.is_open())
@@ -30,33 +37,27 @@ int main()
 
         if (cargo ==  1)
         {
-            Personal personal;
-            personal.menu();
-            string relatorio = personal.toString();
+            
+            personal1.menu();
+            string relatorio = personal1.toString();
             arquivo << relatorio << endl;
 
         }
 
         else if (cargo == 2)
         {
-            Personal personal;
             int id;
 
             cout << "Qual seu ID de aluno?" << endl;
             cin >> id;
 
-            Aluno aluno = personal.getAlunoInd(id);
+            Aluno aluno = personal2.getAlunoInd(id);
             aluno.menu();
         }
 
         else if(cargo == 3)
         {
-            arquivo.open("relatorio_personal.txt", ios::in);
-            string linha;
-            while(getline(arquivo, linha))
-            {
-                cout << linha << endl;
-            }
+            
             break;
         }
 
@@ -67,5 +68,18 @@ int main()
     }
     cout << "------------------------------ Obrigado por usar o CI Trainer --------------------------------" << endl;
     
+
+    arquivo.close();
+
+    arquivo.open("relatorio_personal.txt", ios::in | ios::out | ios::app);
+    if(!arquivo.is_open())
+    {
+        cout << "Erro ao abrir o arquivo" << endl;
+        return 1;
+    }
+    
+    arquivo << personal1.toString();
+
+
     return 0;
 }
