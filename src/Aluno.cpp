@@ -7,6 +7,7 @@
 using namespace std;
 
 Aluno::Aluno(){}
+Aluno::~Aluno(){}
 
 Aluno::Aluno(string nomeCompleto, int idade, string data, Endereco endereco, Medidas medidas, Treino treinos):Pessoa(nomeCompleto, idade, data, endereco)
 {
@@ -46,9 +47,6 @@ void Aluno::setTreino(Treino treinos)
   this->treinos = treinos;
 }
 
-void Aluno :: clearScreen() {
-    cout << "\033[2J\033[1;1H";
-}
 
 void Aluno::menu()
 {
@@ -70,7 +68,6 @@ void Aluno::menu()
     cin >> escolha;
 
     if(escolha == 1){
-      clearScreen();
       treinos.exibir();
     }
 
@@ -97,7 +94,6 @@ void Aluno::menu()
     }
 
     else if(escolha == 4){
-      clearScreen();
         return;
     }
 

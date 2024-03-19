@@ -14,6 +14,7 @@ Medidas::Medidas()
     coxa = 0;
     panturrilha = 0;
 }
+Medidas::~Medidas(){}
 
 Medidas::Medidas(float peso, float altura, float cintura, float busto, float quadril, float coxa, float panturrilha)
 {
