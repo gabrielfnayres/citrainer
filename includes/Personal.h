@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <vector>
 #include "Aluno.h"
@@ -10,7 +11,6 @@ class Personal
       Personal();
       ~Personal();
       vector<Aluno> aluno = vector<Aluno>(10);
-      vector<Aluno> getAlunoPersonal();
       Aluno  getAlunoIndPersonal(int index);
       void setAlunoPersonal(Aluno aluno, int index);
 

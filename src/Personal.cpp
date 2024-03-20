@@ -5,10 +5,6 @@
 Personal::Personal(){}
 Personal::~Personal(){} 
 
-vector<Aluno> Personal::getAlunoPersonal()
-{
-  return aluno;
-}
 
 Aluno Personal::getAlunoIndPersonal(int index)
 {
@@ -18,6 +14,20 @@ Aluno Personal::getAlunoIndPersonal(int index)
 void  Personal::setAlunoPersonal(Aluno aluno, int index)
 {
   this->aluno[index] = aluno;
+}
+
+string Personal::toStringPersonal ()
+{
+  string str = "----- Alunos Cadastrados -----\n\n";
+
+    for(Aluno a : aluno)
+    {
+      str += a.toStringPessoa() + "\n" + a.toStringAluno() + "\n";
+    }
+
+    str += "\n------------------------------";
+
+  return str;
 }
 
 /*void Personal::cadastrarAluno(vector<Aluno> &als) 
@@ -419,16 +429,4 @@ void  Personal::setAlunoPersonal(Aluno aluno, int index)
     }
   }
 */
-string Personal::toStringPersonal ()
-{
-  string str;
 
-    for(Aluno a : aluno)
-    {
-      str += a.toStringPessoa() + "," + a.toStringAluno() + ",";
-    }
-
-    cout << str;
-
-  return str;
-}
