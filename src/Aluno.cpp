@@ -147,7 +147,7 @@ void Aluno::menu()
 
 string Aluno:: toStringAluno()
 {
-  string staluno = medidas.toStringMedidas() + "," + treinos.toStringTreino();
+  string staluno = medidas.toStringMedidas() + ";" + treinos.toStringTreino();
 
 
   return staluno;  

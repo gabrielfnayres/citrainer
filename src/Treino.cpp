@@ -462,12 +462,11 @@ string Treino::toStringTreino()
     {
         if(A.exercicio[i].repeticoes == 0)
         {
-            treino += "0";
             break;
         }
         else
         {
-            treino += ", " + to_string(i+1) + ", " + A.exercicio[i].descricao + ", " + to_string(A.exercicio[i].repeticoes) + ", " + to_string(A.exercicio[i].series) + ", " + to_string(A.exercicio[i].descanso) + ", ";
+            treino += "," + to_string(i+1) + "," + A.exercicio[i].descricao + "," + to_string(A.exercicio[i].repeticoes) + "," + to_string(A.exercicio[i].series) + "," + to_string(A.exercicio[i].descanso) + "-";
         }
     }
 
@@ -477,12 +476,11 @@ string Treino::toStringTreino()
     {
         if(B.exercicio[i].repeticoes == 0)
         {
-            treino += "0";
             break;
         }
         else
         {
-            treino += ", " + to_string(i+1) + ", " + B.exercicio[i].descricao + ", " + to_string(B.exercicio[i].repeticoes) + ", " + to_string(B.exercicio[i].series) + ", " + to_string(B.exercicio[i].descanso) + ", ";
+            treino += "," + to_string(i+1) + "," + B.exercicio[i].descricao + "," + to_string(B.exercicio[i].repeticoes) + "," + to_string(B.exercicio[i].series) + "," + to_string(B.exercicio[i].descanso) + "-";
         }
     }
 
@@ -492,12 +490,11 @@ string Treino::toStringTreino()
     {
         if(C.exercicio[i].repeticoes == 0)
         {
-            treino += "0";
             break;
         }
         else
         {
-            treino += ", " + to_string(i+1) + ", " + C.exercicio[i].descricao + ", " + to_string(C.exercicio[i].repeticoes) + ", " + to_string(C.exercicio[i].series) + ", " + to_string(C.exercicio[i].descanso);
+            treino += "," + to_string(i+1) + "," + C.exercicio[i].descricao + "," + to_string(C.exercicio[i].repeticoes) + "," + to_string(C.exercicio[i].series) + "," + to_string(C.exercicio[i].descanso);
         }
     }
 
