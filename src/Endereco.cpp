@@ -17,7 +17,7 @@ string Endereco::toStringEndereco()
     string stendereco;
     stendereco = CEP + "," + cidade + "," + rua + "," + bairro + "," + to_string(numero);
 
-    cout << stendereco;
+    
     return stendereco;
 
 }

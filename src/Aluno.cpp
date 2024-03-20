@@ -148,7 +148,7 @@ void Aluno::menu()
 string Aluno:: toStringAluno()
 {
   string staluno = medidas.toStringMedidas() + "," + treinos.toStringTreino();
-  cout << staluno;
+
 
   return staluno;  
 }

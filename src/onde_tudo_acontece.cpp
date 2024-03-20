@@ -13,7 +13,7 @@ using namespace std;
 int main()
 {
     int cargo;
-    Gerenciamento* crud = new class Gerenciamento(); 
+    Gerenciamento* crud = new  Gerenciamento(); 
     
     crud->abrirArquivo();
     
