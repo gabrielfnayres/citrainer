@@ -25,6 +25,6 @@ class Gerenciamento
         void alterarAluno(string nome, vector<Aluno> &als);
         Aluno buscarAluno(string nomeAluno, vector<Aluno> als);
         void exibirTodosAlunos();
-        void removerAluno( Aluno &als);
+        void removerAluno(string nome, vector<Aluno> &als);
         void menu();    
 };

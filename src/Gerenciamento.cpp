@@ -358,9 +358,18 @@ void Gerenciamento :: exibirTodosAlunos()
 }
 
 
-void Gerenciamento :: removerAluno( Aluno &als)
+void Gerenciamento :: removerAluno(string nome,vector<Aluno> &als)
 {
-    als = Aluno();
+    
+    vector<Aluno>::iterator it;
+    for(it = als.begin(); it != als.end(); it++)
+    {
+        if(it->getNomeCompleto() == nome)
+        {
+            als.erase(it);
+            break;
+        }
+    }
 }
 
 void Gerenciamento :: menu()
@@ -419,8 +428,7 @@ void Gerenciamento :: menu()
             cout <<"Informe o aluno que deseja remover: " << "\n";
             cin.ignore();
             getline(cin, remo);
-            Aluno a = buscarAluno(remo, personal.aluno);
-            removerAluno(a);
+            removerAluno(remo, personal.aluno);
             cout << "Aluno " << remo <<  " removido com sucesso!" << "\n";
             exibirTodosAlunos();
         }
