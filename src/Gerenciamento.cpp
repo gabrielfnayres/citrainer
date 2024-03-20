@@ -411,7 +411,7 @@ void Gerenciamento :: menu()
 
     while(1)
     {          
-        cout << setw(15) << "MENU" << endl;
+        cout << "\n" << setw(15) << "MENU" << endl;
         cout << "----------------------------" <<endl;
 
         cout << "   1 - Adicionar aluno    " << endl;
