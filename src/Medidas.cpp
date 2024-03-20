@@ -125,7 +125,7 @@ string Medidas::toStringMedidas(){
 
 
     stmedidas = p.str() + "," + a.str() + "," + c.str() + "," + b.str() + "," + q.str() + "," + co.str() + ","  + pa.str();
-
+    cout << stmedidas;
 
     return stmedidas;
 }

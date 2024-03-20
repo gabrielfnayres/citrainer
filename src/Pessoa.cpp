@@ -23,6 +23,7 @@ string Pessoa::toStringPessoa()
 {
     string stpessoa;
     stpessoa =  nomeCompleto + ", " + to_string(idade) + "," + dataDeNascimento + endereco.toStringEndereco();
+    cout << stpessoa;
     return stpessoa;
 }
 

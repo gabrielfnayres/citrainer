@@ -14,7 +14,12 @@ Endereco::Endereco(string bairro, string cidade, string rua, string cep, int num
 
 string Endereco::toStringEndereco()
 {
-    return "\n---------- Endereco ----------\nCEP: " + CEP + "\nCidade: " + cidade + "\nRua: " + rua + "\nBairro: " + bairro + "\nNúmero: " + to_string(numero);
+    string stendereco;
+    stendereco = CEP + "," + cidade + "," + rua + "," + bairro + "," + to_string(numero);
+
+    cout << stendereco;
+    return stendereco;
+
 }
 
 void Endereco :: setBairro(string b){
