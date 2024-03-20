@@ -8,6 +8,7 @@
 #include <iterator>
 #include <string>
 #include <vector>
+#include <cstdlib>
 #include <fstream>
 
 void Gerenciamento:: setPersonal(Personal personal) 
@@ -29,6 +30,33 @@ void Gerenciamento:: abrirArquivo()
     {
         cout << "Não foi possível abrir o arquivo" << endl;
     }
+}
+
+void Gerenciamento::lerArquivo()
+{
+    ifstream lendo("relatorio_personal.txt", ios::in);
+
+    if(!lendo.is_open())
+    {
+        cout << "Falha ao abrir o arquivo!" << "\n";
+    }
+
+    string linha;
+
+    if(lendo.good())
+    {
+        getline(lendo, linha);
+
+    }
+
+    while(getline(lendo, linha))
+    {
+        string  dadosBasicos;
+        stringstream inter(linha);
+
+        getline(inter, dadosBasicos, ';')
+    }
+
 }
 
 void Gerenciamento:: salvarArquivo()
@@ -80,6 +108,8 @@ void Gerenciamento:: cadastrarAluno(vector<Aluno> &als)
     cin >> cintura;
     cout << "Informe a medida do busto do aluno:" << endl;
     cin >> busto;
+    cout << "Informe a medida do quadril do aluno: " << endl;
+    cin >> quadril;
     cout << "Informe a medida do coxa do aluno: " << endl;
     cin >> coxa;
     cout << "Informe a medida da panturrilha do aluno: " << endl;
@@ -104,6 +134,7 @@ void Gerenciamento:: cadastrarAluno(vector<Aluno> &als)
     med.setAltura(altura);  
     med.setCintura(cintura);
     med.setBusto(busto);
+    med.setQuadril(quadril);
     med.setCoxa(coxa);
     med.setPanturrilha(panturrilha);
     criado.setMedidas(med);

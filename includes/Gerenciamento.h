@@ -21,6 +21,7 @@ class Gerenciamento
         
         void abrirArquivo();
         void salvarArquivo();
+        void lerArquivo();
         void alterarMedidas(vector<Aluno> &als, string nome);
         void cadastrarAluno(vector<Aluno> &als);
         void alterarAluno(string nome, vector<Aluno> &als);
