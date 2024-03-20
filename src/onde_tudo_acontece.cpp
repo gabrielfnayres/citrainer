@@ -47,7 +47,7 @@ int main()
             cout << "Opção inválida. Insira uma opção válida:" << endl;
         }
     }
-    cout << "------------------------------ Obrigado por usar o MostruMUX --------------------------------" << endl;
+    cout << "-------------------------- Obrigado por usar o MostruMUX ---------------------------" << endl;
     
    
     crud->salvarArquivo();
