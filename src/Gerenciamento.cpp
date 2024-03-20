@@ -21,7 +21,6 @@ Personal Gerenciamento::getPersonal()
 
 void Gerenciamento:: abrirArquivo()
 {
-    cout << "chester" << endl;
 
     string line;
     ifstream arquivo("relatorio_personal.txt");
@@ -139,7 +138,6 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
             if(it->getNomeCompleto()  == nome)
             {
                 it->setNomeCompleto(nom);
-                cout << "aqui" << endl;
                 break;
             }
         }
@@ -182,35 +180,40 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
     }
     else if(alter == 5)
     {
-        int escolha;
-        cin >> escolha;
+        
+        int bo;
+        
     
         cout << "Informe as alterações do treino do aluno:" << endl;
         cout << " -------------------------------------- " << endl;
         cout << " 1 - Alterar treino" << endl;
         cout << " 2 - Adicionar exercicio" << endl;
-        if(escolha == 1)
+        cin >> bo;
+        if(bo == 1)
         {
             vector<Aluno>::iterator it;
             for(it = als.begin(); it != als.end(); it++)
             {
                 if(it->getNomeCompleto() == nome)
                 {
-                Treino t = it->getTreino();
-                t.alterarTreino();
+                Treino aux = it->getTreino();
+                aux.alterarTreino();
+                it->setTreino(aux);
                 cout << "Treino alterado com sucesso!" << endl;
                 break;
                 }
             }
         }
-        else if(escolha == 2)
+        else if(bo == 2)
         {
-            for(Aluno a : als)
+            vector<Aluno>::iterator it;
+            for(it = als.begin(); it != als.end(); it++)
             {
-                if(a.getNomeCompleto() == nome)
+                if(it->getNomeCompleto() == nome)
                 {
-                    Treino t = a.getTreino();
-                    t.adicionarExercicio();
+                    Treino aux = it->getTreino();
+                    aux.adicionarExercicio();
+                    it->setTreino(aux);
                     cout << "Execício adicionado com sucesso!" << endl;
                     break;
                 }
