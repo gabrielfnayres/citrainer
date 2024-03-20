@@ -1,5 +1,4 @@
 #include "../includes/Gerenciamento.h"
-#include "../includes/Pessoa.h"
 #include "../includes/Endereco.h"
 #include "../includes/Aluno.h"
 #include "../includes/Treino.h"
@@ -180,7 +179,7 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
     else if(alter == 4)
     {
         int esc;
-        
+        vector<Aluno>::iterator it; 
     
         cout << "Informe informe a medida que deseja alterar: " << "\n";
         cout << " --------------------------------------- " << "\n";
@@ -196,16 +195,17 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
         if(esc == 1){
             cout << "Informe o peso do aluno: " << "\n";
             
-            vector<Aluno>::iterator a;
-            for(al = als.begin(); al != als.end(); al++)
+            
+            for(it = als.begin(); it != als.end(); it++)
             {
-                if(al->getNomeCompleto() == nome)
+                if(it->getNomeCompleto() == nome)
                 {
                     
                     float newPeso;
                     cin >> newPeso;
-                    Medidas tempo = al->getMedidas();
-                    tempo.setPeso(newPeso);  
+                    Medidas *aux;
+                    *aux = it->getMedidas();
+                    aux->setPeso(newPeso);
                     cout << "Peso alterado com sucesso!" << "\n";
                     break;
                 }
@@ -218,7 +218,7 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
             {
                 if(a.getNomeCompleto() == nome)
                 {
-                    tempo = a.getMedidas();
+                    Medidas tempo = a.getMedidas();
                     float newAltura;
                     cin >> newAltura;
                     tempo.setAltura(newAltura);
@@ -235,7 +235,7 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
                 if(a.getNomeCompleto() == nome)
                 {
                     float newCintura;
-                    tempo = a.getMedidas();
+                    Medidas tempo = a.getMedidas();
                     cin >> newCintura;
                     tempo.setCintura(newCintura);
                     cout << "Cintura alterada com sucesso! " << "\n";
@@ -251,7 +251,7 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
                 if(a.getNomeCompleto() == nome)
                 {
                     float newBusto;
-                    tempo = a.getMedidas();
+                    Medidas tempo = a.getMedidas();
                     cin >> newBusto;
                     tempo.setBusto(newBusto);
                     cout << "Busto alterado com sucesso!" << "\n";
@@ -266,7 +266,7 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
                 if(a.getNomeCompleto() == nome)
                 {
                     float newQuadril;
-                    tempo = a.getMedidas();
+                    Medidas tempo = a.getMedidas();
                     cin >> newQuadril;
                     tempo.setQuadril(newQuadril);
                     cout << "Quadril alterado com sucesso!" << "\n";
@@ -281,7 +281,7 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
                 if(a.getNomeCompleto() == nome)
                 {
                     float newCoxa;
-                    tempo = a.getMedidas();
+                    Medidas tempo = a.getMedidas();
                     cin >> newCoxa;
                     tempo.setCoxa(newCoxa);
                     cout << "Coxa alterada com sucesso!" << "\n";
@@ -295,7 +295,7 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
             for(Aluno a : als)
             {
                 float newPant;
-                tempo = a.getMedidas();
+                Medidas tempo = a.getMedidas();
                 cin >> newPant;
                 tempo.setPanturrilha(newPant);
                 cout << "Panturrilha alterada com sucesso!" << "\n";
