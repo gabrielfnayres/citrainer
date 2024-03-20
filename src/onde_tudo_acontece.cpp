@@ -22,8 +22,8 @@ int main()
     while(1)
     {
         cout << "Olá Personal" << endl;
-        cout << "Para acessar o seu MUX: - digite 1"
-        cout << "Para sair do programa: - digite 2"
+        cout << "Para acessar o seu MUX: - digite 1" << endl;
+        cout << "Para sair do programa: - digite 2"<< endl;
         cin >> cargo;
 
         if (cargo ==  1)

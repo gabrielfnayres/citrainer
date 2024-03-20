@@ -4,6 +4,11 @@
 #include <iterator>
 #include <string>
 #include <vector>
+#include "Endereco.h"
+#include "Medidas.h"
+#include "Treino.h"
+#include "Personal.h"
+#include <fstream>
 
 void Gerenciamento:: setPersonal(Personal personal) {
             this->personal = personal;
