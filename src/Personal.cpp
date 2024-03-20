@@ -5,10 +5,6 @@
 Personal::Personal(){}
 Personal::~Personal(){} 
 
-vector<Aluno> Personal::getAlunoPersonal()
-{
-  return aluno;
-}
 
 Aluno Personal::getAlunoIndPersonal(int index)
 {
