@@ -17,13 +17,13 @@ int main()
     
     crud->abrirArquivo();
     
-    cout << "------------------------------ Bem-vindo ao CI Trainer ------------------------------" << endl;
+    cout << "------------------------------ Bem-vindo ao MostruMUX ------------------------------" << endl;
 
     while(1)
     {
-        cout << "Olá Personal" << endl;
-        cout << "Para acessar o seu MUX: - digite 1" << endl;
-        cout << "Para sair do programa: - digite 2"<< endl;
+        cout << "\nOlá, Personal!\n" << endl;
+        cout << "[1] Para acessar o seu MUX" << endl;
+        cout << "[2] Para sair do programa" << endl;
         cin >> cargo;
 
         if (cargo ==  1)
@@ -47,7 +47,7 @@ int main()
             cout << "Opção inválida. Insira uma opção válida:" << endl;
         }
     }
-    cout << "------------------------------ Obrigado por usar o CI Trainer --------------------------------" << endl;
+    cout << "------------------------------ Obrigado por usar o MostruMUX --------------------------------" << endl;
     
    
     crud->salvarArquivo();

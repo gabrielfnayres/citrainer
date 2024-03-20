@@ -22,6 +22,8 @@ Personal Gerenciamento::getPersonal()
 
 void Gerenciamento:: abrirArquivo()
 {
+    cout << "chester" << endl;
+
     string line;
     ifstream arquivo("relatorio_personal.txt");
     
@@ -373,7 +375,7 @@ void Gerenciamento :: menu()
 
     while(1)
     {          
-        cout << setw(40) << "MENU PRINCIPAL" << endl;
+        cout << setw(15) << "MENU" << endl;
         cout << "----------------------------" <<endl;
 
         cout << "   1 - Adicionar aluno    " << endl;

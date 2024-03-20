@@ -30,6 +30,7 @@ void Aluno::exibir()
   cout << "Nome: " << nomeCompleto << endl;
   cout << "Idade: " << idade << endl;
   cout << "Data de nascimento: " << dataDeNascimento << endl;
+  endereco.exibirEndereco();
   medidas.exibir();
   treinos.exibir();
 }
