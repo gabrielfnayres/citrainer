@@ -10,7 +10,7 @@ class Personal
   public:
       Personal();
       ~Personal();
-      vector<Aluno> aluno;
+      vector<Aluno> aluno = {};
       Aluno  getAlunoIndPersonal(int index);
       void setAlunoPersonal(Aluno aluno, int index);
 
