@@ -49,78 +49,78 @@ void Gerenciamento:: salvarArquivo()
     }
 }
 
-        void Gerenciamento:: cadastrarAluno(vector<Aluno> &als)
-    {
-        Aluno criado;
-        string n;
-        int idade;
-        Medidas med;
-        Treino tre;
-        int numero;
-        Endereco end;
-        string data, bairro, cep, cidade, rua;
-        float peso, altura, cintura, busto, quadril, coxa, panturrilha;
-        
-        cin.ignore();
-        cout << "Informe o nome do aluno: " << "\n";
-        getline(cin, n);
-        cout << "Informe a idade do aluno: " << "\n";
-        cin >> idade;
-        cout << "Infome a data de nascimento: " << "\n";
-        cin.ignore();
-        getline(cin, data);
-        cout << "Informe o bairro do aluno: " << "\n";
-        
-        getline(cin, bairro);
-        cout << "Informe a cidade do aluno: " << "\n";
-        
-        getline(cin, cidade);
-        cout << "Informe a rua do aluno: " << "\n";
-        
-        getline(cin, rua);
-        cout << "Informe o número do aluno: " << "\n";
-        cin >> numero;
-        cout << "Informe o CEP do aluno: " << "\n";
-        cin.ignore();
-        getline(cin, cep);
-        cout << "Informe peso do aluno: " << endl;
-        cin >> peso;
-        cout << "Informe a altura do aluno: " << endl;
-        cin >> altura;
-        cout << "Informe a medida da cintura do aluno:" << endl;
-        cin >> cintura;
-        cout << "Informe a medida do busto do aluno:" << endl;
-        cin >> busto;
-        cout << "Informe a medida do coxa do aluno: " << endl;
-        cin >> coxa;
-        cout << "Informe a medida da panturrilha do aluno: " << endl;
-        cin >> panturrilha;
+void Gerenciamento:: cadastrarAluno(vector<Aluno> &als)
+{
+    Aluno criado;
+    string n;
+    int idade;
+    Medidas med;
+    Treino tre;
+    int numero;
+    Endereco end;
+    string data, bairro, cep, cidade, rua;
+    float peso, altura, cintura, busto, quadril, coxa, panturrilha;
+    
+    cin.ignore();
+    cout << "Informe o nome do aluno: " << "\n";
+    getline(cin, n);
+    cout << "Informe a idade do aluno: " << "\n";
+    cin >> idade;
+    cout << "Infome a data de nascimento: " << "\n";
+    cin.ignore();
+    getline(cin, data);
+    cout << "Informe o bairro do aluno: " << "\n";
+    
+    getline(cin, bairro);
+    cout << "Informe a cidade do aluno: " << "\n";
+    
+    getline(cin, cidade);
+    cout << "Informe a rua do aluno: " << "\n";
+    
+    getline(cin, rua);
+    cout << "Informe o número do aluno: " << "\n";
+    cin >> numero;
+    cout << "Informe o CEP do aluno: " << "\n";
+    cin.ignore();
+    getline(cin, cep);
+    cout << "Informe peso do aluno: " << endl;
+    cin >> peso;
+    cout << "Informe a altura do aluno: " << endl;
+    cin >> altura;
+    cout << "Informe a medida da cintura do aluno:" << endl;
+    cin >> cintura;
+    cout << "Informe a medida do busto do aluno:" << endl;
+    cin >> busto;
+    cout << "Informe a medida do coxa do aluno: " << endl;
+    cin >> coxa;
+    cout << "Informe a medida da panturrilha do aluno: " << endl;
+    cin >> panturrilha;
 
-        tre.montarTreino();
-        criado.setTreino(tre);
-        
-        end.setBairro(bairro);
-        end.setCidade(cidade);
-        end.setRua(rua);
-        end.setNumero(numero);
-        end.setCep(cep);
-        criado.setEndereco(end);
-        
-        criado.setNomeCompleto(n);  
-        criado.setIdade(idade);
-        criado.setDataDeNascimento(data);
-        criado.setEndereco(end);
+    tre.montarTreino();
+    criado.setTreino(tre);
+    
+    end.setBairro(bairro);
+    end.setCidade(cidade);
+    end.setRua(rua);
+    end.setNumero(numero);
+    end.setCep(cep);
+    criado.setEndereco(end);
+    
+    criado.setNomeCompleto(n);  
+    criado.setIdade(idade);
+    criado.setDataDeNascimento(data);
+    criado.setEndereco(end);
 
-        med.setPeso(peso);
-        med.setAltura(altura);  
-        med.setCintura(cintura);
-        med.setBusto(busto);
-        med.setCoxa(coxa);
-        med.setPanturrilha(panturrilha);
-        criado.setMedidas(med);
-        
-        als.push_back(criado);
-    }
+    med.setPeso(peso);
+    med.setAltura(altura);  
+    med.setCintura(cintura);
+    med.setBusto(busto);
+    med.setCoxa(coxa);
+    med.setPanturrilha(panturrilha);
+    criado.setMedidas(med);
+    
+    als.push_back(criado);
+}
 
 void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
 {
