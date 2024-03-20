@@ -124,7 +124,7 @@ string Medidas::toStringMedidas(){
     
 
 
-    stmedidas = "---------- Medidas -----------\nPeso(kg): " + p.str() + "\n" + "Altura(m): " + a.str() + "\n" + "Cintura(cm): " + c.str() + "\n" + "Busto(cm): " + b.str() + "\n " + "Quadril(cm): " + q.str() + "\n" + "Coxa(cm): " + co.str() + "\n" + "Panturrilha(cm): " + pa.str();
+    stmedidas = p.str() + "," + a.str() + "," + c.str() + "," + b.str() + "," + q.str() + "," + co.str() + ","  + pa.str();
 
 
     return stmedidas;
