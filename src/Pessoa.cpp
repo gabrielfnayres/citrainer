@@ -22,7 +22,7 @@ void Pessoa::exibir(){}
 string Pessoa::toStringPessoa()
 {
     string stpessoa;
-    stpessoa =  nomeCompleto + ", " + to_string(idade) + "," + dataDeNascimento + endereco.toStringEndereco();
+    stpessoa =  nomeCompleto + ", " + to_string(idade) + "," + dataDeNascimento + ", " + endereco.toStringEndereco();
    
     return stpessoa;
 }

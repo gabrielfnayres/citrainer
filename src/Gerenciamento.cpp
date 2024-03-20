@@ -37,8 +37,7 @@ void Gerenciamento:: salvarArquivo()
 {
     ofstream arquivo;
     arquivo.open("relatorio_personal.txt");
-    personal.toStringPersonal();
-
+    arquivo << personal.toStringPersonal() << endl;
 }
 
 void Gerenciamento:: cadastrarAluno(vector<Aluno> &als)

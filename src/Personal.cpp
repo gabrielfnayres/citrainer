@@ -22,7 +22,7 @@ string Personal::toStringPersonal ()
 
     for(Aluno a : aluno)
     {
-      str += a.toStringPessoa() + "," + a.toStringAluno() + ",";
+      str += a.toStringPessoa() + "," + a.toStringAluno() + "\n";
     }
 
     
