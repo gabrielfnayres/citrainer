@@ -126,18 +126,19 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
     cout << " 5-Treino" << "\n";
 
     cin >> alter;
+    cin.ignore();
 
     if(alter == 1)
     {
         cout << "Informe o novo nome:" << "\n";
         string nom;
-        cin.ignore();
+        vector<Aluno>::iterator it;
         getline(cin, nom);
         
-        for(Aluno a : als)
+        for(it = als.begin(); it != als.end(); it++)
         {
             
-            if(a.getNomeCompleto() == nome)
+            if( == nome)
             {
                 cout << "aqui" << endl;
                 a.setNomeCompleto(nom);
