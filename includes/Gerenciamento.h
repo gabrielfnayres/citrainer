@@ -65,6 +65,7 @@ class Gerenciamento
             Medidas med;
             Treino tre;
             int numero;
+            Endereco end;
             string data, bairro, cep, cidade, rua;
             float peso, altura, cintura, busto, quadril, coxa, panturrilha;
             
@@ -104,8 +105,14 @@ class Gerenciamento
             cin >> panturrilha;
             tre.montarTreino();
             criado.setTreino(tre);
+
+            end.setBairro(bairro);
+            end.setCidade(cidade);
+            end.setRua(rua);
+            end.setCep(cep);
+            end.setNumero(numero);
             
-            criado.setEndereco(bairro, cidade, rua, cep, numero);
+            criado.setEndereco(end);
             
             criado.setNomeCompleto(n);  
 

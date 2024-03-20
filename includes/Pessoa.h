@@ -9,7 +9,7 @@ class Pessoa
   public:
     Pessoa();
     ~Pessoa();
-    Pessoa(string nomeCompleto, int idade, string data);
+    Pessoa(string nomeCompleto, int idade, string data, Endereco endereco);
     virtual void exibir() = 0;
     string toStringPessoa();
 
