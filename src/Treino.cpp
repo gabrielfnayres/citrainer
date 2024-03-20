@@ -504,7 +504,7 @@ string Treino::toStringTreino()
         }
     }
 
-cout << treino;
+
     return treino;
 }
 
