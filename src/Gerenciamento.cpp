@@ -386,6 +386,11 @@ void Gerenciamento :: removerAluno(string nome,vector<Aluno> &als)
     }
 }
 
+void Gerenciamento::alterarMedidas(vector<Aluno> &als,Medidas m)
+{
+    
+}
+
 void Gerenciamento :: menu()
 {
     int escolha;
