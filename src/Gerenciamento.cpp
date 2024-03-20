@@ -181,7 +181,7 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
     else if(alter == 4)
     {
         int esc;
-        Medidas tempo;
+        
     
         cout << "Informe informe a medida que deseja alterar: " << "\n";
         cout << " --------------------------------------- " << "\n";
@@ -194,29 +194,32 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
         cout << " 7 - Panturrilha" << "\n";
 
         cin >> esc;
-        switch(esc)
-        {
-        case 1:
+        if(esc == 1){
             cout << "Informe o peso do aluno: " << "\n";
             
-            for(Aluno a : als)
+            vector<Aluno>::iterator a;
+            for(al = als.begin(); al != als.end(); al++)
             {
-            if(a.getNomeCompleto() == nome){
-                Medidas tempo = a.getMedidas();
-                float newPeso;
-                cin >> newPeso;
-                tempo.setPeso(newPeso);
-                cout << "Peso alterado com sucesso!" << "\n";
-                break;
+                if(al->getNomeCompleto() == nome)
+                {
+                    
+                    float newPeso;
+                    cin >> newPeso;
+                    Medidas tempo = al->getMedidas();
+                    tempo.setPeso(newPeso);  
+                    cout << "Peso alterado com sucesso!" << "\n";
+                    break;
+                }
             }
-            }
-        case 2:
+        }
+        else if(esc == 2)
+        {
             cout << "Informe a altura do aluno:" << "\n";
             for(Aluno a : als)
             {
                 if(a.getNomeCompleto() == nome)
                 {
-                    Medidas tempo = a.getMedidas();
+                    tempo = a.getMedidas();
                     float newAltura;
                     cin >> newAltura;
                     tempo.setAltura(newAltura);
@@ -224,75 +227,85 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
                     break;
                 }
             }
-        case 3:
+        }    
+        else if(esc == 3)
+        {
             cout << "Informe a cintura do aluno: " << "\n";
             for(Aluno a : als)
             {
                 if(a.getNomeCompleto() == nome)
                 {
                     float newCintura;
-                    Medidas tempo = a.getMedidas();
+                    tempo = a.getMedidas();
                     cin >> newCintura;
                     tempo.setCintura(newCintura);
                     cout << "Cintura alterada com sucesso! " << "\n";
                     break;
                 }
             }
-        case 4:
+        }
+        else if(esc == 4)
+        {
             cout << "Informe o busto do aluno:" << "\n";
             for(Aluno a : als)
             {
                 if(a.getNomeCompleto() == nome)
                 {
                     float newBusto;
-                    Medidas tempo = a.getMedidas();
+                    tempo = a.getMedidas();
                     cin >> newBusto;
                     tempo.setBusto(newBusto);
                     cout << "Busto alterado com sucesso!" << "\n";
                     break;
                 }
             }
-        case 5:
+        }
+        else if(esc == 5){
             cout << "Informe o quadril do aluno: " << "\n";
             for(Aluno a : als)
             {
                 if(a.getNomeCompleto() == nome)
                 {
                     float newQuadril;
-                    Medidas tempo = a.getMedidas();
+                    tempo = a.getMedidas();
                     cin >> newQuadril;
                     tempo.setQuadril(newQuadril);
                     cout << "Quadril alterado com sucesso!" << "\n";
                     break;
                 }
             }
-        case 6:
+        }
+        else if(esc == 6){
             cout << "Informe a coxa do aluno: " << "\n";
             for(Aluno a : als)
             {
                 if(a.getNomeCompleto() == nome)
                 {
                     float newCoxa;
-                    Medidas tempo = a.getMedidas();
+                    tempo = a.getMedidas();
                     cin >> newCoxa;
                     tempo.setCoxa(newCoxa);
                     cout << "Coxa alterada com sucesso!" << "\n";
                     break;
                 }
             }
-        case 7:
+        }
+        else if(esc == 7)
+        {
             cout << "Informe a panturrilha do aluno: " << "\n";
             for(Aluno a : als)
             {
                 float newPant;
-                Medidas tempo = a.getMedidas();
+                tempo = a.getMedidas();
                 cin >> newPant;
                 tempo.setPanturrilha(newPant);
                 cout << "Panturrilha alterada com sucesso!" << "\n";
                 break;
             }
-        default:
-            cout << "Informaçã inválida" << "\n";
+        }
+        else
+        {
+            cout << "Informação inválida" << "\n";
         }
     }
     else if(alter == 5)
@@ -306,11 +319,12 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
         cout << " 2 - Adicionar exercicio" << endl;
         if(escolha == 1)
         {
-            for(Aluno a : als)
+            vector<Aluno>::iterator it;
+            for(it = als.begin(); it != als.end(); it++)
             {
-                if(a.getNomeCompleto() == nome)
+                if(it->getNomeCompleto() == nome)
                 {
-                Treino t = a.getTreino();
+                Treino t = it->getTreino();
                 t.alterarTreino();
                 cout << "Treino alterado com sucesso!" << endl;
                 break;
@@ -332,6 +346,7 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
         }
     }
 }
+
 
 Aluno Gerenciamento :: buscarAluno(string nomeAluno, vector<Aluno> als)
 {
