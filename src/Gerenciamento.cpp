@@ -134,14 +134,14 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
         string nom;
         vector<Aluno>::iterator it;
         getline(cin, nom);
-        
+    
         for(it = als.begin(); it != als.end(); it++)
         {
             
-            if( == nome)
+            if(it->getNomeCompleto()  == nome)
             {
+                it->setNomeCompleto(nom);
                 cout << "aqui" << endl;
-                a.setNomeCompleto(nom);
                 break;
             }
         }
@@ -150,28 +150,30 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
     {
         cout << "Informe a idade do aluno: \n";
         int ida;
-        
+        vector<Aluno>::iterator it;
         cin >> ida;
 
-        for(Aluno a : als)
+        for(it = als.begin(); it != als.end(); it++)
         {
-            if(a.getNomeCompleto() == nome)
+            if(it->getNomeCompleto() == nome)
             {
-                a.setIdade(ida);
+                it->setIdade(ida);
                 break;
             }
         }
+        
     }
     else if(alter == 3)
     {
         cout << "Informe a nova data: " << endl;
         string novaData;
         getline(cin, novaData);
-        for(Aluno a : als)
+        vector<Aluno>::iterator it;
+        for(it = als.begin(); it != als.end(); it++)
         {
-            if(a.getNomeCompleto() == nome)
+            if(it->getNomeCompleto() == nome)
             {
-                a.setDataDeNascimento(novaData);
+                it->setDataDeNascimento(novaData);
                 break;
             }
         }
@@ -196,6 +198,7 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
         {
         case 1:
             cout << "Informe o peso do aluno: " << "\n";
+            
             for(Aluno a : als)
             {
             if(a.getNomeCompleto() == nome){
