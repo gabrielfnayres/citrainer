@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <iomanip>
 #include <iterator>
@@ -11,17 +10,15 @@
 #include <fstream>
 using namespace std;
 
-
 class Gerenciamento
 {
-
     protected:
         Personal personal;
         
     public:
-
-
         void setPersonal(Personal personal);
+        Personal getPersonal();
+        
         void abrirArquivo();
         void salvarArquivo();
         void cadastrarAluno(vector<Aluno> &als);
@@ -29,8 +26,5 @@ class Gerenciamento
         Aluno buscarAluno(string nomeAluno, vector<Aluno> als);
         void exibirTodosAlunos();
         void removerAluno( Aluno &als);
-        void menu();
-       
-
-        
+        void menu();    
 };
