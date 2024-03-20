@@ -21,7 +21,9 @@ int main()
 
     while(1)
     {
-        cout << "Você é Personal ou Aluno? (1 - Personal | 2 - Sair)" << endl;
+        cout << "Olá Personal" << endl;
+        cout << "Para acessar o seu MUX: - digite 1"
+        cout << "Para sair do programa: - digite 2"
         cin >> cargo;
 
         if (cargo ==  1)
@@ -33,14 +35,13 @@ int main()
             crud->menu();
         }
 
-
-
-        else if(cargo == 2)
+        else if (cargo == 2)
         {
-            
-            break;
+             break;
+
         }
 
+    
         else
         {
             cout << "Opção inválida. Insira uma opção válida:" << endl;
