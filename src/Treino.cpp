@@ -466,11 +466,11 @@ string Treino::toStringTreino()
         }
         else
         {
-            treino += "," + to_string(i+1) + "," + A.exercicio[i].descricao + "," + to_string(A.exercicio[i].repeticoes) + "," + to_string(A.exercicio[i].series) + "," + to_string(A.exercicio[i].descanso) + "-";
+            treino += "," + to_string(i+1) + "," + A.exercicio[i].descricao + "," + to_string(A.exercicio[i].repeticoes) + "," + to_string(A.exercicio[i].series) + "," + to_string(A.exercicio[i].descanso);
         }
     }
 
-    treino += "B";
+    treino += ",B";
 
     for(int i = 0; i<15; i++)
     {
@@ -480,11 +480,11 @@ string Treino::toStringTreino()
         }
         else
         {
-            treino += "," + to_string(i+1) + "," + B.exercicio[i].descricao + "," + to_string(B.exercicio[i].repeticoes) + "," + to_string(B.exercicio[i].series) + "," + to_string(B.exercicio[i].descanso) + "-";
+            treino += "," + to_string(i+1) + "," + B.exercicio[i].descricao + "," + to_string(B.exercicio[i].repeticoes) + "," + to_string(B.exercicio[i].series) + "," + to_string(B.exercicio[i].descanso);
         }
     }
 
-    treino += "C";
+    treino += ",C";
 
     for(int i = 0; i<15; i++)
     {
