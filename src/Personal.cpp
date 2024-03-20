@@ -421,14 +421,14 @@ void  Personal::setAlunoPersonal(Aluno aluno, int index)
 */
 string Personal::toStringPersonal ()
 {
-  string str = "----- Alunos Cadastrados -----\n\n";
+  string str;
 
     for(Aluno a : aluno)
     {
-      str += a.toStringPessoa() + "\n" + a.toStringAluno() + "\n";
+      str += a.toStringPessoa() + "," + a.toStringAluno() + ",";
     }
 
-    str += "\n------------------------------";
+    cout << str;
 
   return str;
 }
