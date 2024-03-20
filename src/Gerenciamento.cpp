@@ -1,13 +1,14 @@
-#include "Gerenciamento.h"
+#include "../includes/Gerenciamento.h"
+#include "../includes/Pessoa.h"
+#include "../includes/Endereco.h"
+#include "../includes/Aluno.h"
+#include "../includes/Treino.h"
+#include "../includes/Personal.h"
 #include <iostream>
 #include <iomanip>
 #include <iterator>
 #include <string>
 #include <vector>
-#include "Endereco.h"
-#include "Medidas.h"
-#include "Treino.h"
-#include "Personal.h"
 #include <fstream>
 
 void Gerenciamento:: setPersonal(Personal personal) 
