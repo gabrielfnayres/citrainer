@@ -18,7 +18,7 @@ Aluno::Aluno()
 
 Aluno::~Aluno(){}
 
-Aluno::Aluno(string nomeCompleto, int idade, string data, Endereco, Medidas medidas, Treino treinos):Pessoa(nomeCompleto, idade, data)
+Aluno::Aluno(string nomeCompleto, int idade, string data, Endereco endereco, Medidas medidas, Treino treinos):Pessoa(nomeCompleto, idade, data, endereco)
 {
   this->medidas = medidas;
   this->treinos = treinos;
@@ -47,6 +47,11 @@ void Aluno::setIdade(int i)
 void Aluno::setDataDeNascimento(string d)
 {
   dataDeNascimento = d;
+}
+
+void Aluno::setEndereco(Endereco e)
+{
+  endereco = e;
 }
 
 string Aluno::getNomeCompleto()

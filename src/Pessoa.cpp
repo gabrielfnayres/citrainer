@@ -7,15 +7,14 @@ Pessoa::Pessoa()
     int idade = 0;
 }
 
-Pessoa::~Pessoa(){
+Pessoa::~Pessoa(){}
 
-}
-
-Pessoa::Pessoa(string n, int i, string d)
+Pessoa::Pessoa(string n, int i, string d, Endereco e)
 {
     nomeCompleto = n;
     idade = i;
     dataDeNascimento = d;
+    endereco = e;
 }
 
 void Pessoa::exibir(){}

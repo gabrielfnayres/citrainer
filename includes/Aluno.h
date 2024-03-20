@@ -23,7 +23,7 @@ class Aluno: public Pessoa
         void setNomeCompleto(string n);
         void setIdade(int i);
         void setDataDeNascimento(string d);
-        void setEndereco(string bairro, string cidade, string rua, string cep, int numero);
+        void setEndereco(Endereco e);
         void setTreino(Treino treinos);
         void setMedidas(Medidas medidas); 
         string getNomeCompleto();

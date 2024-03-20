@@ -20,6 +20,7 @@ class Gerenciamento
         
     public:
 
+
         void setPersonal(Personal personal);
         void abrirArquivo();
         void salvarArquivo();
