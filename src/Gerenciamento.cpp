@@ -206,9 +206,11 @@ void Gerenciamento::cadastrarAluno(vector<Aluno> &als)
         cin >> quantMeses;
         mensal->setQuantMeses(quantMeses);
 
+
         mensal->exibir();
 
         criado.setPlano(*mensal);
+
     }
 
     else if(tPlano == 2)
@@ -222,7 +224,7 @@ void Gerenciamento::cadastrarAluno(vector<Aluno> &als)
         cin >> quantMeses;
         anual->setQuantMeses(quantAnos);  
 
-        criado.setPlano(*anual);
+        criado.setPlano(anual);
     }
 
     end.setBairro(bairro);
@@ -359,14 +361,9 @@ void Gerenciamento::alterarAluno(string nome, vector<Aluno> &als)
             }
         }
     }
-    else if(alter == 6)
+    else 
     {
-        cout << "O que deseja alterar no plano do aluno?" << "\n";
-        cout << " -------------------------------------- " << "\n";
-        cout << " 1 - Alterar plano" << "\n";
-        cout << " 2 - Adicionar plano" << "\n";
-        int op;
-        cin >> op;
+        return;
     }
 }
 
@@ -386,11 +383,12 @@ Aluno Gerenciamento::buscarAluno(string nomeAluno, vector<Aluno> als)
     return exibido;
 }
 
-void Gerenciamento::exibirTodosAlunos()
+  void Gerenciamento::exibirTodosAlunos(vector<Aluno> als)
 {
-    for(Aluno a : personal.aluno)
+    vector<Aluno>::iterator it;
+    for(it = als.begin(); it != als.end(); it++)
     {
-        a.exibir();
+        it->exibir(); 
         cout << "\n";
     }
 }
@@ -614,13 +612,13 @@ void Gerenciamento::menu()
             getline(cin, remo);
             removerAluno(remo, personal.aluno);
             cout << "Aluno " << remo <<  " removido com sucesso!" << "\n";
-            exibirTodosAlunos();
+            exibirTodosAlunos(personal.aluno);
         }
 
         else if(escolha == 5)
         {
             cout << "Aí está a lista dos seus alunos: " << "\n";
-            exibirTodosAlunos();
+            exibirTodosAlunos(personal.aluno);
         }
 
         else if(escolha == 6)
