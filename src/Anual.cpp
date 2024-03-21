@@ -1,5 +1,6 @@
 #include "../includes/Anual.h"
 #include <iostream>
+#include "../includes/Aluno.h"
 #include <string>
 using namespace std;
 

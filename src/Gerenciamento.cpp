@@ -207,6 +207,7 @@ void Gerenciamento::cadastrarAluno(vector<Aluno> &als)
         mensal->setQuantMeses(quantMeses);
 
         criado.setPlano(mensal);
+
     }
 
     else if(tPlano == 2)

@@ -1,6 +1,8 @@
 #include "../includes/Mensal.h"
+#include "../includes/Aluno.h"
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 Mensal::Mensal(){}
@@ -24,4 +26,5 @@ string Mensal::exibir()
 {
     string str = "------ Plano Mensal ------\nValor do plano: R$ " + to_string(valorPlano) + "\n" + "Quantidade de Meses: " + to_string(quantMeses) + "\n" + "Valor total: R$ " + to_string(valorTotal) + "\n" + "--------------------------\n";
     return str;
+
 }

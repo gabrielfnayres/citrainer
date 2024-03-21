@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <vector>
 #include <string>
 using namespace std;
 
@@ -18,7 +19,9 @@ class Planos
         void alterarValor(float valorPlano);
         virtual void calcularValorTotal();
         void exibirValorTotal();
+
         virtual string exibir() = 0;
+
         
         void setValorTotal(float valorTotal);
         void setValorPlano(float valorPlano);

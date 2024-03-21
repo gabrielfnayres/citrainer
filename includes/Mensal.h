@@ -11,5 +11,7 @@ class Mensal: public Planos
         void alterarQuantidadeAnos(int quantAnos);
         void alterarQuantidadeMeses(int quantMeses);
         void calcularValorTotal();
+
         string exibir();
+
 };
