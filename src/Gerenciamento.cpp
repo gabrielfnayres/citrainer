@@ -41,7 +41,7 @@ void Gerenciamento:: abrirArquivo()
     }
 }
 
-void Gerenciamento::lerArquivo()
+/*void Gerenciamento::lerArquivo()
 {
     ifstream lendo("relatorio_personal.txt", ios::in);
 
@@ -123,7 +123,7 @@ void Gerenciamento::lerArquivo()
             alunoLer.push_back(al);
         
     }
-}
+}*/
 
 
 void Gerenciamento::salvarArquivo()
@@ -205,6 +205,8 @@ void Gerenciamento::cadastrarAluno(vector<Aluno> &als)
         cout << "Informe a quantidade de meses do plano: " << "\n";
         cin >> quantMeses;
         mensal->setQuantMeses(quantMeses);
+
+        mensal->exibir();
 
         criado.setPlano(*mensal);
     }
