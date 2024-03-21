@@ -23,8 +23,10 @@ void Planos::exibirValorTotal()
     cout << "Valor total: " << valorTotal << endl;
 }
 
-void Planos::exibir(vector<Aluno> als)
+
+string Planos::exibir()
 {
+  return "";
 
 }
 

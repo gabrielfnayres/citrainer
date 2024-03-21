@@ -22,16 +22,9 @@ void Mensal::calcularValorTotal()
     valorTotal = valorPlano * quantMeses;
 }
 
-void Mensal::exibir(vector<Aluno> als)
+string Mensal::exibir()
 {
-    vector<Aluno>::iterator it;
-    for(it != als.begin(); it != als.end(); it++){
-        cout << "--------- Planos ----------\n";
+    string str = "------ Plano Mensal ------\nValor do plano: R$ " + to_string(valorPlano) + "\n" + "Quantidade de Meses: " + to_string(quantMeses) + "\n" + "Valor total: R$ " + to_string(valorTotal) + "\n" + "--------------------------\n";
+    return str;
 
-        cout << "Valor do plano: R$ " << valorPlano << "\n";
-        cout << "Quantidade de Meses: " << quantMeses << "\n";
-        cout << "Valor total: R$ " << valorTotal << "\n";
-
-        cout << "---------------------------\n";
-    }
 }

@@ -147,7 +147,6 @@ void Treino::exibirTreinoC()
         {
             if(C.exercicio[i].repeticoes == 0)
             {
-                cout << "----------------------------\n" << endl;
                 break;
             }
             else
