@@ -18,10 +18,11 @@ Aluno::Aluno()
 
 Aluno::~Aluno(){}
 
-Aluno::Aluno(string nomeCompleto, int idade, string data, Endereco endereco, Medidas medidas, Treino treinos):Pessoa(nomeCompleto, idade, data, endereco)
+Aluno::Aluno(string nomeCompleto, int idade, string data, Endereco endereco, Medidas medidas, Treino treinos, Planos plano):Pessoa(nomeCompleto, idade, data, endereco)
 {
   this->medidas = medidas;
   this->treinos = treinos;
+  this->plano = plano;
 }
 
 void Aluno::exibir()
@@ -30,9 +31,10 @@ void Aluno::exibir()
   cout << "Nome: " << nomeCompleto << endl;
   cout << "Idade: " << idade << endl;
   cout << "Data de nascimento: " << dataDeNascimento << endl;
-  endereco.exibirEndereco();
+  endereco.exibir();
   medidas.exibir();
   treinos.exibir();
+  plano.exibir();
 }
 
 void Aluno::setNomeCompleto(string n)
@@ -55,6 +57,21 @@ void Aluno::setEndereco(Endereco e)
   endereco = e;
 }
 
+void Aluno::setMedidas(Medidas medidas)
+{
+  this->medidas = medidas;
+}
+
+void Aluno::setTreino(Treino treinos)
+{
+  this->treinos = treinos;
+}
+
+void Aluno::setPlano(Planos plano)
+{
+  this->plano = plano;
+}
+
 string Aluno::getNomeCompleto()
 {
   return nomeCompleto;
@@ -75,19 +92,9 @@ Medidas Aluno::getMedidas()
   return medidas;
 }
 
-void Aluno::setMedidas(Medidas medidas)
-{
-  this->medidas = medidas;
-}
-
 Treino Aluno::getTreino()
 {
   return treinos;
-}
-  
-void Aluno::setTreino(Treino treinos)
-{
-  this->treinos = treinos;
 }
 
 void Aluno::menu()

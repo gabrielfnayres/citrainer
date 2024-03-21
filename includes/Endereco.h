@@ -17,7 +17,7 @@ class Endereco
     ~Endereco();
     Endereco(string b, string c, string r, string cep, int n);
     string toStringEndereco();
-    void exibirEndereco();
+    void exibir();
 
     void setBairro(string b);
     void setCidade(string c);

@@ -62,7 +62,7 @@ int Endereco:: getNumero(){
     return numero;
 }
 
-void Endereco:: exibirEndereco(){
+void Endereco:: exibir(){
     cout << "---------- Endereco ----------\n";
     cout << "CEP: " << CEP << endl;
     cout << "Cidade: "<< cidade<< endl;
