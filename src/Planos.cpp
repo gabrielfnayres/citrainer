@@ -16,7 +16,10 @@ void Planos::alterarValor(float valorPlano)
 {
     this -> valorPlano = valorPlano;
 }
-void Planos::calcularValorTotal(){}
+float Planos::calcularValorTotal()
+{
+    return 0;
+}
 
 void Planos::exibirValorTotal()
 {

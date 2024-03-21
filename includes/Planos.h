@@ -17,7 +17,7 @@ class Planos
         virtual void alterarQuantidadeAnos(int quantAnos);
         virtual void alterarQuantidadeMeses(int quantMeses);
         void alterarValor(float valorPlano);
-        virtual void calcularValorTotal();
+        virtual float calcularValorTotal() = 0;
         void exibirValorTotal();
 
         virtual string exibir() = 0;
