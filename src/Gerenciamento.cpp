@@ -13,6 +13,12 @@
 #include <vector>
 #include <cstdlib>
 #include <fstream>
+#include <sstream>
+#include <stdexcept>
+#include <charconv>
+#include <stdlib.h>
+
+#define endl "\n"
 
 void Gerenciamento:: setPersonal(Personal personal) 
 {
@@ -31,11 +37,11 @@ void Gerenciamento:: abrirArquivo()
     
     if(!arquivo.is_open())
     {
-        cout << "Não foi possível abrir o arquivo" << endl;
+        cout << "Não foi possível abrir o arquivo" << "\n";
     }
 }
 
-/*void Gerenciamento::lerArquivo()
+void Gerenciamento::lerArquivo()
 {
     ifstream lendo("relatorio_personal.txt", ios::in);
 
@@ -45,31 +51,89 @@ void Gerenciamento:: abrirArquivo()
     }
 
     string linha;
-
-    if(lendo.good())
-    {
-        getline(lendo, linha);
-
-    }
+    vector<Aluno> alunoLer;
 
     while(getline(lendo, linha))
     {
-        string  dadosBasicos;
-        stringstream inter(linha);
 
-        getline(inter, dadosBasicos, ';');
+            Aluno al;
+            string nome;
+            int idade;
+            string data;
+            Endereco end;
+            Medidas med;
+            Treino tre;
+            string bairro, cidade, rua, cep;
+            int numero;
+            #include <stdexcept>
+
+            // ...
+
+            float peso, altura, cintura, busto, quadril, coxa, panturrilha;
+            string linha;
+            getline(lendo, linha);
+            nome = linha;
+            al.setNomeCompleto(nome);
+            getline(lendo, linha);
+            idade = from_chars(linha);
+            al.setIdade(idade);
+            getline(lendo, linha);
+            data = linha;
+            al.setDataDeNascimento(data);
+            getline(lendo, linha);
+            bairro = linha;
+            getline(lendo, linha);
+            cidade = linha;
+            getline(lendo, linha);
+            rua = linha;
+            getline(lendo, linha);
+            numero = from_chars(linha);
+            getline(lendo, linha);
+            cep = linha;
+            end.setBairro(bairro);
+            end.setCidade(cidade);
+            end.setRua(rua);
+            end.setNumero(numero);
+            end.setCep(cep);
+            al.setEndereco(end);
+            getline(lendo, linha);
+            peso = stof(linha);
+            getline(lendo, linha);
+            altura = stof(linha);
+            getline(lendo, linha);
+            cintura = stof(linha);
+            getline(lendo, linha);
+            busto = stof(linha);
+            getline(lendo, linha);
+            quadril = stof(linha);
+            getline(lendo, linha);
+            coxa = stof(linha);
+            getline(lendo, linha);
+            panturrilha = stof(linha);
+            med.setPeso(peso);
+            med.setAltura(altura);
+            med.setCintura(cintura);
+            med.setBusto(busto);
+            med.setQuadril(quadril);
+            med.setCoxa(coxa);
+            med.setPanturrilha(panturrilha);
+            al.setMedidas(med);
+            tre.montarTreino();
+            al.setTreino(tre);
+            alunoLer.push_back(al);
+        
     }
+}
 
-}*/
 
-void Gerenciamento:: salvarArquivo()
+void Gerenciamento::salvarArquivo()
 {
     ofstream arquivo;
     arquivo.open("relatorio_personal.txt");
     arquivo << personal.toStringPersonal() << endl;
 }
 
-void Gerenciamento:: cadastrarAluno(vector<Aluno> &als)
+void Gerenciamento::cadastrarAluno(vector<Aluno> &als)
 {
     Aluno criado;
     string n;
@@ -193,6 +257,7 @@ void Gerenciamento::alterarAluno(string nome, vector<Aluno> &als)
     cout << " 3-Data de nascimento" << "\n";
     cout << " 4-Medidas" << "\n";
     cout << " 5-Treino" << "\n";
+    cout << " 6-Plano" << "\n";
 
     cin >> alter;
     cin.ignore();
@@ -291,6 +356,15 @@ void Gerenciamento::alterarAluno(string nome, vector<Aluno> &als)
                 }
             }
         }
+    }
+    else if(alter == 6)
+    {
+        cout << "O que deseja alterar no plano do aluno?" << "\n";
+        cout << " -------------------------------------- " << "\n";
+        cout << " 1 - Alterar plano" << "\n";
+        cout << " 2 - Adicionar plano" << "\n";
+        int op;
+        cin >> op;
     }
 }
 
