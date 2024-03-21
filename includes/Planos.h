@@ -18,7 +18,7 @@ class Planos
         void alterarValor(float valorPlano);
         virtual void calcularValorTotal();
         void exibirValorTotal();
-        virtual void exibir();
+        virtual void exibir() = 0;
         
         void setValorTotal(float valorTotal);
         void setValorPlano(float valorPlano);

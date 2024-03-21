@@ -3,6 +3,8 @@
 #include "../includes/Treino.h"
 #include "../includes/Medidas.h"
 #include "../includes/Endereco.h"
+#include "../includes/Planos.h"
+#include "../includes/Anual.h"
 #include <iomanip>
 
 using namespace std;
@@ -18,7 +20,7 @@ Aluno::Aluno()
 
 Aluno::~Aluno(){}
 
-Aluno::Aluno(string nomeCompleto, int idade, string data, Endereco endereco, Medidas medidas, Treino treinos, Planos plano):Pessoa(nomeCompleto, idade, data, endereco)
+Aluno::Aluno(string nomeCompleto, int idade, string data, Endereco endereco, Medidas medidas, Treino treinos, Planos *plano):Pessoa(nomeCompleto, idade, data, endereco)
 {
   this->medidas = medidas;
   this->treinos = treinos;
@@ -34,7 +36,6 @@ void Aluno::exibir()
   endereco.exibir();
   medidas.exibir();
   treinos.exibir();
-  plano.exibir();
 }
 
 void Aluno::setNomeCompleto(string n)
@@ -67,7 +68,7 @@ void Aluno::setTreino(Treino treinos)
   this->treinos = treinos;
 }
 
-void Aluno::setPlano(Planos plano)
+void Aluno::setPlano(Planos *plano)
 {
   this->plano = plano;
 }

@@ -20,7 +20,10 @@ void Planos::exibirValorTotal()
     cout << "Valor total: " << valorTotal << endl;
 }
 
-void Planos::exibir(){}
+void Planos::exibir()
+{
+  
+}
 
 void Planos::setValorTotal(float valorTotal)
 {

@@ -178,7 +178,7 @@ void Treino::alterarTreino()
             cout << "\nQual exercício deseja alterar? (Índice)" << endl;
             cin >> e;
 
-            while((e<=0)||(e>15))
+            if((e<=0)||(e>15))
             {
                 cout << "Exercício inválido ou inexistente. Insira um exercício válido: ";
                 cin >> e;
@@ -207,7 +207,7 @@ void Treino::alterarTreino()
             cout << "\nQual exercício deseja alterar? (Índice)" << endl;
             cin >> e;
 
-            while((e<=0)||(e>15))
+            if((e<=0)||(e>15))
             {
                 cout << "Exercício inválido ou inexistente. Insira um exercício válido: ";
                 cin >> e;
@@ -236,7 +236,7 @@ void Treino::alterarTreino()
             cout << "\nQual exercício deseja alterar? (Índice)" << endl;
             cin >> e;
 
-            while((e<=0)||(e>15))
+            if((e<=0)||(e>15))
             {
                 cout << "Exercício inválido ou inexistente. Insira um exercício válido: ";
                 cin >> e;

@@ -26,7 +26,7 @@ class Gerenciamento
         void cadastrarAluno(vector<Aluno> &als);
         void alterarAluno(string nome, vector<Aluno> &als);
         Aluno buscarAluno(string nomeAluno, vector<Aluno> als);
-        void exibirTodosAlunos();
+        void exibirTodosAlunos(vector<Aluno> als);
         void removerAluno(string nome, vector<Aluno> &als);
         void menu();    
 };

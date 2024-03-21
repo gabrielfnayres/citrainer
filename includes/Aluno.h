@@ -11,13 +11,13 @@ class Aluno: public Pessoa
     private:
         Medidas medidas;
         Treino treinos;
-        Planos plano;
+        Planos *plano;
 
     public:
         int treinoDoDia = 0;
         Aluno();
         ~Aluno();
-        Aluno(string nomeCompleto, int idade, string data, Endereco endereco, Medidas medidas, Treino treinos, Planos plano);
+        Aluno(string nomeCompleto, int idade, string data, Endereco endereco, Medidas medidas, Treino treinos, Planos* plano);
         void exibir();
         void menu();
         string toStringAluno();
@@ -28,7 +28,7 @@ class Aluno: public Pessoa
         void setEndereco(Endereco e);
         void setTreino(Treino treinos);
         void setMedidas(Medidas medidas); 
-        void setPlano(Planos plano);
+        void setPlano(Planos *plano);
         string getNomeCompleto();
         int getIdade();
         string getDataDeNascimento(); 
