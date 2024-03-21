@@ -337,147 +337,147 @@ void Gerenciamento::removerAluno(string nome,vector<Aluno> &als)
 void Gerenciamento::alterarMedidas(vector<Aluno> &als,string m)
 {
     int esc;
-        vector<Aluno>::iterator it; 
-    
-        cout << "Informe informe a medida que deseja alterar: " << "\n";
-        cout << " --------------------------------------- " << "\n";
-        cout << " 1 - Peso" << "\n";
-        cout << " 2 - Altura" << "\n";
-        cout << " 3 - Cintura" << "\n";
-        cout << " 4 - Busto" << "\n";
-        cout << " 5 - Quadril" << "\n";
-        cout << " 6 - Coxa" << "\n";
-        cout << " 7 - Panturrilha" << "\n";
+    vector<Aluno>::iterator it; 
 
-        cin >> esc;
+    cout << "Informe informe a medida que deseja alterar: " << "\n";
+    cout << " --------------------------------------- " << "\n";
+    cout << " 1 - Peso" << "\n";
+    cout << " 2 - Altura" << "\n";
+    cout << " 3 - Cintura" << "\n";
+    cout << " 4 - Busto" << "\n";
+    cout << " 5 - Quadril" << "\n";
+    cout << " 6 - Coxa" << "\n";
+    cout << " 7 - Panturrilha" << "\n";
 
-        if(esc == 1)
+    cin >> esc;
+
+    if(esc == 1)
+    {
+        cout << "Informe o peso do aluno: " << "\n";
+        for(it = als.begin(); it != als.end(); it++)
         {
-            cout << "Informe o peso do aluno: " << "\n";
-            for(it = als.begin(); it != als.end(); it++)
+            if(it->getNomeCompleto() == m)
             {
-                if(it->getNomeCompleto() == m)
-                {
-                    float newPeso;
-                    cin >> newPeso;
-                    Medidas aux;
-                    aux = it->getMedidas();
-                    aux.setPeso(newPeso);
-                    it->setMedidas(aux);
-                    cout << "Peso alterado com sucesso!" << "\n";
-                    break;
-                }
-            }
-        }
-        else if(esc == 2)
-        {
-            cout << "Informe a altura do aluno:" << "\n";
-            for(it = als.begin(); it != als.end(); it++)
-            {
-                if(it->getNomeCompleto() == m)
-                {
-                    float newAltura;
-                    cin >> newAltura;
-                    Medidas aux;
-                    aux = it->getMedidas();
-                    aux.setAltura(newAltura);
-                    it->setMedidas(aux);
-                    cout << "Altura alterada com sucesso!" << "\n";
-                }
-            }
-        }    
-        else if(esc == 3)
-        {
-            cout << "Informe a cintura do aluno: " << "\n";
-            for(it = als.begin(); it != als.end(); it++)
-            {
-                if(it->getNomeCompleto() == m)
-                {
-                    float newCintura;
-                    cin >> newCintura;
-                    Medidas aux;
-                    aux = it->getMedidas();
-                    aux.setCintura(newCintura);
-                    it->setMedidas(aux);
-                    cout << "Cintura alterada com sucesso! " << "\n";
-                    break;
-                }
-            }
-        }
-        else if(esc == 4)
-        {
-            cout << "Informe o busto do aluno:" << "\n";
-            for(it = als.begin(); it != als.end(); it++)
-            {
-                if(it->getNomeCompleto() == m)
-                {
-                    float newBusto;
-                    cin >> newBusto;
-                    Medidas aux;
-                    aux = it->getMedidas();
-                    aux.setBusto(newBusto);
-                    it->setMedidas(aux);
-                    cout << "Busto alterado com sucesso!" << "\n";
-                    break;
-                }
-            }
-        }
-        else if(esc == 5)
-        {
-            cout << "Informe o quadril do aluno: " << "\n";
-            for(it = als.begin(); it != als.end(); it++)
-            {
-                if(it->getNomeCompleto() == m)
-                {
-                    float newQuadril;
-                    cin >> newQuadril;
-                    Medidas aux;
-                    aux = it->getMedidas();
-                    aux.setQuadril(newQuadril);
-                    it->setMedidas(aux);
-                    cout << "Quadril alterado com sucesso!" << "\n";
-                    break;
-                }
-            }
-        }
-        else if(esc == 6)
-        {
-            cout << "Informe a coxa do aluno: " << "\n";
-            for(it = als.begin(); it != als.end(); it++)
-            {
-                if(it->getNomeCompleto() == m)
-                {
-                    float newCoxa;
-                    cin >> newCoxa;
-                    Medidas aux;
-                    aux = it->getMedidas();
-                    aux.setCoxa(newCoxa);
-                    it->setMedidas(aux);
-                    cout << "Coxa alterada com sucesso!" << "\n";
-                    break;
-                }
-            }
-        }
-        else if(esc == 7)
-        {
-            cout << "Informe a panturrilha do aluno: " << "\n";
-            for(it = als.begin(); it != als.end(); it++)
-            {
-                float newPant;
-                cin >> newPant;
+                float newPeso;
+                cin >> newPeso;
                 Medidas aux;
                 aux = it->getMedidas();
-                aux.setPanturrilha(newPant);
+                aux.setPeso(newPeso);
                 it->setMedidas(aux);
-                cout << "Panturrilha alterada com sucesso!" << "\n";
+                cout << "Peso alterado com sucesso!" << "\n";
                 break;
             }
         }
-        else
+    }
+    else if(esc == 2)
+    {
+        cout << "Informe a altura do aluno:" << "\n";
+        for(it = als.begin(); it != als.end(); it++)
         {
-            cout << "Informação inválida" << "\n";
-            return;
+            if(it->getNomeCompleto() == m)
+            {
+                float newAltura;
+                cin >> newAltura;
+                Medidas aux;
+                aux = it->getMedidas();
+                aux.setAltura(newAltura);
+                it->setMedidas(aux);
+                cout << "Altura alterada com sucesso!" << "\n";
+            }
         }
+    }    
+    else if(esc == 3)
+    {
+        cout << "Informe a cintura do aluno: " << "\n";
+        for(it = als.begin(); it != als.end(); it++)
+        {
+            if(it->getNomeCompleto() == m)
+            {
+                float newCintura;
+                cin >> newCintura;
+                Medidas aux;
+                aux = it->getMedidas();
+                aux.setCintura(newCintura);
+                it->setMedidas(aux);
+                cout << "Cintura alterada com sucesso! " << "\n";
+                break;
+            }
+        }
+    }
+    else if(esc == 4)
+    {
+        cout << "Informe o busto do aluno:" << "\n";
+        for(it = als.begin(); it != als.end(); it++)
+        {
+            if(it->getNomeCompleto() == m)
+            {
+                float newBusto;
+                cin >> newBusto;
+                Medidas aux;
+                aux = it->getMedidas();
+                aux.setBusto(newBusto);
+                it->setMedidas(aux);
+                cout << "Busto alterado com sucesso!" << "\n";
+                break;
+            }
+        }
+    }
+    else if(esc == 5)
+    {
+        cout << "Informe o quadril do aluno: " << "\n";
+        for(it = als.begin(); it != als.end(); it++)
+        {
+            if(it->getNomeCompleto() == m)
+            {
+                float newQuadril;
+                cin >> newQuadril;
+                Medidas aux;
+                aux = it->getMedidas();
+                aux.setQuadril(newQuadril);
+                it->setMedidas(aux);
+                cout << "Quadril alterado com sucesso!" << "\n";
+                break;
+            }
+        }
+    }
+    else if(esc == 6)
+    {
+        cout << "Informe a coxa do aluno: " << "\n";
+        for(it = als.begin(); it != als.end(); it++)
+        {
+            if(it->getNomeCompleto() == m)
+            {
+                float newCoxa;
+                cin >> newCoxa;
+                Medidas aux;
+                aux = it->getMedidas();
+                aux.setCoxa(newCoxa);
+                it->setMedidas(aux);
+                cout << "Coxa alterada com sucesso!" << "\n";
+                break;
+            }
+        }
+    }
+    else if(esc == 7)
+    {
+        cout << "Informe a panturrilha do aluno: " << "\n";
+        for(it = als.begin(); it != als.end(); it++)
+        {
+            float newPant;
+            cin >> newPant;
+            Medidas aux;
+            aux = it->getMedidas();
+            aux.setPanturrilha(newPant);
+            it->setMedidas(aux);
+            cout << "Panturrilha alterada com sucesso!" << "\n";
+            break;
+        }
+    }
+    else
+    {
+        cout << "Informação inválida" << "\n";
+        return;
+    }
 }
 
 void Gerenciamento::menu()
