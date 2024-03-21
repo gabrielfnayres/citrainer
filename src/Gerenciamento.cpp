@@ -3,6 +3,9 @@
 #include "../includes/Aluno.h"
 #include "../includes/Treino.h"
 #include "../includes/Personal.h"
+#include "../includes/Planos.h"
+#include "../includes/Mensal.h"
+#include "../includes/Anual.h"
 #include <iostream>
 #include <iomanip>
 #include <iterator>
@@ -32,7 +35,7 @@ void Gerenciamento:: abrirArquivo()
     }
 }
 
-void Gerenciamento::lerArquivo()
+/*void Gerenciamento::lerArquivo()
 {
     ifstream lendo("relatorio_personal.txt", ios::in);
 
@@ -54,10 +57,10 @@ void Gerenciamento::lerArquivo()
         string  dadosBasicos;
         stringstream inter(linha);
 
-        getline(inter, dadosBasicos, ';')
+        getline(inter, dadosBasicos, ';');
     }
 
-}
+}*/
 
 void Gerenciamento:: salvarArquivo()
 {
@@ -71,6 +74,8 @@ void Gerenciamento:: cadastrarAluno(vector<Aluno> &als)
     Aluno criado;
     string n;
     int idade;
+    int tPlano, quantMeses, quantAnos;
+    float vPlano;
     Medidas med;
     Treino tre;
     int numero;
@@ -117,7 +122,43 @@ void Gerenciamento:: cadastrarAluno(vector<Aluno> &als)
 
     tre.montarTreino();
     criado.setTreino(tre);
-    
+    cout << "Qual o plano do aluno? (1 - Mensal | 2 - Anual)" << "\n";
+    cin >> tPlano;
+
+    while(tPlano != 1 && tPlano != 2)
+    {
+        cout << "Opção inválida. Insira uma opção válida: ";
+        cin >> tPlano;
+    }
+
+    if(tPlano == 1)
+    {
+        Planos *mensal = new Mensal();
+
+        cout << "Informe o valor do plano: " << "\n";
+        cin >> vPlano;
+        mensal->setValorPlano(vPlano);
+        cout << "Informe a quantidade de meses do plano: " << "\n";
+        cin >> quantMeses;
+        mensal->setQuantMeses(quantMeses);
+
+        criado.setPlano(*mensal);
+    }
+
+    else if(tPlano == 2)
+    {   
+        Planos *anual = new Anual();
+
+        cout << "Informe o valor do plano: " << "\n";
+        cin >> vPlano;
+        anual->setValorPlano(vPlano);
+        cout << "Informe a quantidade de anos do plano: " << "\n";
+        cin >> quantMeses;
+        anual->setQuantMeses(quantAnos);  
+
+        criado.setPlano(*anual);
+    }
+
     end.setBairro(bairro);
     end.setCidade(cidade);
     end.setRua(rua);
@@ -138,11 +179,11 @@ void Gerenciamento:: cadastrarAluno(vector<Aluno> &als)
     med.setCoxa(coxa);
     med.setPanturrilha(panturrilha);
     criado.setMedidas(med);
-    
+
     als.push_back(criado);
 }
 
-void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
+void Gerenciamento::alterarAluno(string nome, vector<Aluno> &als)
 {
     cout << " O que deseja alterar no seu aluno? " << "\n";
     int alter;
@@ -254,7 +295,7 @@ void Gerenciamento:: alterarAluno(string nome, vector<Aluno> &als)
 }
 
 
-Aluno Gerenciamento :: buscarAluno(string nomeAluno, vector<Aluno> als)
+Aluno Gerenciamento::buscarAluno(string nomeAluno, vector<Aluno> als)
 {
     string resp;
     Aluno exibido;
@@ -269,7 +310,7 @@ Aluno Gerenciamento :: buscarAluno(string nomeAluno, vector<Aluno> als)
     return exibido;
 }
 
-void Gerenciamento :: exibirTodosAlunos()
+void Gerenciamento::exibirTodosAlunos()
 {
     for(Aluno a : personal.aluno)
     {
@@ -279,7 +320,7 @@ void Gerenciamento :: exibirTodosAlunos()
 }
 
 
-void Gerenciamento :: removerAluno(string nome,vector<Aluno> &als)
+void Gerenciamento::removerAluno(string nome,vector<Aluno> &als)
 {
     
     vector<Aluno>::iterator it;
@@ -439,7 +480,7 @@ void Gerenciamento::alterarMedidas(vector<Aluno> &als,string m)
         }
 }
 
-void Gerenciamento :: menu()
+void Gerenciamento::menu()
 {
     int escolha;
 

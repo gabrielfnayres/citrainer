@@ -19,3 +19,14 @@ void Mensal::calcularValorTotal()
 {
     valorTotal = valorPlano * quantMeses;
 }
+
+void Mensal::exibir()
+{
+    cout << "--------- Planos ----------\n";
+
+    cout << "Valor do plano: R$ " << valorPlano << "\n";
+    cout << "Quantidade de Meses: " << quantMeses << "\n";
+    cout << "Valor total: R$ " << valorTotal << "\n";
+
+    cout << "---------------------------\n";
+}

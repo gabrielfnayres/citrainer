@@ -21,3 +21,43 @@ void Planos::exibirValorTotal()
 }
 
 void Planos::exibir(){}
+
+void Planos::setValorTotal(float valorTotal)
+{
+    this -> valorTotal = valorTotal;
+}
+
+void Planos::setValorPlano(float valorPlano)
+{
+    this -> valorPlano = valorPlano;
+}
+
+void Planos::setQuantAnos(int quantAnos)
+{
+    this -> quantAnos = quantAnos;
+}
+
+void Planos::setQuantMeses(int quantMeses)
+{
+    this -> quantMeses = quantMeses;
+}
+
+float Planos::getValorTotal()
+{
+    return valorTotal;
+}
+
+float Planos::getValorPlano()
+{
+    return valorPlano;
+}
+
+int Planos::getQuantAnos()
+{
+    return quantAnos;
+}
+
+int Planos::getQuantMeses()
+{
+    return quantMeses;
+}
