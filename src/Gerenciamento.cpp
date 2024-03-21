@@ -206,9 +206,11 @@ void Gerenciamento::cadastrarAluno(vector<Aluno> &als)
         cin >> quantMeses;
         mensal->setQuantMeses(quantMeses);
 
-        criado.setPlano(mensal); // Change the parameter type to a pointer of the base class Planos
 
-        delete mensal; // Delete the dynamically allocated object
+        mensal->exibir();
+
+        criado.setPlano(*mensal);
+
     }
 
     else if(tPlano == 2)

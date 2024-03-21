@@ -18,7 +18,9 @@ int main()
     Gerenciamento* crud = new  Gerenciamento(); 
     
     crud->abrirArquivo();
-    
+
+    //crud->lerArquivo();
+
     cout << "------------------------------ Bem-vindo ao MostruMUX ------------------------------" << endl;
 
     while(1)
