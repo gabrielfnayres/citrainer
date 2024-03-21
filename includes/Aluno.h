@@ -34,5 +34,5 @@ class Aluno: public Pessoa
         string getDataDeNascimento(); 
         Medidas getMedidas();
         Treino getTreino();
-        Planos getPlano();
+        Planos* getPlano();
 };
