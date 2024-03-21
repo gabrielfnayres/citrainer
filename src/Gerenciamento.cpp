@@ -219,7 +219,7 @@ void Gerenciamento::cadastrarAluno(vector<Aluno> &als)
         anual->setValorPlano(vPlano);
         cout << "Informe a quantidade de anos do plano: " << "\n";
         cin >> quantMeses;
-        anual->setQuantMeses(quantAnos);  
+        anual->setQuantAnos(quantAnos);  
 
         criado.setPlano(anual);
     }

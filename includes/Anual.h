@@ -10,7 +10,7 @@ class Anual: public Planos
         Anual();
         void alterarQuantidadeAnos(int quantAnos);
         void alterarQuantidadeMeses(int quantMeses);
-        void calcularValorTotal();
+        float calcularValorTotal();
 
         string exibir();
 

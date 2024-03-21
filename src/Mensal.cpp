@@ -17,14 +17,14 @@ void Mensal:: alterarQuantidadeMeses(int quantMeses)
     this -> quantMeses = quantMeses;
 }
 
-void Mensal::calcularValorTotal()
+float Mensal::calcularValorTotal()
 {
-    valorTotal = valorPlano * quantMeses;
+    return valorTotal = valorPlano * quantMeses;
 }
 
 string Mensal::exibir()
 {
-    string str = "------ Plano Mensal ------\nValor do plano: R$ " + to_string(valorPlano) + "\n" + "Quantidade de Meses: " + to_string(quantMeses) + "\n" + "Valor total: R$ " + to_string(valorTotal) + "\n" + "--------------------------\n";
+    string str = "------ Plano Mensal ------\nValor do plano: R$ " + to_string(valorPlano) + "\n" + "Quantidade de Meses: " + to_string(quantMeses) + "\n" + "Valor total: R$ " + to_string(calcularValorTotal()) + "\n" + "--------------------------\n";
     return str;
 
 }
