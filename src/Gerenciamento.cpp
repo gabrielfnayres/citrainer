@@ -258,7 +258,6 @@ void Gerenciamento::alterarAluno(string nome, vector<Aluno> &als)
     cout << " 3-Data de nascimento" << "\n";
     cout << " 4-Medidas" << "\n";
     cout << " 5-Treino" << "\n";
-    cout << " 6-Plano" << "\n";
 
     cin >> alter;
     cin.ignore();
