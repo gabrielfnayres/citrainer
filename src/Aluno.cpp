@@ -98,6 +98,11 @@ Treino Aluno::getTreino()
   return treinos;
 }
 
+Planos* Aluno::getPlano()
+{
+  return plano;
+}
+
 void Aluno::menu()
 {
   int escolha;

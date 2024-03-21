@@ -206,11 +206,7 @@ void Gerenciamento::cadastrarAluno(vector<Aluno> &als)
         cin >> quantMeses;
         mensal->setQuantMeses(quantMeses);
 
-
-        mensal->exibir();
-
-        criado.setPlano(*mensal);
-
+        criado.setPlano(mensal);
     }
 
     else if(tPlano == 2)
@@ -389,6 +385,7 @@ Aluno Gerenciamento::buscarAluno(string nomeAluno, vector<Aluno> als)
     for(it = als.begin(); it != als.end(); it++)
     {
         it->exibir(); 
+        cout << it->getPlano()->exibir() << "\n";
         cout << "\n";
     }
 }

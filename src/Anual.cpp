@@ -20,13 +20,8 @@ void Anual::calcularValorTotal()
 valorTotal = valorPlano * quantAnos;
 }
 
-void Anual::exibir()
+string Anual::exibir()
 {
-  cout << "--------- Planos ----------\n";
-
-    cout << "Valor do plano: R$ " << valorPlano << "\n";
-    cout << "Quantidade de Meses: " << quantAnos << "\n";
-    cout << "Valor total: R$ " << valorTotal << "\n";
-
-    cout << "---------------------------\n";
+    string str = "------- Plano Anual -------\nValor do plano: R$ " + to_string(valorPlano) + "\n" + "Quantidade de Anos: " + to_string(quantAnos) + "\n" + "Valor total: R$ " + to_string(valorTotal) + "\n" + "---------------------------\n";
+    return str;
 }

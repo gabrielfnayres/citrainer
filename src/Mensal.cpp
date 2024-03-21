@@ -20,13 +20,8 @@ void Mensal::calcularValorTotal()
     valorTotal = valorPlano * quantMeses;
 }
 
-void Mensal::exibir()
+string Mensal::exibir()
 {
-    cout << "--------- Planos ----------\n";
-
-    cout << "Valor do plano: R$ " << valorPlano << "\n";
-    cout << "Quantidade de Meses: " << quantMeses << "\n";
-    cout << "Valor total: R$ " << valorTotal << "\n";
-
-    cout << "---------------------------\n";
+    string str = "------ Plano Mensal ------\nValor do plano: R$ " + to_string(valorPlano) + "\n" + "Quantidade de Meses: " + to_string(quantMeses) + "\n" + "Valor total: R$ " + to_string(valorTotal) + "\n" + "--------------------------\n";
+    return str;
 }
