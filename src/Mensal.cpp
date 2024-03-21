@@ -1,6 +1,8 @@
 #include "../includes/Mensal.h"
+#include "../includes/Aluno.h"
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 Mensal::Mensal(){}
@@ -20,13 +22,16 @@ void Mensal::calcularValorTotal()
     valorTotal = valorPlano * quantMeses;
 }
 
-void Mensal::exibir()
+void Mensal::exibir(vector<Aluno> als)
 {
-    cout << "--------- Planos ----------\n";
+    vector<Aluno>::iterator it;
+    for(it != als.begin(); it != als.end(); it++){
+        cout << "--------- Planos ----------\n";
 
-    cout << "Valor do plano: R$ " << valorPlano << "\n";
-    cout << "Quantidade de Meses: " << quantMeses << "\n";
-    cout << "Valor total: R$ " << valorTotal << "\n";
+        cout << "Valor do plano: R$ " << valorPlano << "\n";
+        cout << "Quantidade de Meses: " << quantMeses << "\n";
+        cout << "Valor total: R$ " << valorTotal << "\n";
 
-    cout << "---------------------------\n";
+        cout << "---------------------------\n";
+    }
 }

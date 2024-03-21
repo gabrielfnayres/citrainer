@@ -11,5 +11,5 @@ class Anual: public Planos
         void alterarQuantidadeAnos(int quantAnos);
         void alterarQuantidadeMeses(int quantMeses);
         void calcularValorTotal();
-        void exibir();
+        void exibir(vector<Aluno> als);
 };

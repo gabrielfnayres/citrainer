@@ -1,5 +1,6 @@
 #include "../includes/Anual.h"
 #include <iostream>
+#include "../includes/Aluno.h"
 #include <string>
 using namespace std;
 
@@ -20,7 +21,7 @@ void Anual::calcularValorTotal()
 valorTotal = valorPlano * quantAnos;
 }
 
-void Anual::exibir()
+void Anual::exibir(vector<Aluno> als)
 {
   cout << "--------- Planos ----------\n";
 

@@ -36,6 +36,7 @@ void Aluno::exibir()
   endereco.exibir();
   medidas.exibir();
   treinos.exibir();
+  
 }
 
 void Aluno::setNomeCompleto(string n)

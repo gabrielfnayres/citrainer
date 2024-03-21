@@ -207,9 +207,9 @@ void Gerenciamento::cadastrarAluno(vector<Aluno> &als)
         mensal->setQuantMeses(quantMeses);
 
 
-        mensal->exibir();
+        mensal->exibir(als);
 
-        criado.setPlano(*mensal);
+        criado.setPlano(mensal);
 
     }
 

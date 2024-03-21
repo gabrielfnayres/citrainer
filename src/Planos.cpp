@@ -1,6 +1,9 @@
 #include "../includes/Planos.h"
 #include <iostream>
 #include <string>
+#include "../includes/Aluno.h"
+#include "../includes/Pessoa.h"
+
 using namespace std;
 
 Planos::Planos(){}
@@ -20,9 +23,9 @@ void Planos::exibirValorTotal()
     cout << "Valor total: " << valorTotal << endl;
 }
 
-void Planos::exibir()
+void Planos::exibir(vector<Aluno> als)
 {
-  
+
 }
 
 void Planos::setValorTotal(float valorTotal)
