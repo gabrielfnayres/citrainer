@@ -38,3 +38,4 @@
     g++ *.cpp -o citrainer
     ./citrainer
 
+![DIAGRAMA 4-1](https://github.com/gabrielfnayres/citrainer/assets/93880679/aa8cd48d-8c22-4fda-b387-94f2b7cb9d06)
